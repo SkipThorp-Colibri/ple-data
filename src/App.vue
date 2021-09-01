@@ -1,15 +1,43 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <AddReport />
+  
+  <div class="container">
+    <div class="text-left" style="margin-top: 1rem;">
+      <button type="button" class="btn btn-primary btn-sm mb-2">new report</button>
+    </div>
+    
+    <ReportsTable :reports="reports" />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import AddReport from './components/AddReport.vue'
+import ReportsTable from './components/ReportsTable.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    AddReport,
+    ReportsTable
+  },
+  data() {
+    return {
+      reports: []
+    }
+  },
+  created() {
+    this.reports = [
+      { 
+        subject: "Aflac ND/SD", 
+        departments: ["Aflac SD - Amber Lind Agency","Aflac ND - Ellie Papineau Agency"],
+        emails: ["mdevans@aflac.com","LThorson@aflac.com"] 
+      },
+      { 
+        subject: "Report 2", 
+        departments: ["Aflac SD - Craig Stadtfeld Agency","Aflac ND - Lynn Brokaw Agency","Aflac SD - Shon Ford Agency"],
+        emails: ["cnewell@aflac.com"] 
+      }
+    ]
   }
 }
 </script>
