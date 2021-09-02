@@ -20,16 +20,13 @@
                 </div>
             </div>
             <div class="form-row">
-                <div class="col"><Button v-show="!showAddSubject" text="add subject" color="btn-primary" @btn-click="toggleAddSubject" /></div>
-                <div class="col"><Button v-show="!showAddDepartment" text="add department" color="btn-primary" @btn-click="toggleAddDepartment" /></div>
-                <div class="col"><Button v-show="!showAddEmail" text="add email" color="btn-primary" @btn-click="toggleAddEmail" /></div>
+                <div class="col"></div>
+                <div class="col"><Button text="add department" color="btn-primary" @btn-click="toggleAddDepartment" /></div>
+                <div class="col"><Button text="add email" color="btn-primary" @btn-click="toggleAddEmail" /></div>
             </div>
             <div class="form-row">
                 <div class="col">
-                    <div v-show="showAddSubject">
-                        <input type="text" v-model="newSubject" class="form-control" />
-                        <Button text="submit" color="btn-success" @btn-click="submitSubject" />
-                    </div>
+                    <input type="text" v-model="subject" class="form-control" />
                 </div>
                 <div class="col">
                     <div v-show="showAddDepartment">
@@ -55,72 +52,55 @@
 import Button from './Button.vue'
 
 export default {
-    name: "AddReport",
+    name: "EditReport",
     components: {
         Button
     },
     data() {
         return {
             subject: '',
-            departments: [],
-            emails: [],
+            departments: ["Aflac SD - Amber Lind Agency"],
+            emails: ["mdevans@aflac.com","LThorson@aflac.com"],
             newDepartment: '',
             newEmail: '',
             newReport: null,
-            newSubject: null,
             showAddDepartment: false,
-            showAddEmail: false,
-            showAddSubject: true
+            showAddEmail: false
         }
     },
     methods: {
         onAddReportSubmit() {
-            const newReport = { subject: this.subject, departments: this.departments, emails: this.emails}
-            this.$emit('add-new-report', newReport)
-            console.log("add report submitted", newReport)
-            this.subject = ''
-            this.departments = []
-            this.emails = []
+            this.newReport = { subject: this.subject, departments: this.departments, emails: this.emails}
+            console.log("add report submitted", this.newReport)
         },
         submitDepartment() {
             if(this.newDepartment != ''){
                 this.departments = [...this.departments, this.newDepartment]
                 this.newDepartment = ''
-                this.toggleAddDepartment()
             }
         },
         submitEmail() {
             if(this.newEmail != ''){
                 this.emails = [...this.emails, this.newEmail]
                 this.newEmail = ''
-                this.toggleAddEmail()
             }
-        },
-        submitSubject() {
-            if(this.newSubject != ''){
-                this.subject = this.newSubject
-                this.newSubject = ''
-            }
-            this.toggleAddSubject()
         },
         toggleAddDepartment() {
-            // console.log("toggle show add department", this.showAddDepartment)
+            console.log("toggle show add department", this.showAddDepartment)
             this.showAddDepartment = !this.showAddDepartment
         },
         toggleAddEmail() {
-            // console.log("toggle show add email", this.showAddEmail)
+            console.log("toggle show add email", this.showAddEmail)
             this.showAddEmail = !this.showAddEmail
         },
-        toggleAddSubject() {
-            // console.log("toggle show add subject", this.showAddSubject)
-            this.showAddSubject = !this.showAddSubject
-        },
         removeEmail(email) {
-            this.emails = this.emails.filter((e) => e !== email)
+            console.log(email)
+            //this.$emit('delete-email', email)
         }
         ,
         removeDepartment(dept) {
-            this.departments = this.departments.filter((d) => d !== dept)
+            console.log(dept)
+            //this.$emit('delete-dept', dept)
         }
     }
 }

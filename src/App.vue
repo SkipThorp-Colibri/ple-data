@@ -1,9 +1,12 @@
 <template>
-  <AddReport />
+  <div v-show="showAddNewReport">
+    <AddReport @add-new-report="addNewReportToList" />
+  </div>
+  
   
   <div class="container">
     <div class="text-left" style="margin-top: 1rem;">
-      <button type="button" class="btn btn-primary btn-sm mb-2">new report</button>
+      <Button text="new report" color="btn-primary" @btn-click="toggleAddReport" />
     </div>
     
     <ReportsTable :reports="reports" />
@@ -12,17 +15,30 @@
 
 <script>
 import AddReport from './components/AddReport.vue'
+import Button from './components/Button.vue'
 import ReportsTable from './components/ReportsTable.vue'
 
 export default {
   name: 'App',
   components: {
     AddReport,
+    Button,
     ReportsTable
   },
   data() {
     return {
-      reports: []
+      reports: [],
+      showAddNewReport: false
+    }
+  },
+  methods: {
+    toggleAddReport() {
+      this.showAddNewReport = !this.showAddNewReport
+    },
+    addNewReportToList(report) {
+      this.toggleAddReport()
+      console.log("received new report", report)
+      this.reports = [...this.reports, report]
     }
   },
   created() {
