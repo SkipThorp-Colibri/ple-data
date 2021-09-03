@@ -35,7 +35,7 @@ export default {
     },
     async editReport(id) {
       this.selectedReport = await this.fetchReport(id)
-      this.toggleEditReport()
+      this.showEditReport = true
     },
     async addNewReportToList(report) {
       this.toggleEditReport()
