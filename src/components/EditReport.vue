@@ -1,6 +1,6 @@
 <template>
     <div class="container" id="add-report-container">
-        <form class="text-left" @submit="onAddReportSubmit">
+        <form class="text-left">
             <div class="form-row">
                 <div class="col">
                     <h4>Subject</h4>
@@ -20,13 +20,16 @@
                 </div>
             </div>
             <div class="form-row">
-                <div class="col"></div>
-                <div class="col"><Button text="add department" color="btn-primary" @btn-click="toggleAddDepartment" /></div>
-                <div class="col"><Button text="add email" color="btn-primary" @btn-click="toggleAddEmail" /></div>
+                <div class="col"><Button v-show="!showAddSubject" text="edit subject" color="btn-primary" @btn-click="toggleAddSubject" /></div>
+                <div class="col"><Button v-show="!showAddDepartment" text="add department" color="btn-primary" @btn-click="toggleAddDepartment" /></div>
+                <div class="col"><Button v-show="!showAddEmail" text="add email" color="btn-primary" @btn-click="toggleAddEmail" /></div>
             </div>
             <div class="form-row">
                 <div class="col">
-                    <input type="text" v-model="subject" class="form-control" />
+                    <div v-show="showAddSubject">
+                        <input type="text" v-model="newSubject" class="form-control" />
+                        <Button text="submit" color="btn-success" @btn-click="submitSubject" />
+                    </div>
                 </div>
                 <div class="col">
                     <div v-show="showAddDepartment">
@@ -42,7 +45,7 @@
                 </div>
             </div>
             <div class="form-row">
-                <Button text="add report" color="btn-success" @btn-click="onAddReportSubmit" />
+                <Button :text="isEdit ? 'submit edit' : 'submit report'" color="btn-success" @btn-click="onReportSubmit" />
             </div>
         </form>
     </div>
@@ -59,48 +62,76 @@ export default {
     data() {
         return {
             subject: '',
-            departments: ["Aflac SD - Amber Lind Agency"],
-            emails: ["mdevans@aflac.com","LThorson@aflac.com"],
+            departments: [],
+            emails: [],
             newDepartment: '',
             newEmail: '',
-            newReport: null,
-            showAddDepartment: false,
-            showAddEmail: false
+            newSubject: null,
+            showAddDepartment: true,
+            showAddEmail: true,
+            showAddSubject: true,
+            isEdit: false
         }
     },
+    props: {
+        selectedReport: null
+    },
     methods: {
-        onAddReportSubmit() {
-            this.newReport = { subject: this.subject, departments: this.departments, emails: this.emails}
-            console.log("add report submitted", this.newReport)
+        onReportSubmit() {
+            const report = { subject: this.subject, departments: this.departments, emails: this.emails}
+            console.log("hit onReportSubmit", report)
+            if(this.isEdit) {
+                console.log("this is an edit")
+                this.$emit('edit-report', report)
+            } else {
+                this.$emit('add-new-report', report)
+            }
+            this.subject = ''
+            this.departments = []
+            this.emails = []
         },
         submitDepartment() {
             if(this.newDepartment != ''){
                 this.departments = [...this.departments, this.newDepartment]
                 this.newDepartment = ''
+                this.toggleAddDepartment()
             }
         },
         submitEmail() {
             if(this.newEmail != ''){
                 this.emails = [...this.emails, this.newEmail]
                 this.newEmail = ''
+                this.toggleAddEmail()
             }
         },
+        submitSubject() {
+            if(this.newSubject != ''){
+                this.subject = this.newSubject
+                this.newSubject = ''
+            }
+            this.toggleAddSubject()
+        },
         toggleAddDepartment() {
-            console.log("toggle show add department", this.showAddDepartment)
+            // console.log("toggle show add department", this.showAddDepartment)
             this.showAddDepartment = !this.showAddDepartment
         },
         toggleAddEmail() {
-            console.log("toggle show add email", this.showAddEmail)
+            // console.log("toggle show add email", this.showAddEmail)
             this.showAddEmail = !this.showAddEmail
         },
+        toggleAddSubject() {
+            // console.log("toggle show add subject", this.showAddSubject)
+            this.showAddSubject = !this.showAddSubject
+        },
         removeEmail(email) {
-            console.log(email)
-            //this.$emit('delete-email', email)
-        }
-        ,
+            if(confirm(`Do you want to delete ${email}`)) {
+                this.emails = this.emails.filter((e) => e !== email)
+            }
+        },
         removeDepartment(dept) {
-            console.log(dept)
-            //this.$emit('delete-dept', dept)
+            if(confirm(`Do you want to delete ${dept}`)) {
+                this.departments = this.departments.filter((d) => d !== dept)
+            }
         }
     }
 }

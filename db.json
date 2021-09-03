@@ -1,0 +1,79 @@
+{
+  "reports": [
+    {
+      "id": 1,
+      "subject": "Aflac ND/SD",
+      "departments": [
+        "Aflac SD - Amber Lind Agency",
+        "Aflac ND - Ellie Papineau Agency"
+      ],
+      "emails": [
+        "mdevans@aflac.com",
+        "LThorson@aflac.com"
+      ]
+    },
+    {
+      "id": 2,
+      "subject": "Report 2",
+      "departments": [
+        "Aflac SD - Craig Stadtfeld Agency",
+        "Aflac ND - Lynn Brokaw Agency",
+        "Aflac SD - Shon Ford Agency"
+      ],
+      "emails": [
+        "cnewell@aflac.com"
+      ]
+    },
+    {
+      "subject": "test subject",
+      "departments": [
+        "test department"
+      ],
+      "emails": [
+        "test@email.com"
+      ],
+      "id": 3
+    },
+    {
+      "subject": "Colonial_Soren",
+      "departments": [
+        "Colonial Life - Norman Soren"
+      ],
+      "emails": [
+        "NSoren@coloniallife.com"
+      ],
+      "id": 4
+    },
+    {
+      "subject": "adsf",
+      "departments": [
+        "adsf"
+      ],
+      "emails": [
+        "adsf"
+      ],
+      "id": 5
+    },
+    {
+      "subject": "adweg",
+      "departments": [
+        "afgarasgb"
+      ],
+      "emails": [
+        "argsdasv"
+      ],
+      "id": 6
+    },
+    {
+      "subject": "qwer",
+      "departments": [
+        "wert"
+      ],
+      "emails": [
+        "sdfg",
+        "asdf"
+      ],
+      "id": 7
+    }
+  ]
+}

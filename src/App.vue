@@ -1,59 +1,69 @@
 <template>
-  <div v-show="showAddNewReport">
-    <AddReport @add-new-report="addNewReportToList" />
+  <div v-show="showEditReport">
+    <EditReport @add-new-report="addNewReportToList" :report="selectedReport" />
   </div>
-  
-  
   <div class="container">
     <div class="text-left" style="margin-top: 1rem;">
-      <Button text="new report" color="btn-primary" @btn-click="toggleAddReport" />
+      <Button text="new report" color="btn-primary" @btn-click="toggleEditReport" />
     </div>
-    
-    <ReportsTable :reports="reports" />
+    <ReportsTable :reports="reports" @edit-report="editReport" />
   </div>
 </template>
 
 <script>
-import AddReport from './components/AddReport.vue'
+import EditReport from './components/EditReport.vue'
 import Button from './components/Button.vue'
 import ReportsTable from './components/ReportsTable.vue'
 
 export default {
   name: 'App',
   components: {
-    AddReport,
+    EditReport,
     Button,
     ReportsTable
   },
   data() {
     return {
       reports: [],
-      showAddNewReport: false
+      showEditReport: false,
+      selectedReport: null
     }
   },
   methods: {
-    toggleAddReport() {
-      this.showAddNewReport = !this.showAddNewReport
+    toggleEditReport() {
+      this.showEditReport = !this.showEditReport
     },
-    addNewReportToList(report) {
-      this.toggleAddReport()
-      console.log("received new report", report)
-      this.reports = [...this.reports, report]
+    async editReport(id) {
+      this.selectedReport = await this.fetchReport(id)
+      this.toggleEditReport()
+    },
+    async addNewReportToList(report) {
+      this.toggleEditReport()
+      const stringifyReport = JSON.stringify(report)
+
+      const res = await fetch('http://localhost:5000/reports', {
+        method: 'POST',
+        headers: {
+          'Content-type': 'application/json'
+        },
+        body: JSON.stringify(report)
+      })
+      const data = await res.json()
+      this.reports = [...this.reports, data]
+    },
+    async fetchReports() {
+      const res = await fetch('http://localhost:5000/reports')
+      const data = await res.json()
+      return data
+    },
+    async fetchReport(id) {
+      const res = await fetch(`http://localhost:5000/reports/${id}`)
+      const data = await res.json()
+      return data
     }
   },
-  created() {
-    this.reports = [
-      { 
-        subject: "Aflac ND/SD", 
-        departments: ["Aflac SD - Amber Lind Agency","Aflac ND - Ellie Papineau Agency"],
-        emails: ["mdevans@aflac.com","LThorson@aflac.com"] 
-      },
-      { 
-        subject: "Report 2", 
-        departments: ["Aflac SD - Craig Stadtfeld Agency","Aflac ND - Lynn Brokaw Agency","Aflac SD - Shon Ford Agency"],
-        emails: ["cnewell@aflac.com"] 
-      }
-    ]
+  async created() {
+    this.reports = await this.fetchReports()
   }
 }
 </script>
