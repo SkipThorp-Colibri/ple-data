@@ -45,7 +45,7 @@
                 </div>
             </div>
             <div class="form-row">
-                <Button :text="isEdit ? 'submit edit' : 'submit report'" color="btn-success" @btn-click="onReportSubmit" />
+                <Button text="submit report" color="btn-success" @btn-click="onReportSubmit" />
             </div>
         </form>
     </div>
@@ -55,7 +55,7 @@
 import Button from './Button.vue'
 
 export default {
-    name: "EditReport",
+    name: "AddReport",
     components: {
         Button
     },
@@ -69,8 +69,7 @@ export default {
             newSubject: null,
             showAddDepartment: true,
             showAddEmail: true,
-            showAddSubject: true,
-            isEdit: false
+            showAddSubject: true
         }
     },
     props: {
@@ -79,13 +78,7 @@ export default {
     methods: {
         onReportSubmit() {
             const report = { subject: this.subject, departments: this.departments, emails: this.emails}
-            console.log("hit onReportSubmit", report)
-            if(this.isEdit) {
-                console.log("this is an edit")
-                this.$emit('edit-report', report)
-            } else {
-                this.$emit('add-new-report', report)
-            }
+            this.$emit('add-new-report', report)
             this.subject = ''
             this.departments = []
             this.emails = []
@@ -112,15 +105,12 @@ export default {
             this.toggleAddSubject()
         },
         toggleAddDepartment() {
-            // console.log("toggle show add department", this.showAddDepartment)
             this.showAddDepartment = !this.showAddDepartment
         },
         toggleAddEmail() {
-            // console.log("toggle show add email", this.showAddEmail)
             this.showAddEmail = !this.showAddEmail
         },
         toggleAddSubject() {
-            // console.log("toggle show add subject", this.showAddSubject)
             this.showAddSubject = !this.showAddSubject
         },
         removeEmail(email) {

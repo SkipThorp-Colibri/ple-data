@@ -1,44 +1,42 @@
 <template>
-  <div v-show="showEditReport">
-    <EditReport @add-new-report="addNewReportToList" :report="selectedReport" />
-  </div>
+  <Navbar />
+  <AddReport v-if="showAddReport" @add-new-report="addNewReportToList" :report="selectedReport" />
   <div class="container">
     <div class="text-left" style="margin-top: 1rem;">
-      <Button text="new report" color="btn-primary" @btn-click="toggleEditReport" />
+      <Button text="new report" color="btn-primary" @btn-click="toggleAddReport" />
     </div>
     <ReportsTable :reports="reports" @edit-report="editReport" />
   </div>
 </template>
 
 <script>
-import EditReport from './components/EditReport.vue'
+import AddReport from './components/AddReport.vue'
 import Button from './components/Button.vue'
+import Navbar from './components/Navbar.vue'
 import ReportsTable from './components/ReportsTable.vue'
 
 export default {
   name: 'App',
   components: {
-    EditReport,
+    AddReport,
     Button,
+    Navbar,
     ReportsTable
   },
   data() {
     return {
       reports: [],
-      showEditReport: false,
-      selectedReport: null
+      showAddReport: false,
+      selectedReport: null,
+      isEdit: false
     }
   },
   methods: {
-    toggleEditReport() {
-      this.showEditReport = !this.showEditReport
-    },
-    async editReport(id) {
-      this.selectedReport = await this.fetchReport(id)
-      this.showEditReport = true
+    toggleAddReport() {
+      this.showAddReport = !this.showAddReport
     },
     async addNewReportToList(report) {
-      this.toggleEditReport()
+      this.toggleAddReport()
       const stringifyReport = JSON.stringify(report)
 
       const res = await fetch('http://localhost:5000/reports', {
@@ -51,6 +49,9 @@ export default {
       const data = await res.json()
       this.reports = [...this.reports, data]
     },
+    editReport(id) {
+      console.log('edit report', id)
+    },
     async fetchReports() {
       const res = await fetch('http://localhost:5000/reports')
       const data = await res.json()
@@ -62,7 +63,7 @@ export default {
       return data
     }
   },
-  async created() {
+  async mounted() {
     this.reports = await this.fetchReports()
   }
 }
@@ -75,6 +76,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
