@@ -1,6 +1,7 @@
 <template>
   <Navbar />
-  <AddReport v-if="showAddReport" @add-new-report="addNewReportToList" />
+  <AddReport v-if="showAddReport" @add-new-report="addNewReportToList" @close-add-report="showAddReport = false" />
+  <EditReport v-if="showEditReport" :report="selectedReport" @close-edit-report="showEditReport = false" />
   <div class="container">
     <div class="text-left" style="margin-top: 1rem;">
       <Button text="new report" color="btn-primary" @btn-click="toggleAddReport" />
@@ -12,6 +13,7 @@
 <script>
 import AddReport from './components/AddReport.vue'
 import Button from './components/Button.vue'
+import EditReport from './components/EditReport.vue'
 import Navbar from './components/Navbar.vue'
 import ReportsTable from './components/ReportsTable.vue'
 
@@ -20,6 +22,7 @@ export default {
   components: {
     AddReport,
     Button,
+    EditReport,
     Navbar,
     ReportsTable
   },
@@ -27,6 +30,7 @@ export default {
     return {
       reports: [],
       showAddReport: false,
+      showEditReport: false,
       selectedReport: null,
       isEdit: false
     }
@@ -34,6 +38,9 @@ export default {
   methods: {
     toggleAddReport() {
       this.showAddReport = !this.showAddReport
+      if(this.showAddReport) {
+        this.showEditReport = false
+      }
     },
     async addNewReportToList(report) {
       this.toggleAddReport()
@@ -51,6 +58,8 @@ export default {
     },
     editReport(id) {
       console.log('edit report', id)
+      this.showEditReport = true
+      this.showAddReport = false
     },
     async fetchReports() {
       const res = await fetch('http://localhost:5000/reports')
