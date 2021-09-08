@@ -47,10 +47,12 @@
     {
       "subject": "test 3",
       "departments": [
-        "dept 3"
+        "dept 3",
+        "dept 2"
       ],
       "emails": [
-        "dept3@email.com"
+        "dept2of3@email.com",
+        "dept1of3@email.com"
       ],
       "id": 8
     },
@@ -80,15 +82,14 @@
         "twelfth department"
       ],
       "emails": [
-        "dept12@email.com",
-        "test@email.com"
+        "dept12@email.com"
       ],
       "id": 12
     },
     {
-      "subject": "test",
+      "subject": "Test id 13",
       "departments": [
-        "dept"
+        "dept 13"
       ],
       "emails": [
         "email"
@@ -98,8 +99,7 @@
     {
       "subject": "asdoiguoidgh",
       "departments": [
-        "oioaifhgadfgajgnkajnrg",
-        "daguzsgklnas;jklrgn"
+        "oioaifhgadfgajgnkajnrg"
       ],
       "emails": [
         "iuagsdiunagiuadgin"

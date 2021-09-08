@@ -6,18 +6,18 @@
             <div class="form-row">
                 <div class="col">
                     <h4>Subject</h4>
-                    {{ subject }}
+                    {{ report.subject }}
                 </div>
                 <div class="col">
                     <label class="control-label">Departments</label>
                     <ul>
-                        <li v-for="dept in departments" :key="dept"><Button :text="dept" color="btn-light" :block="true" @btn-click="removeDepartment(dept)" /></li>
+                        <li v-for="dept in report.departments" :key="dept"><Button :text="dept" color="btn-light" :block="true" @btn-click="removeDepartment(dept)" /></li>
                     </ul>
                 </div>
                 <div class="col">
                     <label class="control-label">Emails</label>
                     <ul>
-                        <li v-for="email in emails" :key="email"><Button :text="email" color="btn-light" :block="true" @btn-click="removeEmail(email)" /></li>
+                        <li v-for="email in report.emails" :key="email"><Button :text="email" color="btn-light" :block="true" @btn-click="removeEmail(email)" /></li>
                     </ul>
                 </div>
             </div>
@@ -47,7 +47,7 @@
                 </div>
             </div>
             <div class="form-row">
-                <Button text="submit report" color="btn-success" @btn-click="onReportSubmit" />
+                <Button text="submit edit" color="btn-success" @btn-click="onReportSubmit" />
                 <Button text="cancel" color="btn-danger" @btn-click="closeEditReport" class="ml-1" />
             </div>
         </form>
@@ -67,6 +67,7 @@ export default {
     },
     mounted() {
         console.log(this.report)
+
     },
     data() {
         return {
@@ -76,36 +77,35 @@ export default {
             newDepartment: '',
             newEmail: '',
             newSubject: null,
-            showAddDepartment: true,
-            showAddEmail: true,
-            showAddSubject: true
+            showAddDepartment: false,
+            showAddEmail: false,
+            showAddSubject: false
         }
     },
     methods: {
         onReportSubmit() {
-            const report = { subject: this.subject, departments: this.departments, emails: this.emails}
-            this.$emit('add-new-report', report)
+            this.$emit('submit-edit-report', this.report)
             this.subject = ''
             this.departments = []
             this.emails = []
         },
         submitDepartment() {
             if(this.newDepartment != ''){
-                this.departments = [...this.departments, this.newDepartment]
+                this.report.departments = [...this.report.departments, this.newDepartment]
                 this.newDepartment = ''
                 this.toggleAddDepartment()
             }
         },
         submitEmail() {
             if(this.newEmail != ''){
-                this.emails = [...this.emails, this.newEmail]
+                this.report.emails = [...this.report.emails, this.newEmail]
                 this.newEmail = ''
                 this.toggleAddEmail()
             }
         },
         submitSubject() {
             if(this.newSubject != ''){
-                this.subject = this.newSubject
+                this.report.subject = this.newSubject
                 this.newSubject = ''
             }
             this.toggleAddSubject()
@@ -121,18 +121,16 @@ export default {
         },
         removeEmail(email) {
             if(confirm(`Do you want to delete ${email}`)) {
-                this.emails = this.emails.filter((e) => e !== email)
+                this.report.emails = this.report.emails.filter((e) => e !== email)
             }
         },
         removeDepartment(dept) {
             if(confirm(`Do you want to delete ${dept}`)) {
-                this.departments = this.departments.filter((d) => d !== dept)
+                this.report.departments = this.report.departments.filter((d) => d !== dept)
             }
         },
-        setReportData(report) {
-            this.subject = this.report.subject
-        },
         closeEditReport() {
+            // this.report = null
             this.$emit('close-edit-report')
         }
     }

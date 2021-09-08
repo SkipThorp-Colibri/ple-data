@@ -1,7 +1,7 @@
 <template>
   <Navbar />
   <AddReport v-if="showAddReport" @add-new-report="addNewReportToList" @close-add-report="showAddReport = false" />
-  <EditReport v-if="showEditReport" :report="selectedReport" @close-edit-report="showEditReport = false" />
+  <EditReport v-if="showEditReport" @submit-edit-report="onEditReport" :report="selectedReport" @close-edit-report="showEditReport = false" />
   <div class="container">
     <div class="text-left" style="margin-top: 1rem;">
       <Button text="new report" color="btn-primary" @btn-click="toggleAddReport" />
@@ -42,6 +42,9 @@ export default {
         this.showEditReport = false
       }
     },
+    toggleEditReport() {
+      this.showEditReport = !this.showEditReport
+    },
     async addNewReportToList(report) {
       this.toggleAddReport()
       const stringifyReport = JSON.stringify(report)
@@ -51,15 +54,36 @@ export default {
         headers: {
           'Content-type': 'application/json'
         },
-        body: JSON.stringify(report)
+        body: stringifyReport
       })
       const data = await res.json()
       this.reports = [...this.reports, data]
     },
-    editReport(id) {
+    async onEditReport(report) {
+      this.toggleEditReport()
+      
+      const stringifyReport = JSON.stringify(report)
+
+      const res = await fetch(`http://localhost:5000/reports/${report.id}`, {
+        method: 'PUT',
+        headers: {
+          'Content-type': 'application/json'
+        },
+        body: stringifyReport
+      })
+      const data = await res.json()
+      console.log('onEditReport', data)
+
+      let updatedItemIndex = this.reports.findIndex(r => r.id === data.id)
+      this.reports[updatedItemIndex] = data
+      console.log('updatedItem', this.reports[updatedItemIndex])
+
+    },
+    async editReport(id) {
       console.log('edit report', id)
+      this.selectedReport = await this.fetchReport(id)
       this.showEditReport = true
-      this.showAddReport = false
+      this.showAddReport = false      
     },
     async fetchReports() {
       const res = await fetch('http://localhost:5000/reports')
