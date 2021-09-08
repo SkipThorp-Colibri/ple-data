@@ -72,9 +72,6 @@ export default {
             showAddSubject: true
         }
     },
-    props: {
-        selectedReport: null
-    },
     methods: {
         onReportSubmit() {
             const report = { subject: this.subject, departments: this.departments, emails: this.emails}

@@ -1,6 +1,6 @@
 <template>
   <Navbar />
-  <AddReport v-if="showAddReport" @add-new-report="addNewReportToList" :report="selectedReport" />
+  <AddReport v-if="showAddReport" @add-new-report="addNewReportToList" />
   <div class="container">
     <div class="text-left" style="margin-top: 1rem;">
       <Button text="new report" color="btn-primary" @btn-click="toggleAddReport" />
