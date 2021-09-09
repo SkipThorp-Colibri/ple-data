@@ -6,6 +6,9 @@
     <div class="text-left" style="margin-top: 1rem;">
       <Button text="new report" color="btn-primary" @btn-click="toggleAddReport" />
     </div>
+
+    <UpdateTable :reportsUpdate="reportsUpdate" @clear-update-list="clearUpdateList" />
+
     <ReportsTable :reports="reports" @edit-report="editReport" />
   </div>
 </template>
@@ -16,6 +19,7 @@ import Button from './components/Button.vue'
 import EditReport from './components/EditReport.vue'
 import Navbar from './components/Navbar.vue'
 import ReportsTable from './components/ReportsTable.vue'
+import UpdateTable from './components/UpdateTable.vue'
 
 export default {
   name: 'App',
@@ -24,11 +28,13 @@ export default {
     Button,
     EditReport,
     Navbar,
-    ReportsTable
+    ReportsTable,
+    UpdateTable
   },
   data() {
     return {
       reports: [],
+      reportsUpdate: [],
       showAddReport: false,
       showEditReport: false,
       selectedReport: null,
@@ -58,6 +64,7 @@ export default {
       })
       const data = await res.json()
       this.reports = [...this.reports, data]
+      this.addReportToUpdateList(data)
     },
     async onEditReport(report) {
       this.toggleEditReport()
@@ -75,6 +82,8 @@ export default {
 
       let updatedItemIndex = this.reports.findIndex(r => r.id === data.id)
       this.reports[updatedItemIndex] = data
+      this.addReportToUpdateList(data)
+
 
     },
     async editReport(id) {
@@ -91,6 +100,14 @@ export default {
       const res = await fetch(`http://localhost:5000/reports/${id}`)
       const data = await res.json()
       return data
+    },
+    addReportToUpdateList(report) {
+      console.log('addReportToUpdateList', report)
+      this.reportsUpdate = [...this.reportsUpdate, report]
+      console.log('reportsUpdate', this.reportsUpdate)
+    },
+    clearUpdateList() {
+      this.reportsUpdate = []
     }
   },
   async mounted() {
