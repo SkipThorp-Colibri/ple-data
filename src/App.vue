@@ -72,15 +72,12 @@ export default {
         body: stringifyReport
       })
       const data = await res.json()
-      console.log('onEditReport', data)
 
       let updatedItemIndex = this.reports.findIndex(r => r.id === data.id)
       this.reports[updatedItemIndex] = data
-      console.log('updatedItem', this.reports[updatedItemIndex])
 
     },
     async editReport(id) {
-      console.log('edit report', id)
       this.selectedReport = await this.fetchReport(id)
       this.showEditReport = true
       this.showAddReport = false      

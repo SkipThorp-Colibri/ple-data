@@ -1,120 +1,14 @@
 {
   "reports": [
     {
-      "id": 1,
-      "subject": "Aflac ND/SD",
+      "subject": "NAA_#470208_David_Benoit_Group",
       "departments": [
-        "Aflac SD - Amber Lind Agency",
-        "Aflac ND - Ellie Papineau Agency"
+        "NAA #470208 - David Benoit Group"
       ],
       "emails": [
-        "mdevans@aflac.com",
-        "LThorson@aflac.com"
-      ]
-    },
-    {
-      "id": 2,
-      "subject": "Report 2",
-      "departments": [
-        "Aflac SD - Craig Stadtfeld Agency",
-        "Aflac ND - Lynn Brokaw Agency",
-        "Aflac SD - Shon Ford Agency"
+        "david@lifeinsprotection.com"
       ],
-      "emails": [
-        "cnewell@aflac.com"
-      ]
-    },
-    {
-      "subject": "test subject",
-      "departments": [
-        "test department"
-      ],
-      "emails": [
-        "test@email.com"
-      ],
-      "id": 3
-    },
-    {
-      "subject": "Colonial_Soren",
-      "departments": [
-        "Colonial Life - Norman Soren"
-      ],
-      "emails": [
-        "NSoren@coloniallife.com"
-      ],
-      "id": 4
-    },
-    {
-      "subject": "test 3",
-      "departments": [
-        "dept 3",
-        "dept 2"
-      ],
-      "emails": [
-        "dept2of3@email.com",
-        "dept1of3@email.com"
-      ],
-      "id": 8
-    },
-    {
-      "subject": "test 6",
-      "departments": [
-        "a department"
-      ],
-      "emails": [
-        "an@email.com"
-      ],
-      "id": 9
-    },
-    {
-      "subject": "Test 9",
-      "departments": [
-        "Department 9"
-      ],
-      "emails": [
-        "dept9@email.com"
-      ],
-      "id": 11
-    },
-    {
-      "subject": "test 12",
-      "departments": [
-        "twelfth department"
-      ],
-      "emails": [
-        "dept12@email.com"
-      ],
-      "id": 12
-    },
-    {
-      "subject": "Test id 13",
-      "departments": [
-        "dept 13"
-      ],
-      "emails": [
-        "email"
-      ],
-      "id": 13
-    },
-    {
-      "subject": "asdoiguoidgh",
-      "departments": [
-        "oioaifhgadfgajgnkajnrg"
-      ],
-      "emails": [
-        "iuagsdiunagiuadgin"
-      ],
-      "id": 14
-    },
-    {
-      "subject": "asdf",
-      "departments": [
-        "qwer"
-      ],
-      "emails": [
-        "zxvc"
-      ],
-      "id": 15
+      "id": 1
     }
   ]
 }

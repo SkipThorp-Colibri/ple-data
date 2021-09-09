@@ -65,10 +65,6 @@ export default {
     props: {
         report: Object
     },
-    mounted() {
-        console.log(this.report)
-
-    },
     data() {
         return {
             subject: '',

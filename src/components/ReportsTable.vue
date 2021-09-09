@@ -35,7 +35,6 @@ export default {
     },
     methods: {
         editLine(report) {
-            console.log("edit clicked", report)
             this.$emit('edit-report', report.id)
         }
     },
