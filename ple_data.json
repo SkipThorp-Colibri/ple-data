@@ -1540,9 +1540,7 @@
         "Aflac MI - Stephen Gracin Agency"
       ],
       "emails": [
-        "sarah_puwal1@us.aflac.com",
-        "stephena_gracin@us.aflac.com",
-        "l_michalak@us.aflac.com"
+        "stephena_gracin@us.aflac.com"
       ],
       "subject": "AFLAC_Gracin"
     },
@@ -36974,7 +36972,8 @@
       "id": 3168,
       "departments": [
         "New York Life - Greater Detroit GO",
-        "New York Life - William Connors"
+        "New York Life - William Connors",
+        "New York Life - Jack Jerzewski"
       ],
       "emails": [
         "jodelaney@newyorklife.com",
@@ -46502,7 +46501,7 @@
         "SFG - Nicholas John Compartore Agency"
       ],
       "emails": [
-        "ncompartore@comcast.net"
+        "Teamcompartore@gmail.com"
       ],
       "subject": "SFG_Nicholas_John_Compartore"
     },
@@ -46712,6 +46711,38 @@
         "evo.bsc@gmail.com"
       ],
       "subject": "PHP_EVO_Financial"
+    },
+    {
+      "subject": "NAA_Benoit_Group",
+      "departments": [
+        "NAA #470208 - David Benoit Group"
+      ],
+      "emails": [
+        "david@lifeinsprotection.com"
+      ],
+      "id": 4050
+    },
+    {
+      "subject": "naa #23452345 test subject",
+      "departments": [
+        "asggaragasv#asdlkggh",
+        "aawseg"
+      ],
+      "emails": [
+        "jkhgkuaas@email.com"
+      ],
+      "id": 4051
+    },
+    {
+      "subject": "Aflac_Renee_Trudeau_Agency",
+      "departments": [
+        "Aflac - Renee Trudeau Agency"
+      ],
+      "emails": [
+        "renee_trudeau@us.aflac.com",
+        "aubrey_mckenzie1@us.aflac.com"
+      ],
+      "id": 4052
     }
   ]
 }

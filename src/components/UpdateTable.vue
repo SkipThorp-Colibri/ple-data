@@ -36,7 +36,7 @@ export default {
     },
     methods: {
         convertToCsvText() {
-            this.csvContent = "data:text/csv;charset=utf-8,"
+            // this.csvContent = "data:text/csv;charset=utf-8,"
             this.reportsUpdate.forEach((report) => {
                 console.log('in reportsUpdate')
                 var row = ''
@@ -62,13 +62,23 @@ export default {
         downloadCsv() {
             this.convertToCsvText()
 
-            var encodedUri = encodeURI(this.csvContent);
-            var link = document.createElement("a");
-            link.setAttribute("href", encodedUri);
-            link.setAttribute("download", "Output_Update.csv");
-            document.body.appendChild(link); // Required for FF
+            var a = document.createElement("a")
+            document.body.appendChild(a)
+            a.style = "display: none"
+            var blob = new Blob([this.csvContent], {type: "text/csv"}), url = window.URL.createObjectURL(blob)
+            a.href = url
+            a.download = "Output_Update.csv"
+            a.click()
+            window.URL.revokeObjectURL(url)
 
-            link.click(); // This will download the data file named "Output_Update.csv".
+
+            // var encodedUri = encode(this.csvContent);
+            // var link = document.createElement("a");
+            // link.setAttribute("href", encodedUri);
+            // link.setAttribute("download", "Output_Update.csv");
+            // document.body.appendChild(link); // Required for FF
+
+            // link.click(); // This will download the data file named "Output_Update.csv".
         },
         clearUpdateContent() {
             this.csvContent = ''
