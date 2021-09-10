@@ -103,9 +103,7 @@ export default {
       return data
     },
     addReportToUpdateList(report) {
-      console.log('addReportToUpdateList', report)
       this.reportsUpdate = [...this.reportsUpdate, report]
-      console.log('reportsUpdate', this.reportsUpdate)
     },
     clearUpdateList() {
       this.reportsUpdate = []

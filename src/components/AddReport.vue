@@ -5,7 +5,7 @@
         <form class="text-left">
             <div class="form-row">
                 <div class="col">
-                    <h4>Subject</h4>
+                    <label class="control-label">Email Subject</label>
                     {{ subject }}
                 </div>
                 <div class="col">
@@ -85,8 +85,10 @@ export default {
         },
         submitDepartment() {
             if(this.newDepartment != ''){
+                this.newDepartment = this.newDepartment.replace(/\u2013|\u2014/g, "-")
                 this.departments = [...this.departments, this.newDepartment]
                 this.newDepartment = ''
+                
                 this.toggleAddDepartment()
             }
         },
@@ -101,7 +103,15 @@ export default {
             if(this.newSubject != ''){
                 this.subject = this.newSubject
                 this.newSubject = ''
+
+                this.subject = this.subject.replace(/\u2013|\u2014/g, "-")
+                this.subject = this.subject.replace(/ - /g,"_")
+                this.subject = this.subject.replace(/,/g," ")
+                this.subject = this.subject.replace(/ /g,"_")
+                this.subject = this.subject.replace(/__/g,"_")
+                
             }
+
             this.toggleAddSubject()
         },
         toggleAddDepartment() {

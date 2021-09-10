@@ -87,8 +87,10 @@ export default {
         },
         submitDepartment() {
             if(this.newDepartment != ''){
-                this.report.departments = [...this.report.departments, this.newDepartment]
+                this.newDepartment = this.newDepartment.replace(/\u2013|\u2014/g, "-")
+                this.departments = [...this.departments, this.newDepartment]
                 this.newDepartment = ''
+                
                 this.toggleAddDepartment()
             }
         },
@@ -101,8 +103,15 @@ export default {
         },
         submitSubject() {
             if(this.newSubject != ''){
-                this.report.subject = this.newSubject
+                this.subject = this.newSubject
                 this.newSubject = ''
+
+                this.subject = this.subject.replace(/\u2013|\u2014/g, "-")
+                this.subject = this.subject.replace(/ - /g,"_")
+                this.subject = this.subject.replace(/,/g," ")
+                this.subject = this.subject.replace(/ /g,"_")
+                this.subject = this.subject.replace(/__/g,"_")
+                
             }
             this.toggleAddSubject()
         },

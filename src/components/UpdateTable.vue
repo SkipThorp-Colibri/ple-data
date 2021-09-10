@@ -3,7 +3,7 @@
     <table class="table">
         <thead>
         <tr>
-            <th class="text-left" scope="col">CSV text</th>
+            <th class="text-left" scope="col">Updated Items</th>
         </tr>
         </thead>
         <tbody>
@@ -36,6 +36,8 @@ export default {
     },
     methods: {
         convertToCsvText() {
+
+
             this.reportsUpdate.forEach((report) => {
                 var row = ''
                 row += report.id + ','
@@ -43,14 +45,14 @@ export default {
                     if(i > 0) {
                         row += '%'
                     }
-                    row += dept
+                    row += `"${dept}"`
                 })
                 row += ','
                 report.emails.forEach((email,i) => {
                     if(i > 0) {
                         row += ';'
                     }
-                    row += email
+                    row += `"${email}"`
                 })
                 row += ','
                 row += report.subject + '\r\n'
