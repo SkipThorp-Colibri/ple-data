@@ -36,9 +36,7 @@ export default {
     },
     methods: {
         convertToCsvText() {
-            // this.csvContent = "data:text/csv;charset=utf-8,"
             this.reportsUpdate.forEach((report) => {
-                console.log('in reportsUpdate')
                 var row = ''
                 row += report.id + ','
                 report.departments.forEach((dept,i) => {
