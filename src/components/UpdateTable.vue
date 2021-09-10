@@ -70,15 +70,6 @@ export default {
             a.download = "Output_Update.csv"
             a.click()
             window.URL.revokeObjectURL(url)
-
-
-            // var encodedUri = encode(this.csvContent);
-            // var link = document.createElement("a");
-            // link.setAttribute("href", encodedUri);
-            // link.setAttribute("download", "Output_Update.csv");
-            // document.body.appendChild(link); // Required for FF
-
-            // link.click(); // This will download the data file named "Output_Update.csv".
         },
         clearUpdateContent() {
             this.csvContent = ''
