@@ -89,7 +89,8 @@ export default {
     async editReport(id) {
       this.selectedReport = await this.fetchReport(id)
       this.showEditReport = true
-      this.showAddReport = false      
+      this.showAddReport = false
+      document.body.scrollTop = document.documentElement.scrollTop = 0
     },
     async fetchReports() {
       const res = await fetch('http://localhost:5000/reports')
