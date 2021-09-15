@@ -4,10 +4,7 @@
         <hr />
         <form class="text-left">
             <div class="form-row">
-                <div class="col">
-                    <h4>Subject</h4>
-                    {{ report.subject }}
-                </div>
+                
                 <div class="col">
                     <label class="control-label">Departments</label>
                     <ul>
@@ -20,19 +17,19 @@
                         <li v-for="email in report.emails" :key="email"><Button :text="email" color="btn-light" :block="true" @btn-click="removeEmail(email)" /></li>
                     </ul>
                 </div>
+                <div class="col">
+                    <h4>Subject</h4>
+                    {{ report.subject }}
+                </div>
             </div>
             <div class="form-row">
-                <div class="col"><Button v-show="!showAddSubject" text="edit subject" color="btn-primary" @btn-click="toggleAddSubject" /></div>
+                
                 <div class="col"><Button v-show="!showAddDepartment" text="add department" color="btn-primary" @btn-click="toggleAddDepartment" /></div>
                 <div class="col"><Button v-show="!showAddEmail" text="add email" color="btn-primary" @btn-click="toggleAddEmail" /></div>
+                <div class="col"><Button v-show="!showAddSubject" text="edit subject" color="btn-primary" @btn-click="toggleAddSubject" /></div>
             </div>
             <div class="form-row">
-                <div class="col">
-                    <div v-show="showAddSubject">
-                        <input type="text" v-model="newSubject" class="form-control" />
-                        <Button text="submit" color="btn-success" @btn-click="submitSubject" />
-                    </div>
-                </div>
+                
                 <div class="col">
                     <div v-show="showAddDepartment">
                         <input type="text" v-model="newDepartment" class="form-control" />
@@ -43,6 +40,12 @@
                     <div v-show="showAddEmail">
                         <input type="text" v-model="newEmail" class="form-control" />
                         <Button text="submit" color="btn-success" @btn-click="submitEmail" />
+                    </div>
+                </div>
+                <div class="col">
+                    <div v-show="showAddSubject">
+                        <input type="text" v-model="newSubject" class="form-control" />
+                        <Button text="submit" color="btn-success" @btn-click="submitSubject" />
                     </div>
                 </div>
             </div>
@@ -103,15 +106,14 @@ export default {
         },
         submitSubject() {
             if(this.newSubject != ''){
-                this.subject = this.newSubject
-                this.newSubject = ''
-
-                this.subject = this.subject.replace(/\u2013|\u2014/g, "-")
-                this.subject = this.subject.replace(/ - /g,"_")
-                this.subject = this.subject.replace(/,/g," ")
-                this.subject = this.subject.replace(/ /g,"_")
-                this.subject = this.subject.replace(/__/g,"_")
+                this.newSubject = this.newSubject.replace(/\u2013|\u2014/g, "-")
+                this.newSubject = this.newSubject.replace(/ - /g,"_")
+                this.newSubject = this.newSubject.replace(/,/g," ")
+                this.newSubject = this.newSubject.replace(/ /g,"_")
+                this.newSubject = this.newSubject.replace(/__/g,"_")
                 
+                this.report.subject = this.newSubject
+                this.newSubject = ''
             }
             this.toggleAddSubject()
         },

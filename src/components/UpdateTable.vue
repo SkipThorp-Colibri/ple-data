@@ -8,7 +8,7 @@
         </thead>
         <tbody>
             <tr v-for="report in reportsUpdate" :key="report.id">
-                <td class="text-left">{{report.id}} | {{report.subject}} | {{report.departments.join(', ')}} | {{report.emails.join(', ')}}</td>
+                <td class="text-left">{{report.id}} | {{report.departments.join(', ')}} | {{report.emails.join(', ')}} | {{report.subject}}</td>
             </tr>
         </tbody>
     </table>
