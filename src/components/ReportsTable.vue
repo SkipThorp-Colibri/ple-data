@@ -7,6 +7,7 @@
         <th scope="col">Emails</th>
         <th scope="col">Title/Subject</th>
         <th></th>
+        <th></th>
       </tr>
     </thead>
     <tbody>
@@ -16,6 +17,7 @@
             <td class="text-left"><span v-for="(email,i) in report.emails" :key="i"><span v-if="i > 0">, </span>{{ email }}</span></td>
             <th class="text-left">{{report.subject}}</th>
             <td><Button color="btn-primary" text="edit" @btn-click="editLine(report)" /></td>
+            <td><Button color="btn-danger" text="delete" @btn-click="deleteLine(report)" /></td>
         </tr>
     </tbody>
   </table>
@@ -36,10 +38,14 @@ export default {
     methods: {
         editLine(report) {
             this.$emit('edit-report', report.id)
+        },
+        deleteLine(report) {
+          this.$emit('delete-report', report.id)
         }
     },
     emits: [
-      'edit-report'
+      'edit-report',
+      'delete-report'
     ]
 }
 </script>

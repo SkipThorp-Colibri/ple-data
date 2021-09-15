@@ -9,7 +9,7 @@
 
     <UpdateTable :reportsUpdate="reportsUpdate" @clear-update-list="clearUpdateList" />
 
-    <ReportsTable :reports="reports" @edit-report="editReport" />
+    <ReportsTable :reports="reports" @edit-report="editReport" @delete-report="deleteReport" />
   </div>
 </template>
 
@@ -83,14 +83,25 @@ export default {
       let updatedItemIndex = this.reports.findIndex(r => r.id === data.id)
       this.reports[updatedItemIndex] = data
       this.addReportToUpdateList(data)
-
-
+    },
+    async onDeleteReport(id) {
+      const res = await fetch(`http://localhost:5000/reports/${id}`, {
+        method: 'DELETE'
+      })
     },
     async editReport(id) {
       this.selectedReport = await this.fetchReport(id)
       this.showEditReport = true
       this.showAddReport = false
       document.body.scrollTop = document.documentElement.scrollTop = 0
+    },
+    async deleteReport(id) {
+      let report = await this.fetchReport(id)
+
+      if(confirm(`Do you want to delete ${report.subject}`)) {
+          this.reports = this.reports.filter((r) => r.id !== id)
+      }
+      this.onDeleteReport(id)
     },
     async fetchReports() {
       const res = await fetch('http://localhost:5000/reports')
