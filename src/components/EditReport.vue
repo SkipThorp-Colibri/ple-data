@@ -91,7 +91,7 @@ export default {
         submitDepartment() {
             if(this.newDepartment != ''){
                 this.newDepartment = this.newDepartment.replace(/\u2013|\u2014/g, "-")
-                this.departments = [...this.departments, this.newDepartment]
+                this.report.departments = [...this.report.departments, this.newDepartment]
                 this.newDepartment = ''
                 
                 this.toggleAddDepartment()
