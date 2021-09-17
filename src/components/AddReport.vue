@@ -6,20 +6,50 @@
             <div class="form-row">
                 
                 <div class="col">
-                    <label class="control-label">Departments</label>
+                    <h5>Departments</h5>
                     <ul>
                         <li v-for="dept in departments" :key="dept"><Button :text="dept" color="btn-light" :block="true" @btn-click="removeDepartment(dept)" /></li>
                     </ul>
                 </div>
                 <div class="col">
-                    <label class="control-label">Emails</label>
+                    <h5>Emails</h5>
                     <ul>
                         <li v-for="email in emails" :key="email"><Button :text="email" color="btn-light" :block="true" @btn-click="removeEmail(email)" /></li>
                     </ul>
                 </div>
                 <div class="col">
-                    <label class="control-label">Email Subject</label>
+                    <h5>Subject</h5>
                     {{ subject }}
+                </div>
+                <div class="col">
+                    <div class="form-row">
+                        <div class="col"><label for="rowsort" class="col-sm-2 col-form-label">rowsort</label></div>
+                        <div class="col"><input class="form-control" name="rowsort" v-model="rowsort" /></div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col"><label for="columnsort" class="col-sm-2 col-form-label">columnsort</label></div>
+                        <div class="col"><input class="form-control" name="columnsort" v-model="columnsort" /></div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col"><label for="login_filter" class="col-sm-2 col-form-label">login_filter</label></div>
+                        <div class="col"><input class="form-control" name="login_filter" v-model="login_filter" /></div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col"><label for="completion_filter" class="col-sm-2 col-form-label">completion_filter</label></div>
+                        <div class="col"><input class="form-control" name="completion_filter" v-model="completion_filter" /></div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col"><label for="remove_button" class="col-sm-2 col-form-label">remove_button</label></div>
+                        <div class="col"><input class="form-control" name="remove_button" v-model="remove_button" /></div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col"><label for="course_type_only" class="col-sm-2 col-form-label">course_type_only</label></div>
+                        <div class="col"><input class="form-control" name="course_type_only" v-model="course_type_only" /></div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col"><label for="ple_only" class="col-sm-2 col-form-label">ple_only</label></div>
+                        <div class="col"><input class="form-control" name="ple_only" v-model="ple_only" /></div>
+                    </div>
                 </div>
             </div>
             <div class="form-row">
@@ -27,6 +57,7 @@
                 <div class="col"><Button v-show="!showAddDepartment" text="add department" color="btn-primary" @btn-click="toggleAddDepartment" /></div>
                 <div class="col"><Button v-show="!showAddEmail" text="add email" color="btn-primary" @btn-click="toggleAddEmail" /></div>
                 <div class="col"><Button v-show="!showAddSubject" text="edit subject" color="btn-primary" @btn-click="toggleAddSubject" /></div>
+                <div class="col"></div>
             </div>
             <div class="form-row">
                 
@@ -48,6 +79,7 @@
                         <Button text="submit" color="btn-success" @btn-click="submitSubject" />
                     </div>
                 </div>
+                <div class="col"></div>
             </div>
             <div class="form-row">
                 <Button text="submit report" color="btn-success" @btn-click="onReportSubmit" />
@@ -67,9 +99,17 @@ export default {
     },
     data() {
         return {
-            subject: '',
             departments: [],
             emails: [],
+            subject: '',
+            rowsort: 0,
+            cc_email: "",
+            columnsort: 0,
+            login_filter: 0,
+            completion_filter: 0,
+            remove_button: 0,
+            course_type_only: 0,
+            ple_only: 0,            
             newDepartment: '',
             newEmail: '',
             newSubject: null,
@@ -80,7 +120,19 @@ export default {
     },
     methods: {
         onReportSubmit() {
-            const report = { departments: this.departments, emails: this.emails, subject: this.subject }
+            const report = { 
+                departments: this.departments, 
+                emails: this.emails, 
+                subject: this.subject,
+                rowsort: this.rowsort,
+                cc_email: this.cc_email,
+                columnsort: this.columnsort,
+                login_filter: this.login_filter,
+                completion_filter: this.completion_filter,
+                remove_button: this.remove_button,
+                course_type_only: this.course_type_only,
+                ple_only: this.ple_only
+            }
             this.$emit('add-new-report', report)
             this.subject = ''
             this.departments = []

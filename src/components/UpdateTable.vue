@@ -54,8 +54,17 @@ export default {
                     }
                     row += `"${email}"`
                 })
-                row += ','
-                row += report.subject + '\r\n'
+                row += `,${report.subject}`
+                row += `,${report.rowsort}`
+                row += `,${report.cc_email}`
+                row += `,${report.columnsort}`
+                row += `,${report.login_filter}`
+                row += `,${report.completion_filter}`
+                row += `,${report.remove_button}`
+                row += `,${report.course_type_only}`
+                row += `,${report.ple_only}\r\n`
+
+
                 this.csvContent += row
             })
         },
@@ -81,6 +90,6 @@ export default {
 
 <style scoped>
     #updateTableContainer {
-        background-color: lightblue;
+        background-color: rgb(224, 246, 255);
     }
 </style>

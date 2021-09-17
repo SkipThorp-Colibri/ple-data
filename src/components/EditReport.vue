@@ -6,19 +6,19 @@
             <div class="form-row">
                 
                 <div class="col">
-                    <label class="control-label">Departments</label>
+                    <h5>Departments</h5>
                     <ul>
                         <li v-for="dept in report.departments" :key="dept"><Button :text="dept" color="btn-light" :block="true" @btn-click="removeDepartment(dept)" /></li>
                     </ul>
                 </div>
                 <div class="col">
-                    <label class="control-label">Emails</label>
+                    <h5>Emails</h5>
                     <ul>
                         <li v-for="email in report.emails" :key="email"><Button :text="email" color="btn-light" :block="true" @btn-click="removeEmail(email)" /></li>
                     </ul>
                 </div>
                 <div class="col">
-                    <h4>Subject</h4>
+                    <h5>Subject</h5>
                     {{ report.subject }}
                 </div>
             </div>
