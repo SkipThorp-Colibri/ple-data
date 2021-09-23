@@ -21,12 +21,43 @@
                     <h5>Subject</h5>
                     {{ report.subject }}
                 </div>
+                <div class="col">
+                    <div class="form-row">
+                        <div class="col"><label for="rowsort" class="col-sm-2 col-form-label">rowsort</label></div>
+                        <div class="col"><input class="form-control" name="rowsort" v-model="report.rowsort" /></div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col"><label for="columnsort" class="col-sm-2 col-form-label">columnsort</label></div>
+                        <div class="col"><input class="form-control" name="columnsort" v-model="report.columnsort" /></div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col"><label for="login_filter" class="col-sm-2 col-form-label">login_filter</label></div>
+                        <div class="col"><input class="form-control" name="login_filter" v-model="report.login_filter" /></div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col"><label for="completion_filter" class="col-sm-2 col-form-label">completion_filter</label></div>
+                        <div class="col"><input class="form-control" name="completion_filter" v-model="report.completion_filter" /></div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col"><label for="remove_button" class="col-sm-2 col-form-label">remove_button</label></div>
+                        <div class="col"><input class="form-control" name="remove_button" v-model="report.remove_button" /></div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col"><label for="course_type_only" class="col-sm-2 col-form-label">course_type_only</label></div>
+                        <div class="col"><input class="form-control" name="course_type_only" v-model="report.course_type_only" /></div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col"><label for="ple_only" class="col-sm-2 col-form-label">ple_only</label></div>
+                        <div class="col"><input class="form-control" name="ple_only" v-model="report.ple_only" /></div>
+                    </div>
+                </div>
             </div>
             <div class="form-row">
                 
                 <div class="col"><Button v-show="!showAddDepartment" text="add department" color="btn-primary" @btn-click="toggleAddDepartment" /></div>
                 <div class="col"><Button v-show="!showAddEmail" text="add email" color="btn-primary" @btn-click="toggleAddEmail" /></div>
                 <div class="col"><Button v-show="!showAddSubject" text="edit subject" color="btn-primary" @btn-click="toggleAddSubject" /></div>
+                <div class="col"></div>
             </div>
             <div class="form-row">
                 
@@ -48,8 +79,11 @@
                         <Button text="submit" color="btn-success" @btn-click="submitSubject" />
                     </div>
                 </div>
+                <div class="col"></div>
             </div>
+            <hr />
             <div class="form-row">
+                
                 <Button text="submit edit" color="btn-success" @btn-click="onReportSubmit" />
                 <Button text="cancel" color="btn-danger" @btn-click="closeEditReport" class="ml-1" />
             </div>

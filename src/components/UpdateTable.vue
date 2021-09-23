@@ -36,24 +36,11 @@ export default {
     },
     methods: {
         convertToCsvText() {
-
-
             this.reportsUpdate.forEach((report) => {
                 var row = ''
-                row += report.id + ','
-                report.departments.forEach((dept,i) => {
-                    if(i > 0) {
-                        row += '%'
-                    }
-                    row += `"${dept}"`
-                })
-                row += ','
-                report.emails.forEach((email,i) => {
-                    if(i > 0) {
-                        row += ';'
-                    }
-                    row += `"${email}"`
-                })
+                row += report.id
+                row += ',"' + report.departments.join('%') + '"'
+                row += ',"' + report.emails.join(';') + '"'
                 row += `,${report.subject}`
                 row += `,${report.rowsort}`
                 row += `,${report.cc_email}`
@@ -64,8 +51,8 @@ export default {
                 row += `,${report.course_type_only}`
                 row += `,${report.ple_only}\r\n`
 
-
                 this.csvContent += row
+
             })
         },
         downloadCsv() {

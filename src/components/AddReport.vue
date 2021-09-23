@@ -81,6 +81,7 @@
                 </div>
                 <div class="col"></div>
             </div>
+            <hr />
             <div class="form-row">
                 <Button text="submit report" color="btn-success" @btn-click="onReportSubmit" />
                 <Button text="cancel" color="btn-danger" @btn-click="closeAddReport" class="ml-1" />
@@ -124,14 +125,14 @@ export default {
                 departments: this.departments, 
                 emails: this.emails, 
                 subject: this.subject,
-                rowsort: this.rowsort,
-                cc_email: this.cc_email,
-                columnsort: this.columnsort,
-                login_filter: this.login_filter,
-                completion_filter: this.completion_filter,
-                remove_button: this.remove_button,
-                course_type_only: this.course_type_only,
-                ple_only: this.ple_only
+                rowsort: parseInt(this.rowsort),
+                cc_email: parseInt(this.cc_email),
+                columnsort: parseInt(this.columnsort),
+                login_filter: parseInt(this.login_filter),
+                completion_filter: parseInt(this.completion_filter),
+                remove_button: parseInt(this.remove_button),
+                course_type_only: parseInt(this.course_type_only),
+                ple_only: parseInt(this.ple_only)
             }
             this.$emit('add-new-report', report)
             this.subject = ''
