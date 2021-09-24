@@ -52,7 +52,6 @@ export default {
       this.showEditReport = !this.showEditReport
     },
     async addNewReportToList(report) {
-      console.log('addNewReportToList',report)
       this.toggleAddReport()
       const stringifyReport = JSON.stringify(report)
 

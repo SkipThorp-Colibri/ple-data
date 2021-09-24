@@ -1,5 +1,5 @@
 <template>
-    <div id="updateTableContainer">
+    <div id="updateTableContainer" v-if="reportsUpdate.length > 0">
     <table class="table">
         <thead>
         <tr>
