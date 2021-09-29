@@ -22,34 +22,37 @@
                     {{ subject }}
                 </div>
                 <div class="col">
-                    <div class="form-row">
-                        <div class="col"><label for="rowsort" class="col-sm-2 col-form-label">rowsort</label></div>
-                        <div class="col"><input class="form-control" name="rowsort" v-model="rowsort" /></div>
-                    </div>
-                    <div class="form-row">
-                        <div class="col"><label for="columnsort" class="col-sm-2 col-form-label">columnsort</label></div>
-                        <div class="col"><input class="form-control" name="columnsort" v-model="columnsort" /></div>
-                    </div>
-                    <div class="form-row">
-                        <div class="col"><label for="login_filter" class="col-sm-2 col-form-label">login_filter</label></div>
-                        <div class="col"><input class="form-control" name="login_filter" v-model="login_filter" /></div>
-                    </div>
-                    <div class="form-row">
-                        <div class="col"><label for="completion_filter" class="col-sm-2 col-form-label">completion_filter</label></div>
-                        <div class="col"><input class="form-control" name="completion_filter" v-model="completion_filter" /></div>
-                    </div>
-                    <div class="form-row">
-                        <div class="col"><label for="remove_button" class="col-sm-2 col-form-label">remove_button</label></div>
-                        <div class="col"><input class="form-control" name="remove_button" v-model="remove_button" /></div>
-                    </div>
-                    <div class="form-row">
-                        <div class="col"><label for="course_type_only" class="col-sm-2 col-form-label">course_type_only</label></div>
-                        <div class="col"><input class="form-control" name="course_type_only" v-model="course_type_only" /></div>
-                    </div>
-                    <div class="form-row">
-                        <div class="col"><label for="ple_only" class="col-sm-2 col-form-label">ple_only</label></div>
-                        <div class="col"><input class="form-control" name="ple_only" v-model="ple_only" /></div>
-                    </div>
+
+                    <table class="table table-condensed">
+                        <tr>
+                            <td><label for="rowsort" class="col-sm-2 col-form-label">rowsort</label></td>
+                            <td><input class="form-control form-control-sm" name="rowsort" v-model="rowsort" /></td>
+                        </tr>
+                        <tr>
+                            <td><label for="columnsort" class="col-sm-2 col-form-label">columnsort</label></td>
+                            <td><input class="form-control form-control-sm" name="columnsort" v-model="columnsort" /></td>
+                        </tr>
+                        <tr>
+                            <td><label for="login_filter" class="col-sm-2 col-form-label">login_filter</label></td>
+                            <td><input class="form-control form-control-sm" name="login_filter" v-model="login_filter" /></td>
+                        </tr>
+                        <tr>
+                            <td><label for="completion_filter" class="col-sm-2 col-form-label">completion_filter</label></td>
+                            <td><input class="form-control form-control-sm" name="completion_filter" v-model="completion_filter" /></td>
+                        </tr>
+                        <tr>
+                            <td><label for="remove_button" class="col-sm-2 col-form-label">remove_button</label></td>
+                            <td><input class="form-control form-control-sm" name="remove_button" v-model="remove_button" /></td>
+                        </tr>
+                        <tr>
+                            <td><label for="course_type_only" class="col-sm-2 col-form-label">course_type_only</label></td>
+                            <td><input class="form-control form-control-sm" name="course_type_only" v-model="course_type_only" /></td>
+                        </tr>
+                        <tr>
+                            <td><label for="ple_only" class="col-sm-2 col-form-label">ple_only</label></td>
+                            <td><input class="form-control form-control-sm" name="ple_only" v-model="ple_only" /></td>
+                        </tr>
+                    </table>
                 </div>
             </div>
             <div class="form-row">
