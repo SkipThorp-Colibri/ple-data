@@ -50,6 +50,10 @@
                         <div class="col"><label for="ple_only" class="col-sm-2 col-form-label">ple_only</label></div>
                         <div class="col"><input class="form-control" name="ple_only" v-model="report.ple_only" /></div>
                     </div>
+                    <div class="form-row">
+                        <div class="col"><label for="summary_only" class="col-sm-2 col-form-label">summary_only</label></div>
+                        <div class="col"><input class="form-control" name="summary_only" v-model="report.summary_only" /></div>
+                    </div>
                 </div>
             </div>
             <div class="form-row">

@@ -22,8 +22,7 @@
                     {{ subject }}
                 </div>
                 <div class="col">
-
-                    <table class="table table-condensed">
+                    <table class="table table-condensed table-borderless">
                         <tr>
                             <td><label for="rowsort" class="col-sm-2 col-form-label">rowsort</label></td>
                             <td><input class="form-control form-control-sm" name="rowsort" v-model="rowsort" /></td>
@@ -51,6 +50,10 @@
                         <tr>
                             <td><label for="ple_only" class="col-sm-2 col-form-label">ple_only</label></td>
                             <td><input class="form-control form-control-sm" name="ple_only" v-model="ple_only" /></td>
+                        </tr>
+                        <tr>
+                            <td><label for="summary_only" class="col-sm-2 col-form-label">summary_only</label></td>
+                            <td><input class="form-control form-control-sm" name="summary_only" v-model="summary_only" /></td>
                         </tr>
                     </table>
                 </div>
@@ -113,7 +116,8 @@ export default {
             completion_filter: 0,
             remove_button: 0,
             course_type_only: 0,
-            ple_only: 0,            
+            ple_only: 0,
+            summary_only: 0,           
             newDepartment: '',
             newEmail: '',
             newSubject: null,
@@ -135,7 +139,8 @@ export default {
                 completion_filter: parseInt(this.completion_filter),
                 remove_button: parseInt(this.remove_button),
                 course_type_only: parseInt(this.course_type_only),
-                ple_only: parseInt(this.ple_only)
+                ple_only: parseInt(this.ple_only),
+                summary_only: parseInt(this.summary_only)
             }
             this.$emit('add-new-report', report)
             this.subject = ''
@@ -153,7 +158,7 @@ export default {
         },
         submitEmail() {
             if(this.newEmail != ''){
-                this.emails = [...this.emails, this.newEmail]
+                this.emails = [...this.emails, this.newEmail.toLowerCase()]
                 this.newEmail = ''
                 this.toggleAddEmail()
             }

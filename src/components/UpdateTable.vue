@@ -49,7 +49,8 @@ export default {
                 row += `,${report.completion_filter}`
                 row += `,${report.remove_button}`
                 row += `,${report.course_type_only}`
-                row += `,${report.ple_only}\r\n`
+                row += `,${report.ple_only}`
+                row += `,${report.summary_only === 1 ? 1 : 0}\r\n`
 
                 this.csvContent += row
 
