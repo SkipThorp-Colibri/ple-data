@@ -137,7 +137,7 @@ export default {
         },
         submitEmail() {
             if(this.newEmail != ''){
-                this.report.emails = [...this.report.emails, this.newEmail]
+                this.report.emails = [...this.report.emails, this.newEmail.toLowerCase()]
                 this.newEmail = ''
                 this.toggleAddEmail()
             }
