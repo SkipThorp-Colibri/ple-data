@@ -149,16 +149,25 @@ export default {
         },
         submitDepartment() {
             if(this.newDepartment != ''){
-                this.newDepartment = this.newDepartment.replace(/\u2013|\u2014/g, "-")
-                this.departments = [...this.departments, this.newDepartment]
-                this.newDepartment = ''
+                let newDeptArray = this.newDepartment.split('%')
                 
+                newDeptArray.forEach((value) => {
+                    value = value.replace(/\u2013|\u2014/g, "-")
+                    this.departments = [...this.departments, value]
+                })
+
+                this.newDepartment = ''
                 this.toggleAddDepartment()
             }
         },
         submitEmail() {
             if(this.newEmail != ''){
-                this.emails = [...this.emails, this.newEmail.toLowerCase()]
+                let newEmailArray = this.newEmail.split(';')
+
+                newEmailArray.forEach((value) => {
+                    this.emails = [...this.emails, value.toLowerCase()]
+                })
+
                 this.newEmail = ''
                 this.toggleAddEmail()
             }
