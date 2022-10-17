@@ -1,10 +1,9 @@
 <template>
     <div class="container" id="add-report-container">
-        <h3>Edit report</h3>
+        <h3>Edit report - {{ report.id }}</h3>
         <hr />
         <form class="text-left">
             <div class="form-row">
-                
                 <div class="col">
                     <h5>Departments</h5>
                     <ul>
