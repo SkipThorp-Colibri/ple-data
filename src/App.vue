@@ -2,10 +2,13 @@
   <Navbar />
   <AddReport v-if="showAddReport" @add-new-report="addNewReportToList" @close-add-report="showAddReport = false" />
   <EditReport v-if="showEditReport" @submit-edit-report="onEditReport" :report="selectedReport" @close-edit-report="showEditReport = false" />
+  <BulkInput v-if="showBulkInput" @close-bulk-input="showBulkInput = false"></BulkInput>
   <div class="container-fluid">
     <div class="text-left" style="margin-top: 1rem;">
       <Button text="new report" color="btn-primary" @btn-click="toggleAddReport" />
+      <Button text="bulk input" color="btn-info" style="margin-left: 1rem;" @btn-click="bulkInput" />
     </div>
+    
 
     <UpdateTable :reportsUpdate="reportsUpdate" @clear-update-list="clearUpdateList" />
 
@@ -15,6 +18,7 @@
 
 <script>
 import AddReport from './components/AddReport.vue'
+import BulkInput from './components/BulkInput.vue'
 import Button from './components/Button.vue'
 import EditReport from './components/EditReport.vue'
 import Navbar from './components/Navbar.vue'
@@ -25,6 +29,7 @@ export default {
   name: 'App',
   components: {
     AddReport,
+    BulkInput,
     Button,
     EditReport,
     Navbar,
@@ -37,6 +42,7 @@ export default {
       reportsUpdate: [],
       showAddReport: false,
       showEditReport: false,
+      showBulkInput: true,
       selectedReport: null,
       isEdit: false
     }
@@ -50,6 +56,12 @@ export default {
     },
     toggleEditReport() {
       this.showEditReport = !this.showEditReport
+    },
+    toggleBulkInput() {
+      this.showBulkInput = !this.showBulkInput
+      if(this.showBulkInput) {
+        this.showBulkInput = false
+      }
     },
     async addNewReportToList(report) {
       this.toggleAddReport()
@@ -83,6 +95,9 @@ export default {
       let updatedItemIndex = this.reports.findIndex(r => r.id === data.id)
       this.reports[updatedItemIndex] = data
       this.addReportToUpdateList(data)
+    },
+    async bulkInput() {
+      console.log("Bulk Input")
     },
     async onDeleteReport(id) {
       const res = await fetch(`http://localhost:5000/reports/${id}`, {

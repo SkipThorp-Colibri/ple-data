@@ -208,6 +208,9 @@ export default {
         },
         closeAddReport() {
             this.$emit('close-add-report')
+        },
+        testMethod() {
+            console.log('test method fired')
         }
     }
 }
