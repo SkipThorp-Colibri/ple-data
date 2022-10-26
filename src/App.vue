@@ -6,7 +6,7 @@
   <div class="container-fluid">
     <div class="text-left" style="margin-top: 1rem;">
       <Button text="new report" color="btn-primary" @btn-click="toggleAddReport" />
-      <Button text="bulk input" color="btn-info" style="margin-left: 1rem;" @btn-click="bulkInput" />
+      <Button text="bulk input" color="btn-info" style="margin-left: 1rem;" @btn-click="toggleBulkInput" />
     </div>
     
 
@@ -42,7 +42,7 @@ export default {
       reportsUpdate: [],
       showAddReport: false,
       showEditReport: false,
-      showBulkInput: true,
+      showBulkInput: false,
       selectedReport: null,
       isEdit: false
     }
@@ -60,7 +60,7 @@ export default {
     toggleBulkInput() {
       this.showBulkInput = !this.showBulkInput
       if(this.showBulkInput) {
-        this.showBulkInput = false
+        this.showEditReport = false
       }
     },
     async addNewReportToList(report) {
