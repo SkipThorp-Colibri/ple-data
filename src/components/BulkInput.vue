@@ -44,10 +44,15 @@ export default {
                 let lineObj = {}
                 let tsvLine = line.split('\t')
 
-                lineObj[headers[0]] = tsvLine[0].split('%')
-                lineObj[headers[1]] = tsvLine[1].split(';')
-                lineObj[headers[2]] = tsvLine[2]
+                lineObj["departments"] = tsvLine[0].split('%')
+                lineObj["emails"] = tsvLine[1].split(';')
 
+                if(tsvLine[2] == undefined || tsvLine[2] == '') {
+                    lineObj["subject"] = this.createSubject(lineObj["departments"][0])
+                } else {
+                    lineObj["subject"] = tsvLine[2]
+                }
+                console.log("final subject",lineObj["subject"])
                 lineObj["rowsort"] = 0
                 lineObj["cc_email"] = ""
                 lineObj["columnsort"] = 0
@@ -71,6 +76,15 @@ export default {
         },
         closeBulkInput() {
             this.$emit('close-bulk-input')
+        },
+        createSubject(subjectText) {
+            subjectText = subjectText.replace(/\u2013|\u2014/g, "-")
+            subjectText = subjectText.replace(/ - /g,"_")
+            subjectText = subjectText.replace(/,/g," ")
+            subjectText = subjectText.replace(/ /g,"_")
+            subjectText = subjectText.replace(/__/g,"_")
+
+            return subjectText
         }
     }
 }
