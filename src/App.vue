@@ -2,10 +2,13 @@
   <Navbar />
   <AddReport v-if="showAddReport" @add-new-report="addNewReportToList" @close-add-report="showAddReport = false" />
   <EditReport v-if="showEditReport" @submit-edit-report="onEditReport" :report="selectedReport" @close-edit-report="showEditReport = false" />
+  <BulkInput v-if="showBulkInput" @add-bulk-reports="addBulkReportsToList" @close-bulk-input="showBulkInput = false"></BulkInput>
   <div class="container-fluid">
     <div class="text-left" style="margin-top: 1rem;">
       <Button text="new report" color="btn-primary" @btn-click="toggleAddReport" />
+      <Button text="bulk input" color="btn-info" style="margin-left: 1rem;" @btn-click="toggleBulkInput" />
     </div>
+    
 
     <UpdateTable :reportsUpdate="reportsUpdate" @clear-update-list="clearUpdateList" />
 
@@ -15,6 +18,7 @@
 
 <script>
 import AddReport from './components/AddReport.vue'
+import BulkInput from './components/BulkInput.vue'
 import Button from './components/Button.vue'
 import EditReport from './components/EditReport.vue'
 import Navbar from './components/Navbar.vue'
@@ -25,6 +29,7 @@ export default {
   name: 'App',
   components: {
     AddReport,
+    BulkInput,
     Button,
     EditReport,
     Navbar,
@@ -37,6 +42,7 @@ export default {
       reportsUpdate: [],
       showAddReport: false,
       showEditReport: false,
+      showBulkInput: false,
       selectedReport: null,
       isEdit: false
     }
@@ -51,8 +57,17 @@ export default {
     toggleEditReport() {
       this.showEditReport = !this.showEditReport
     },
+    toggleBulkInput() {
+      this.showBulkInput = !this.showBulkInput
+      if(this.showBulkInput) {
+        this.showEditReport = false
+      }
+    },
     async addNewReportToList(report) {
-      this.toggleAddReport()
+
+      this.showAddReport = false
+      this.showBulkInput = false
+
       const stringifyReport = JSON.stringify(report)
 
       const res = await fetch('http://localhost:5000/reports', {
@@ -65,6 +80,11 @@ export default {
       const data = await res.json()
       this.reports = [...this.reports, data]
       this.addReportToUpdateList(data)
+    },
+    async addBulkReportsToList(reports) {
+      for(let i = 0;i < reports.length;i++){
+        await this.addNewReportToList(reports[i])
+      }
     },
     async onEditReport(report) {
       this.toggleEditReport()
@@ -113,7 +133,7 @@ export default {
       const data = await res.json()
       return data
     },
-    addReportToUpdateList(report) {
+    async addReportToUpdateList(report) {
       this.reportsUpdate = [...this.reportsUpdate, report]
     },
     clearUpdateList() {

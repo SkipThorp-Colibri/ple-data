@@ -128,7 +128,7 @@ export default {
         submitDepartment() {
             if(this.newDepartment != ''){
                 let newDeptArray = this.newDepartment.split('%')
-                console.log(newDeptArray)
+
                 newDeptArray.forEach((value) => {
                     value = value.replace(/\u2013|\u2014/g, "-")
                     this.report.departments = [...this.report.departments, value]
@@ -141,7 +141,7 @@ export default {
         submitEmail() {
             if(this.newEmail != ''){
                 let newEmailArray = this.newEmail.split(';')
-                console.log(newEmailArray)
+
                 newEmailArray.forEach((value) => {
                     this.report.emails = [...this.report.emails, value.toLowerCase()]
                 })
@@ -183,7 +183,6 @@ export default {
             }
         },
         closeEditReport() {
-            // this.report = null
             this.$emit('close-edit-report')
         }
     }
