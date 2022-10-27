@@ -2,7 +2,7 @@
   <Navbar />
   <AddReport v-if="showAddReport" @add-new-report="addNewReportToList" @close-add-report="showAddReport = false" />
   <EditReport v-if="showEditReport" @submit-edit-report="onEditReport" :report="selectedReport" @close-edit-report="showEditReport = false" />
-  <BulkInput v-if="showBulkInput" @close-bulk-input="showBulkInput = false"></BulkInput>
+  <BulkInput v-if="showBulkInput" @add-bulk-reports="addBulkReportsToList" @close-bulk-input="showBulkInput = false"></BulkInput>
   <div class="container-fluid">
     <div class="text-left" style="margin-top: 1rem;">
       <Button text="new report" color="btn-primary" @btn-click="toggleAddReport" />
@@ -64,7 +64,10 @@ export default {
       }
     },
     async addNewReportToList(report) {
-      this.toggleAddReport()
+
+      this.showAddReport = false
+      this.showBulkInput = false
+
       const stringifyReport = JSON.stringify(report)
 
       const res = await fetch('http://localhost:5000/reports', {
@@ -77,6 +80,11 @@ export default {
       const data = await res.json()
       this.reports = [...this.reports, data]
       this.addReportToUpdateList(data)
+    },
+    async addBulkReportsToList(reports) {
+      for(let i = 0;i < reports.length;i++){
+        await this.addNewReportToList(reports[i])
+      }
     },
     async onEditReport(report) {
       this.toggleEditReport()
@@ -95,9 +103,6 @@ export default {
       let updatedItemIndex = this.reports.findIndex(r => r.id === data.id)
       this.reports[updatedItemIndex] = data
       this.addReportToUpdateList(data)
-    },
-    async bulkInput() {
-      console.log("Bulk Input")
     },
     async onDeleteReport(id) {
       const res = await fetch(`http://localhost:5000/reports/${id}`, {
@@ -128,7 +133,7 @@ export default {
       const data = await res.json()
       return data
     },
-    addReportToUpdateList(report) {
+    async addReportToUpdateList(report) {
       this.reportsUpdate = [...this.reportsUpdate, report]
     },
     clearUpdateList() {

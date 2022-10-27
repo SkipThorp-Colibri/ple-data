@@ -183,7 +183,6 @@ export default {
             }
         },
         closeEditReport() {
-            // this.report = null
             this.$emit('close-edit-report')
         }
     }

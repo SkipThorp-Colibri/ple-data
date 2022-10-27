@@ -6,8 +6,8 @@
             <div class="form-row">
                 
                 <div class="col">
-                    <h5>Paste CSV data</h5>
-                    <textarea id="bulk-input-text" style="width: 100%; height: 200px;" v-model="csvText"></textarea>
+                    <h5>Paste TSV data</h5>
+                    <textarea id="bulk-input-text" style="width: 100%; height: 200px;" v-model="tsvText"></textarea>
                 </div>
                 
             </div>
@@ -30,39 +30,44 @@ export default {
     },
     data() {
         return {
-            report: Object        }
+            report: []
+        }
     },
     methods: {
         onProcessBulk() {
-            const csv = this.csvText
-            let processedBulk = []
+            const headers = ["departments","emails","subject"]
+            const tsv = this.tsvText
+            let result = []
+            let tsvLines = tsv.split('\n')
 
-            let csvRecords = this.parseRecords(csv)
+            tsvLines.forEach(line => {
+                let lineObj = {}
+                let tsvLine = line.split('\t')
 
-            csvRecords.forEach((rec, index) => {
-                let csvRecord = this.parseSingleRecord(rec)
-                console.log(csvRecord)
-                processedBulk.push(csvRecord)
+                lineObj[headers[0]] = tsvLine[0].split('%')
+                lineObj[headers[1]] = tsvLine[1].split(';')
+                lineObj[headers[2]] = tsvLine[2]
+
+                lineObj["rowsort"] = 0
+                lineObj["cc_email"] = ""
+                lineObj["columnsort"] = 0
+                lineObj["login_filter"] = 0
+                lineObj["completion_filter"] = 0
+                lineObj["remove_button"] = 0
+                lineObj["course_type_only"] = 0
+                lineObj["ple_only"] = 0
+                lineObj["summary_only"] = 0
+                
+                result.push(lineObj)
             })
-            console.log(processedBulk)
-
-            csvRecords.forEach((record) => {
-                report.departments = []
-                report.emails = []
-                report.subject = ''
-
-                console.log(report)
-            })
+            
+            this.$emit('add-bulk-reports', result)
         },
         parseRecords(records) {
             return records.split('\n')
         },
         parseSingleRecord(text) {
-            text =  text.split('","')
-            text.forEach((value, index) => {
-                text[index] = value.replace('"','')
-            })
-            return text
+            return text.split('\t')
         },
         closeBulkInput() {
             this.$emit('close-bulk-input')
