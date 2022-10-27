@@ -52,7 +52,7 @@ export default {
                 } else {
                     lineObj["subject"] = tsvLine[2]
                 }
-                console.log("final subject",lineObj["subject"])
+
                 lineObj["rowsort"] = 0
                 lineObj["cc_email"] = ""
                 lineObj["columnsort"] = 0
