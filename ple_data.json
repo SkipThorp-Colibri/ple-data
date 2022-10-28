@@ -6589,7 +6589,8 @@
         "karen@ailhla.com",
         "blue@ailhla.com",
         "snieves@ailhla.com",
-        "rhernandez@ailhla.com"
+        "rhernandez@ailhla.com",
+        "rbgray@ailife.com"
       ],
       "subject": "AIL_Henderson",
       "rowsort": 0,
@@ -15714,7 +15715,8 @@
         "Colonial Life - Jacob Gosch",
         "Colonial Life - Joe Conley",
         "Colonial Life - Luciano Villanueva",
-        "Colonial Life - Keshawn Baines"
+        "Colonial Life - Keshawn Baines",
+        "Colonial Life - David Palmer"
       ],
       "emails": [
         "SRoberts@ColonialLife.com",
@@ -20181,7 +20183,6 @@
         "FFL Tri-State - Keven Aguilar",
         "FFL Tri-State - Mindy Tibbs",
         "FFL Dora Dail",
-        "FFL Great Lakes - Kayla Rojo",
         "FFL Tri-State (warm market)",
         "FFL Tri-State (direct hires)"
       ],
@@ -37400,7 +37401,8 @@
         "Kelly.Jordan@nm.com",
         "elizabeth.mullen@nm.com",
         "Kelsey.Delpriore@nm.com",
-        ""
+        "holly.ceaser@nm.com",
+        "stephanie.gilbert@nm.com"
       ],
       "subject": "NM_NorthernNE",
       "rowsort": 0,
@@ -47326,10 +47328,7 @@
         "Cmiller@ailoh.com",
         "Bjuskiw@ailoh.com",
         "Tgeer@ailoh.com",
-        "Dwalton@ailoh.com",
         "Jthiel@ailoh.com",
-        "Jtillman@ailoh.com",
-        "Ldettwiller@ailoh.com",
         "Awenning@ailoh.com",
         "Pb@ailoh.com",
         "Dhartwig@ailoh.com",
@@ -48321,7 +48320,8 @@
         "cle@ailjra.com",
         "rleveille@ailjra.com",
         "ypeguero@ailjra.com",
-        "mpettigrew@ailjra.com"
+        "mpettigrew@ailjra.com",
+        "rbgray@ailife.com"
       ],
       "subject": "AIL_Tampa",
       "rowsort": 0,
@@ -77625,8 +77625,7 @@
     {
       "id": 3833,
       "departments": [
-        "FFL Great Lakes",
-        "FFL Great Lakes - Kayla Rojo"
+        "FFL Great Lakes"
       ],
       "emails": [
         "david.pyle@ffl-greatlakes.com",
@@ -84734,7 +84733,8 @@
       ],
       "emails": [
         "Rusty.hood@tfaconnect.com",
-        "m0d.annielove.bisnar@gmail.com"
+        "m0d.annielove.bisnar@gmail.com",
+        "bhoodwfgceo@gmail.com"
       ],
       "subject": "WFG_Hood_Group",
       "rowsort": 0,
@@ -98642,26 +98642,6 @@
     },
     {
       "departments": [
-        "FFL Great Lakes - Kayla Rojo"
-      ],
-      "emails": [
-        "kayla.rojo@ffl-greatlakes.com",
-        "licensing@ffl-greatlakes.com"
-      ],
-      "subject": "FFL_Rojo",
-      "rowsort": 0,
-      "cc_email": null,
-      "columnsort": 0,
-      "login_filter": 0,
-      "completion_filter": 0,
-      "remove_button": 0,
-      "course_type_only": 0,
-      "ple_only": 0,
-      "summary_only": 0,
-      "id": 4923
-    },
-    {
-      "departments": [
         "FFL Tri-State Tester - John Mazzella",
         "FFL Chris Mazzella",
         "FFL Georgia Rhem",
@@ -105546,7 +105526,8 @@
       ],
       "emails": [
         "almartinez@ailife.com",
-        "aserur@seruragencies.com"
+        "aserur@seruragencies.com",
+        "areyes@reyesagencies.com"
       ],
       "subject": "AIL_Gonzalez-Vena-Serur_Agency",
       "rowsort": 0,
@@ -108557,7 +108538,37 @@
         "Auto Pilot - Amanda Buenemann",
         "Auto Pilot - Ric Hansen",
         "Auto Pilot - Kelsey Shay",
-        "Auto Pilot - Vince Ovecka"
+        "Auto Pilot - Vince Ovecka",
+        "Auto Pilot - Chris Looney",
+        "Auto Pilot - Bob Gist",
+        "Auto Pilot - Liam Masterson",
+        "Auto Pilot - Jeff Ryan",
+        "Auto Pilot - Derrick Spencer",
+        "Auto Pilot - Tyler Stanford",
+        "Auto Pilot - Jared Howard",
+        "Auto Pilot - Jessica Thompson",
+        "Auto Pilot - Jessica Knight",
+        "Auto Pilot - Gunther Perdomo",
+        "Auto Pilot - Dawon Coleman",
+        "Auto Pilot - Jim Hanlin",
+        "Auto Pilot - Steve Lane",
+        "Auto Pilot - Aubrey Pithwa",
+        "Auto Pilot - Joanne Dauphine",
+        "Auto Pilot - Jesse Dompreh",
+        "Auto Pilot - Brenda Hidalgo Leyva",
+        "Auto Pilot - Kurt Lenschow",
+        "Auto Pilot - Weston Leake",
+        "Auto Pilot - Tiffany Meidinger",
+        "Auto Pilot - Teresa Holwerda",
+        "Auto Pilot - Luis Sanchez",
+        "Auto Pilot - Cesar Ramos",
+        "Auto Pilot - Andy Wescott",
+        "Auto Pilot - Nicole Grove",
+        "Auto Pilot - Zach Augustyn",
+        "Auto Pilot - Claude Harriott",
+        "Auto Pilot - Mike Shoffner",
+        "Auto Pilot - Sage Kohler",
+        "Auto Pilot - Kara Berks"
       ],
       "emails": [
         "nathan.wright@colibrigroup.com",
@@ -120901,6 +120912,671 @@
       "ple_only": 0,
       "summary_only": 0,
       "id": 6066
+    },
+    {
+      "departments": [
+        "Liberty National - Ramona Trentini Agency"
+      ],
+      "emails": [
+        "ramonapeaugh@gmail.com"
+      ],
+      "subject": "LNL_Trentini",
+      "rowsort": 0,
+      "cc_email": null,
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 6067
+    },
+    {
+      "departments": [
+        "FFL Kayla Rojo"
+      ],
+      "emails": [
+        "kayla@rojofinancialservices.com"
+      ],
+      "subject": "FFL_Rojo",
+      "rowsort": 0,
+      "cc_email": null,
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 6068
+    },
+    {
+      "departments": [
+        "AIL - Spokane"
+      ],
+      "emails": [
+        "brittneydudycha.ail@gmail.com"
+      ],
+      "subject": "AIL_Spokane",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 6069
+    },
+    {
+      "departments": [
+        "Colonial Life - David Palmer"
+      ],
+      "emails": [
+        "DAVID.PALMER@COLONIALLIFESALES.COM"
+      ],
+      "subject": "Colonial_Palmer",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 6070
+    },
+    {
+      "departments": [
+        "Farmers - Karen Garcia"
+      ],
+      "emails": [
+        "kgarcia3@farmersagent.com"
+      ],
+      "subject": "Farmers_Garcia",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 6071
+    },
+    {
+      "departments": [
+        "Auto Pilot - Chris Looney"
+      ],
+      "emails": [
+        "chris.looney.vacbr6@statefarm.com"
+      ],
+      "subject": "AutoPilot_Looney",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 6072
+    },
+    {
+      "departments": [
+        "Auto Pilot - Bob Gist"
+      ],
+      "emails": [
+        "bob@bobgistinsurance.com"
+      ],
+      "subject": "AutoPilot_Gist",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 6073
+    },
+    {
+      "departments": [
+        "Auto Pilot - Liam Masterson"
+      ],
+      "emails": [
+        "liam.masterson.vaanmk@statefarm.com"
+      ],
+      "subject": "AutoPilot_Masterson",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 6074
+    },
+    {
+      "departments": [
+        "Auto Pilot - Jeff Ryan"
+      ],
+      "emails": [
+        "jeff.ryan.uuaf@statefarm.com"
+      ],
+      "subject": "AutoPilot_Ryan",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 6075
+    },
+    {
+      "departments": [
+        "Auto Pilot - Derrick Spencer"
+      ],
+      "emails": [
+        "derrick@derrickspencer.com"
+      ],
+      "subject": "AutoPilot_D_Spencer",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 6076
+    },
+    {
+      "departments": [
+        "Auto Pilot - Tyler Stanford"
+      ],
+      "emails": [
+        "tyler.stanford.e3vy@statefarm.com"
+      ],
+      "subject": "AutoPilot_Stanford",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 6077
+    },
+    {
+      "departments": [
+        "Auto Pilot - Jared Howard"
+      ],
+      "emails": [
+        "jared.howard.y75g@statefarm.com"
+      ],
+      "subject": "AutoPilot_Howard",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 6078
+    },
+    {
+      "departments": [
+        "Auto Pilot - Jessica Thompson"
+      ],
+      "emails": [
+        "jessica.thompson.d3xi@statefarm.com"
+      ],
+      "subject": "AutoPilot_Thompson",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 6079
+    },
+    {
+      "departments": [
+        "Auto Pilot - Jessica Knight"
+      ],
+      "emails": [
+        "jessica.knight.t2ga@statefarm.com"
+      ],
+      "subject": "AutoPilot_Knight",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 6080
+    },
+    {
+      "departments": [
+        "Auto Pilot - Gunther Perdomo"
+      ],
+      "emails": [
+        "gunther.perdomo-llana.p6k0@statefarm.com"
+      ],
+      "subject": "AutoPilot_Perdomo",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 6081
+    },
+    {
+      "departments": [
+        "Auto Pilot - Dawon Coleman"
+      ],
+      "emails": [
+        "dawon.coleman.vacmgm@statefarm.com"
+      ],
+      "subject": "AutoPilot_Coleman",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 6082
+    },
+    {
+      "departments": [
+        "Auto Pilot - Jim Hanlin"
+      ],
+      "emails": [
+        "jim@jimhanlin.com"
+      ],
+      "subject": "AutoPilot_Hanlin",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 6083
+    },
+    {
+      "departments": [
+        "Auto Pilot - Steve Lane"
+      ],
+      "emails": [
+        "steve.lane.rzw8@statefarm.com"
+      ],
+      "subject": "AutoPilot_Lane",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 6084
+    },
+    {
+      "departments": [
+        "Auto Pilot - Aubrey Pithwa"
+      ],
+      "emails": [
+        "aubrey.pithwa.dypx@statefarm.com"
+      ],
+      "subject": "AutoPilot_Pithwa",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 6085
+    },
+    {
+      "departments": [
+        "Auto Pilot - Joanne Dauphine"
+      ],
+      "emails": [
+        "joanne.dauphin.yc2u@statefarm.com"
+      ],
+      "subject": "AutoPilot_Dauphine",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 6086
+    },
+    {
+      "departments": [
+        "Auto Pilot - Jesse Dompreh"
+      ],
+      "emails": [
+        "jesse.dompreh.b8kt@statefarm.com"
+      ],
+      "subject": "AutoPilot_Dompreh",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 6087
+    },
+    {
+      "departments": [
+        "Auto Pilot - Brenda Hidalgo Leyva"
+      ],
+      "emails": [
+        "brenda.l.hidalgoleyva.vactnr@statefarm.com"
+      ],
+      "subject": "AutoPilot_Hidalgo_Leyva",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 6088
+    },
+    {
+      "departments": [
+        "Auto Pilot - Kurt Lenschow"
+      ],
+      "emails": [
+        "lenschowinsurance@gmail.com"
+      ],
+      "subject": "AutoPilot_Lenschow",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 6089
+    },
+    {
+      "departments": [
+        "Auto Pilot - Weston Leake"
+      ],
+      "emails": [
+        "weston@insurewithweston.com"
+      ],
+      "subject": "AutoPilot_Leake",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 6090
+    },
+    {
+      "departments": [
+        "Auto Pilot - Tiffany Meidinger"
+      ],
+      "emails": [
+        "tiffany@denversf.com"
+      ],
+      "subject": "AutoPilot_Meidinger",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 6091
+    },
+    {
+      "departments": [
+        "Auto Pilot - Teresa Holwerda"
+      ],
+      "emails": [
+        "teresa@insuregirl.com"
+      ],
+      "subject": "AutoPilot_Holwerda",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 6092
+    },
+    {
+      "departments": [
+        "Auto Pilot - Luis Sanchez"
+      ],
+      "emails": [
+        "luis.sanchez.mmkc@statefarm.com"
+      ],
+      "subject": "AutoPilot_Sanchez",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 6093
+    },
+    {
+      "departments": [
+        "Auto Pilot - Cesar Ramos"
+      ],
+      "emails": [
+        "cesar.ramos.y5of@statefarm.com"
+      ],
+      "subject": "AutoPilot_Ramos",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 6094
+    },
+    {
+      "departments": [
+        "Auto Pilot - Andy Wescott"
+      ],
+      "emails": [
+        "andy.wescott.u0ln@statefarm.com"
+      ],
+      "subject": "AutoPilot_Wescott",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 6095
+    },
+    {
+      "departments": [
+        "Auto Pilot - Nicole Grove"
+      ],
+      "emails": [
+        "nicole@nicolegrove.com"
+      ],
+      "subject": "AutoPilot_Grove",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 6096
+    },
+    {
+      "departments": [
+        "Auto Pilot - Zach Augustyn"
+      ],
+      "emails": [
+        "zach@insuremesf.com"
+      ],
+      "subject": "AutoPilot_Augustyn",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 6097
+    },
+    {
+      "departments": [
+        "Auto Pilot - Claude Harriott"
+      ],
+      "emails": [
+        "claudeharriott90@gmail.com"
+      ],
+      "subject": "AutoPilot_Harriott",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 6098
+    },
+    {
+      "departments": [
+        "Auto Pilot - Mike Shoffner"
+      ],
+      "emails": [
+        "mike.shoffner.cp52@statefarm.com"
+      ],
+      "subject": "AutoPilot_Shoffner",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 6099
+    },
+    {
+      "departments": [
+        "Auto Pilot - Sage Kohler"
+      ],
+      "emails": [
+        "sage.kohler.bxrv@statefarm.com"
+      ],
+      "subject": "AutoPilot_Kohler",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 6100
+    },
+    {
+      "departments": [
+        "Auto Pilot - Kara Berks"
+      ],
+      "emails": [
+        "kara.berks.u0nk@statefarm.com"
+      ],
+      "subject": "AutoPilot_Berks",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 6101
     }
   ]
 }
