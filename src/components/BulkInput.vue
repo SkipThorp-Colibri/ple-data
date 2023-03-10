@@ -35,7 +35,6 @@ export default {
     },
     methods: {
         onProcessBulk() {
-            const headers = ["departments","emails","subject"]
             const tsv = this.tsvText
             let result = []
             let tsvLines = tsv.split('\n')
