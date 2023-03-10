@@ -6,7 +6,7 @@
             <div class="form-row">
                 
                 <div class="col">
-                    <h5>Paste TSV data</h5>
+                    <h5>Paste TSV data from Excel</h5>
                     <textarea id="bulk-input-text" style="width: 100%; height: 200px;" v-model="tsvText"></textarea>
                 </div>
                 
@@ -30,7 +30,8 @@ export default {
     },
     data() {
         return {
-            report: []
+            report: [],
+            tsvText: ''
         }
     },
     methods: {
@@ -43,14 +44,29 @@ export default {
                 let lineObj = {}
                 let tsvLine = line.split('\t')
 
-                lineObj["departments"] = tsvLine[0].split('%')
-                lineObj["emails"] = tsvLine[1].split(';')
+                let departments = tsvLine[0].split('%')
+                let cleanDepts = []
+                departments.forEach((dept) => {
+                    cleanDepts = [ ...cleanDepts, this.cleanDepartment(dept) ]
+                })
 
-                if(tsvLine[2] == undefined || tsvLine[2] == '') {
-                    lineObj["subject"] = this.createSubject(lineObj["departments"][0])
+                let emails = tsvLine[1].split(';')
+                let cleanEmails = []
+                emails.forEach((email) => {
+                    cleanEmails = [ ...cleanEmails, this.cleanEmail(email) ]
+                })
+
+                let subject = tsvLine[2]
+                let cleanSubject = ''
+                if(subject == undefined || subject == '') {
+                    cleanSubject = this.createSubject(departments[0])
                 } else {
-                    lineObj["subject"] = tsvLine[2]
+                    cleanSubject = subject.trim()
                 }
+
+                lineObj["departments"] = cleanDepts
+                lineObj["emails"] = cleanEmails
+                lineObj["subject"] = cleanSubject
 
                 lineObj["rowsort"] = 0
                 lineObj["cc_email"] = ""
@@ -83,7 +99,23 @@ export default {
             subjectText = subjectText.replace(/ /g,"_")
             subjectText = subjectText.replace(/__/g,"_")
 
-            return subjectText
+            return subjectText.trim()
+        },
+        cleanDepartment(dept) {
+            let newDept = dept.trim()
+
+            if(newDept != '' && newDept != undefined){
+                newDept = newDept.replace(/\u2013|\u2014/g, "-")
+            }
+
+            return newDept
+        },
+        cleanEmail(email) {
+            let newEmail = email.trim()
+            if(newEmail != '' && newEmail != undefined){
+                newEmail = newEmail.toLowerCase()
+            }
+            return newEmail
         }
     }
 }
