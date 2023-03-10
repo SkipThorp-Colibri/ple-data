@@ -152,8 +152,9 @@ export default {
                 let newDeptArray = this.newDepartment.split('%')
                 
                 newDeptArray.forEach((value) => {
-                    value = value.replace(/\u2013|\u2014/g, "-")
-                    this.departments = [...this.departments, value]
+                    let newDept = value.trim()
+                    newDept = newDept.replace(/\u2013|\u2014/g, "-")
+                    this.departments = [...this.departments, newDept]
                 })
 
                 this.newDepartment = ''
@@ -165,7 +166,8 @@ export default {
                 let newEmailArray = this.newEmail.split(';')
 
                 newEmailArray.forEach((value) => {
-                    this.emails = [...this.emails, value.toLowerCase()]
+                    let cleanEmail = value.trim()
+                    this.emails = [...this.emails, cleanEmail.toLowerCase()]
                 })
 
                 this.newEmail = ''
@@ -174,7 +176,7 @@ export default {
         },
         submitSubject() {
             if(this.newSubject != ''){
-                this.subject = this.newSubject
+                this.subject = this.newSubject.trim()
                 this.newSubject = ''
 
                 this.subject = this.subject.replace(/\u2013|\u2014/g, "-")
@@ -208,9 +210,6 @@ export default {
         },
         closeAddReport() {
             this.$emit('close-add-report')
-        },
-        testMethod() {
-            console.log('test method fired')
         }
     }
 }
