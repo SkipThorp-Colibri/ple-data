@@ -61,7 +61,12 @@ export default {
                 if(subject == undefined || subject == '') {
                     cleanSubject = this.createSubject(departments[0])
                 } else {
-                    cleanSubject = subject.trim()
+                    cleanSubject = subject.replace(/\u2013|\u2014/g, "-")
+                    cleanSubject = cleanSubject.replace(/ - /g,"_")
+                    cleanSubject = cleanSubject.replace(/,/g," ")
+                    cleanSubject = cleanSubject.replace(/ /g,"_")
+                    cleanSubject = cleanSubject.replace(/__/g,"_")
+                    cleanSubject = cleanSubject.trim()
                 }
 
                 lineObj["departments"] = cleanDepts
@@ -106,6 +111,7 @@ export default {
 
             if(newDept != '' && newDept != undefined){
                 newDept = newDept.replace(/\u2013|\u2014/g, "-")
+                newDept = newDept.replace(/^a-zA-Z0-9 ]/g, '')
             }
 
             return newDept

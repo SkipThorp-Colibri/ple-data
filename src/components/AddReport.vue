@@ -154,6 +154,7 @@ export default {
                 newDeptArray.forEach((value) => {
                     let newDept = value.trim()
                     newDept = newDept.replace(/\u2013|\u2014/g, "-")
+                    newDept = newDept.replace(/^a-zA-Z0-9 ]/g, '')
                     this.departments = [...this.departments, newDept]
                 })
 
