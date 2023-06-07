@@ -4,7 +4,7 @@
   <EditReport v-if="showEditReport" @submit-edit-report="onEditReport" :report="selectedReport" @close-edit-report="showEditReport = false" />
   <BulkInput v-if="showBulkInput" @add-bulk-reports="addBulkReportsToList" @close-bulk-input="showBulkInput = false"></BulkInput>
   <div class="container-fluid">
-    <div class="text-left" style="margin-top: 1rem;">
+    <div class="text-left" style="margin-top: 4rem;">
       <Button text="new report" color="btn-primary" @btn-click="toggleAddReport" />
       <Button text="bulk input" color="btn-info" style="margin-left: 1rem;" @btn-click="toggleBulkInput" />
     </div>

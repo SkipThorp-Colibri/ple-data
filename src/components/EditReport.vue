@@ -120,6 +120,9 @@ export default {
     },
     methods: {
         onReportSubmit() {
+            for(let i = 0; i < this.report.emails.length; i++) {
+                this.report.emails[i] = this.report.emails[i].toLowerCase()
+            }
             this.$emit('submit-edit-report', this.report)
             this.subject = ''
             this.departments = []
