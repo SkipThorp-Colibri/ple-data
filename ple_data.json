@@ -93,26 +93,26 @@
       "emails": [
         "moore.jodeci@yahoo.com",
         "dwearsch22@gmail.com",
-        "Matt.tschimperle@gmail.com",
+        "matt.tschimperle@gmail.com",
         "kshirey512@gmail.com",
-        "AJEVERETT@libnat.com",
+        "ajeverett@libnat.com",
         "ajeverett86@gmail.com",
-        "HR@theeverettagencies.com",
+        "hr@theeverettagencies.com",
         "moore.jodeci23@gmail.com",
-        "CDJACKSON@libnat.com",
+        "cdjackson@libnat.com",
         "admin@theeverettagencies.com",
-        "Dan@theeverettagencies.com",
-        "Jodeci@theeverettagencies.com",
-        "Matt@theeverettagencies.com",
-        "Raoof@theeverettagencies.com",
-        "Antonio@theeverettagencies.com",
-        "Johanna@theeverettagencies.com",
+        "dan@theeverettagencies.com",
+        "jodeci@theeverettagencies.com",
+        "matt@theeverettagencies.com",
+        "raoof@theeverettagencies.com",
+        "antonio@theeverettagencies.com",
+        "johanna@theeverettagencies.com",
         "kevin@theeverettagencies.com",
-        "Fran@theeverettagencies.com",
-        "Ty@theeverettagencies.com",
-        "Haleigh@theeverettagencies.com",
-        "Nathan@theeverettagencies.com",
-        "Evan@theeverettagencies.com",
+        "fran@theeverettagencies.com",
+        "ty@theeverettagencies.com",
+        "haleigh@theeverettagencies.com",
+        "nathan@theeverettagencies.com",
+        "evan@theeverettagencies.com",
         "vp@theeverettagencies.com"
       ],
       "subject": "LNL_Addison_Everett",
@@ -199,10 +199,10 @@
         "Aflac OH - Paul Quillin Agency"
       ],
       "emails": [
-        "AConover@aflac.com",
-        "DMassey@aflac.com",
-        "CPollock@aflac.com",
-        "ABlanchard@aflac.com",
+        "aconover@aflac.com",
+        "dmassey@aflac.com",
+        "cpollock@aflac.com",
+        "ablanchard@aflac.com",
         "michael.goff@xcelsolutions.com",
         "jeff.hachtel@xcelsolutions.com"
       ],
@@ -232,7 +232,7 @@
         "Aflac VA - Nicholas Wagner Agency"
       ],
       "emails": [
-        "GWGreene@aflac.com",
+        "gwgreene@aflac.com",
         "michael.goff@xcelsolutions.com",
         "jeff.hachtel@xcelsolutions.com",
         "swalker4@aflac.com",
@@ -701,7 +701,7 @@
       ],
       "emails": [
         "zjohnson@aflac.com",
-        "Acrook@aflac.com"
+        "acrook@aflac.com"
       ],
       "subject": "Aflac_CA_LA",
       "rowsort": 0,
@@ -741,7 +741,7 @@
       ],
       "emails": [
         "carlos_enriquez@us.aflac.com",
-        "C_Enriquez@us.aflac.com"
+        "c_enriquez@us.aflac.com"
       ],
       "subject": "AFLAC_Enriquez",
       "rowsort": 0,
@@ -761,30 +761,9 @@
       ],
       "emails": [
         "david_hernandez@us.aflac.com",
-        "Lizette_hernandez@us.aflac.com"
+        "lizette_hernandez@us.aflac.com"
       ],
       "subject": "AFLAC_Hernandez",
-      "rowsort": 0,
-      "cc_email": "",
-      "columnsort": 0,
-      "login_filter": 0,
-      "completion_filter": 0,
-      "remove_button": 0,
-      "course_type_only": 0,
-      "ple_only": 0,
-      "summary_only": 0
-    },
-    {
-      "id": 40,
-      "departments": [
-        "Aflac CA - David Reesor Agency"
-      ],
-      "emails": [
-        "david_reesor@us.aflac.com",
-        "BMcPherson@aflac.com",
-        "SKirchner@aflac.com"
-      ],
-      "subject": "WFG_Reesor",
       "rowsort": 0,
       "cc_email": "",
       "columnsort": 0,
@@ -802,8 +781,8 @@
       ],
       "emails": [
         "david_reesor@us.aflac.com",
-        "BMcPherson@aflac.com",
-        "SKirchner@aflac.com"
+        "bmcpherson@aflac.com",
+        "skirchner@aflac.com"
       ],
       "subject": "AFLAC_Reesor",
       "rowsort": 0,
@@ -823,7 +802,7 @@
       ],
       "emails": [
         "dwayne_martinez@us.aflac.com",
-        "Sandi_Martinez@us.aflac.com"
+        "sandi_martinez@us.aflac.com"
       ],
       "subject": "AFLAC_Dwayne",
       "rowsort": 0,
@@ -1005,7 +984,7 @@
       ],
       "emails": [
         "renee_corso@us.aflac.com",
-        "Bobbie_Enoch@us.aflac.com"
+        "bobbie_enoch@us.aflac.com"
       ],
       "subject": "AFLAC_Corso",
       "rowsort": 0,
@@ -1066,8 +1045,8 @@
       ],
       "emails": [
         "amy_buchanan@us.aflac.com",
-        "Evan_Buchanan1@us.aflac.com",
-        "ADudley@aflac.com"
+        "evan_buchanan1@us.aflac.com",
+        "adudley@aflac.com"
       ],
       "subject": "AFLAC_Buchanan",
       "rowsort": 0,
@@ -1106,7 +1085,7 @@
       ],
       "emails": [
         "james_garner@us.aflac.com",
-        "Chriseda_crow@us.aflac.com"
+        "chriseda_crow@us.aflac.com"
       ],
       "subject": "AFLAC_Garner",
       "rowsort": 0,
@@ -1186,7 +1165,7 @@
       ],
       "emails": [
         "laura_nalley@us.aflac.com",
-        "C1_Ross@us.aflac.com"
+        "c1_ross@us.aflac.com"
       ],
       "subject": "AFLAC_Marcotte",
       "rowsort": 0,
@@ -1216,7 +1195,7 @@
       ],
       "emails": [
         "awichmann@aflac.com",
-        "ADudley@aflac.com",
+        "adudley@aflac.com",
         "michael.goff@xcelsolutions.com",
         "jeff.hachtel@xcelsolutions.com"
       ],
@@ -1346,7 +1325,7 @@
       ],
       "emails": [
         "kevin_mccarthy@us.aflac.com",
-        "Erika_forsa1@us.aflac.com",
+        "erika_forsa1@us.aflac.com",
         "samuel_szumita@us.aflac.com"
       ],
       "subject": "AFLAC_Mccarthy",
@@ -1367,7 +1346,7 @@
       ],
       "emails": [
         "kevin_mcinerney@us.aflac.com",
-        "Jennifer_quinn@us.aflac.com"
+        "jennifer_quinn@us.aflac.com"
       ],
       "subject": "AFLAC_Mcinerney",
       "rowsort": 0,
@@ -1488,7 +1467,7 @@
       ],
       "emails": [
         "mortiz@aflac.com",
-        "RRiva@aflac.com",
+        "rriva@aflac.com",
         "michael.goff@xcelsolutions.com",
         "jeff.hachtel@xcelsolutions.com"
       ],
@@ -1780,7 +1759,7 @@
       ],
       "emails": [
         "bryan_shover@us.aflac.com",
-        "Brittany_black1@us.aflac.com"
+        "brittany_black1@us.aflac.com"
       ],
       "subject": "AFLAC_Shover",
       "rowsort": 0,
@@ -1920,7 +1899,7 @@
       ],
       "emails": [
         "cory_nelson@us.aflac.com",
-        "Cherise_Thacker@us.aflac.com",
+        "cherise_thacker@us.aflac.com",
         "giavanna_accardo2@us.aflac.com"
       ],
       "subject": "AFLAC_Nelson",
@@ -1974,7 +1953,7 @@
         "Aflac WY - Ben Jenkins Agency"
       ],
       "emails": [
-        "JLockwood@aflac.com",
+        "jlockwood@aflac.com",
         "jgaudet@aflac.com"
       ],
       "subject": "AFLAC_ID_MT_WY",
@@ -2035,7 +2014,7 @@
       ],
       "emails": [
         "caleb_gilmour@us.aflac.com",
-        "Alex_Wright@us.aflac.com"
+        "alex_wright@us.aflac.com"
       ],
       "subject": "AFLAC_Gilmour",
       "rowsort": 0,
@@ -2081,7 +2060,7 @@
       ],
       "emails": [
         "mharlow@aflac.com",
-        "JSHARP@aflac.com",
+        "jsharp@aflac.com",
         "michael.goff@xcelsolutions.com",
         "jeff.hachtel@xcelsolutions.com"
       ],
@@ -2136,8 +2115,8 @@
         "Aflac MA - Scott McCoy Agency"
       ],
       "emails": [
-        "MChille@aflac.com",
-        "MMutrie@aflac.com"
+        "mchille@aflac.com",
+        "mmutrie@aflac.com"
       ],
       "subject": "AFLAC_MA_ME_NH",
       "rowsort": 0,
@@ -2164,7 +2143,7 @@
       ],
       "emails": [
         "jwerner@aflac.com",
-        "JAnderson5@aflac.com"
+        "janderson5@aflac.com"
       ],
       "subject": "Aflac_MI_West",
       "rowsort": 0,
@@ -2387,7 +2366,7 @@
       ],
       "emails": [
         "w_johnson@us.aflac.com",
-        "Lindsay_Tasma@us.aflac.com"
+        "lindsay_tasma@us.aflac.com"
       ],
       "subject": "AFLAC_Johnson",
       "rowsort": 0,
@@ -2561,32 +2540,14 @@
       "summary_only": 0
     },
     {
-      "id": 128,
-      "departments": [
-        "Aflac MO - Zachary Smith Agency"
-      ],
-      "emails": [
-        "kaci_jones1@us.aflac.com"
-      ],
-      "subject": "AFLAC_Smith",
-      "rowsort": 0,
-      "cc_email": "",
-      "columnsort": 0,
-      "login_filter": 0,
-      "completion_filter": 0,
-      "remove_button": 0,
-      "course_type_only": 0,
-      "ple_only": 0,
-      "summary_only": 0
-    },
-    {
       "id": 129,
       "departments": [
         "Aflac MO - Zachary Smith Agency"
       ],
       "emails": [
         "zachary_smith@us.aflac.com",
-        "alyssa_mabary@us.aflac.com"
+        "alyssa_mabary@us.aflac.com",
+        "kaci_jones1@us.aflac.com"
       ],
       "subject": "AFLAC_Zachary_Smith",
       "rowsort": 0,
@@ -2612,7 +2573,7 @@
         "cbasler@aflac.com",
         "michael.goff@xcelsolutions.com",
         "jeff.hachtel@xcelsolutions.com",
-        "MDougan@aflac.com"
+        "mdougan@aflac.com"
       ],
       "subject": "Aflac MO-W",
       "rowsort": 0,
@@ -2632,7 +2593,7 @@
       ],
       "emails": [
         "nicole_jenkins@us.aflac.com",
-        "Vanessa_hoffman2@us.aflac.com"
+        "vanessa_hoffman2@us.aflac.com"
       ],
       "subject": "AFLAC_Jenkins",
       "rowsort": 0,
@@ -2688,7 +2649,7 @@
       ],
       "emails": [
         "chardy@aflac.com",
-        "BStennett@aflac.com",
+        "bstennett@aflac.com",
         "michael.goff@xcelsolutions.com",
         "jeff.hachtel@xcelsolutions.com",
         "christyfisher@aflac.com",
@@ -2711,7 +2672,7 @@
         "Aflac MS - Ginger Hardy Agency"
       ],
       "emails": [
-        "CHardy@aflac.com",
+        "chardy@aflac.com",
         "ginger_hardy@us.aflac.com",
         "wyn_hutson1@us.aflac.com.",
         "misty_kidd1@us.aflac.com"
@@ -2810,8 +2771,8 @@
         "Aflac NC - Jonathan Dunn"
       ],
       "emails": [
-        "DanBredeson@aflac.com",
-        "SBlackshear@aflac.com"
+        "danbredeson@aflac.com",
+        "sblackshear@aflac.com"
       ],
       "subject": "AFLAC_NC_West",
       "rowsort": 0,
@@ -2971,7 +2932,7 @@
       ],
       "emails": [
         "dylan_monteforte@us.aflac.com",
-        "Elise_monteforte@us.aflac.com"
+        "elise_monteforte@us.aflac.com"
       ],
       "subject": "AFLAC_Monteforte",
       "rowsort": 0,
@@ -2991,7 +2952,7 @@
       ],
       "emails": [
         "john_capozzi@us.aflac.com",
-        "Ashley_skourtis3@us.aflac.com"
+        "ashley_skourtis3@us.aflac.com"
       ],
       "subject": "AFLAC_Capozzi",
       "rowsort": 0,
@@ -3090,7 +3051,7 @@
         "Aflac OH - Cameron Carrillo"
       ],
       "emails": [
-        "OhioRsc47@gmail.com",
+        "ohiorsc47@gmail.com",
         "thecolumbusregion@gmail.com",
         "tara_carrillo1@us.aflac.com"
       ],
@@ -3306,8 +3267,8 @@
       ],
       "emails": [
         "eriffe@aflac.com",
-        "REmanuele@aflac.com",
-        "ELeight@aflac.com"
+        "remanuele@aflac.com",
+        "eleight@aflac.com"
       ],
       "subject": "Aflac_PA_West",
       "rowsort": 0,
@@ -3347,7 +3308,7 @@
       ],
       "emails": [
         "peggy_stormer@us.aflac.com",
-        "M42_Smith@us.aflac.com"
+        "m42_smith@us.aflac.com"
       ],
       "subject": "AFLAC_Stormer",
       "rowsort": 0,
@@ -3428,7 +3389,7 @@
       ],
       "emails": [
         "kevin_mccarthy@us.aflac.com",
-        "Erika_forsa1@us.aflac.com",
+        "erika_forsa1@us.aflac.com",
         "k_boucher@us.aflac.com"
       ],
       "subject": "AFLAC_McCarthy",
@@ -3478,9 +3439,9 @@
         "catherinejames139@gmail.com",
         "darcy_gero@us.aflac.com",
         "c13_james@us.aflac.com",
-        "Jennifer_davis3@us.aflac.com",
+        "jennifer_davis3@us.aflac.com",
         "keandra@email.sc.edu",
-        "Jessica_schlusser1@us.aflac.com"
+        "jessica_schlusser1@us.aflac.com"
       ],
       "subject": "AFLAC_James",
       "rowsort": 0,
@@ -3582,7 +3543,7 @@
         "Aflac SC - Robin Mann Agency"
       ],
       "emails": [
-        "Mindy_needle@us.aflac.com"
+        "mindy_needle@us.aflac.com"
       ],
       "subject": "AFLAC_Mann",
       "rowsort": 0,
@@ -3631,7 +3592,7 @@
       ],
       "emails": [
         "mdevans@aflac.com",
-        "LThorson@aflac.com",
+        "lthorson@aflac.com",
         "michael.goff@xcelsolutions.com",
         "jeff.hachtel@xcelsolutions.com"
       ],
@@ -3812,10 +3773,10 @@
       ],
       "emails": [
         "t1_williamson@us.aflac.com",
-        "Drema_Webb@us.aflac.com",
+        "drema_webb@us.aflac.com",
         "doc_reese@us.aflac.com",
         "tim_chappell@us.aflac.com",
-        "D2_rivera@us.aflac.com",
+        "d2_rivera@us.aflac.com",
         "sue_dickhaus@us.aflac.com"
       ],
       "subject": "AFLAC_Williamson",
@@ -3856,8 +3817,9 @@
         "Aflac TN - William Gant Agency"
       ],
       "emails": [
-        "William_gant@us.aflac.com",
-        "nelda_reed@us.aflac.com"
+        "william_gant@us.aflac.com",
+        "nelda_reed@us.aflac.com",
+        "shawna_pross@us.aflac.com"
       ],
       "subject": "AFLAC_Gant",
       "rowsort": 0,
@@ -4111,7 +4073,7 @@
       ],
       "emails": [
         "eleger@aflac.com",
-        "AArnold3@aflac.com",
+        "aarnold3@aflac.com",
         "rpilkenton@aflac.com",
         "michael.goff@xcelsolutions.com",
         "jeff.hachtel@xcelsolutions.com",
@@ -5484,10 +5446,7 @@
         "nfortin@catalanoagency.com",
         "khansen@catalanoagency.com",
         "cgangloff@catalanoagency.com",
-        "mforshee@cfdivision.com",
-        "dlewis@catalanoagency.com",
-        "hanleia02022001@gmail.com",
-        "msclary150entmedia@gmail.com"
+        "dlewis@catalanoagency.com"
       ],
       "subject": "AIL_Catalano",
       "rowsort": 2,
@@ -6469,23 +6428,16 @@
         "mhenderson@ailcfl.com",
         "blocker@ailhla.com",
         "mbogle@ailhla.com",
-        "tcox@ailhla.com",
         "karen@ailhla.com",
         "blue@ailhla.com",
         "snieves@ailhla.com",
         "rhernandez@ailhla.com",
         "afiltz@ailhla.com",
         "jramos@solavistapr.com",
-        "brauliacabrera.16@gmail.com",
         "jdiaz@ailhla.com",
         "jhosenbold@ailhla.com",
         "ahorsham@ailhla.com",
-        "hkristophel@ailhla.com",
         "icastro@ailhla.com",
-        "twilliams@ailhla.com",
-        "scortinas@ailhla.com",
-        "cwatts@ailhla.com",
-        "cbenoit@ailhla.com",
         "mdelores.ailcfl@gmail.com"
       ],
       "subject": "AIL_Henderson",
@@ -8628,8 +8580,7 @@
         "Bankers Life - New Bern, NC"
       ],
       "emails": [
-        "Michelle.Neuhalfen@bankerslife.com",
-        "Charles.cavileer@bankerslife.com"
+        "michelle.neuhalfen@bankerslife.com"
       ],
       "subject": "Bankers_New_Bern",
       "rowsort": 0,
@@ -8791,9 +8742,9 @@
         "Bankers Life - Northeast Philadelphia, PA"
       ],
       "emails": [
-        "Heather.Petrilli@bankerslife.com",
+        "heather.petrilli@bankerslife.com",
         "r.laverdiere@bankers.com",
-        "Tora.Watkins@bankerslife.com",
+        "tora.watkins@bankerslife.com",
         "deana.vassalluzzo@bankerslife.com",
         "mary.anderson@bankerslife.com",
         "linda.sholly@bankerslife.com",
@@ -8809,7 +8760,8 @@
         "lissane.anno@bankerslife.com",
         "sean.eicher@bankerslife.com",
         "shane.levey@bankerslife.com",
-        "karl.hanson@bankerslife.com"
+        "karl.hanson@bankerslife.com",
+        "orsen.sowell@bankerslife.com"
       ],
       "subject": "Bankers_LaVerdiere",
       "rowsort": 0,
@@ -8828,10 +8780,11 @@
         "Bankers Life - Phoenix, AZ"
       ],
       "emails": [
-        "Michael.Thomas@bankerslife.com",
+        "michael.thomas@bankerslife.com",
         "michael.peterson2@bankerslife.com",
         "roya.mohajeri@bankerslife.com",
-        "virginia.sexton@bankerslife.com"
+        "virginia.sexton@bankerslife.com",
+        "philip.fleming@bankerslife.com"
       ],
       "subject": "Bankers_Phoenix",
       "rowsort": 0,
@@ -9182,14 +9135,15 @@
       ],
       "emails": [
         "philip.fleming@bankerslife.com",
-        "Paul.Paladino@bankerslife.com",
+        "paul.paladino@bankerslife.com",
         "vialet.moss@bankerslife.com",
         "vialet.moss@bankerslife.com",
-        "Samantha.murdaugh@bankerslife.com",
+        "samantha.murdaugh@bankerslife.com",
         "john.briggs@bankerslife.com",
         "teresa.bonham@bankerslife.com",
         "taylor.bagley2@bankerslife.com",
-        "mia.paladino2@bankerslife.com"
+        "mia.paladino2@bankerslife.com",
+        "philip.fleming@bankerslife.com"
       ],
       "subject": "Bankers_Springfield",
       "rowsort": 0,
@@ -12068,9 +12022,9 @@
         "Colonial Life - Central California"
       ],
       "emails": [
-        "tkukulica@coloniallife.com",
         "apowers3@coloniallife.com",
-        "jnian@coloniallife.com"
+        "jnian@coloniallife.com",
+        "bhunter@coloniallife.com"
       ],
       "subject": "Colonial_Central_California",
       "rowsort": 0,
@@ -14404,7 +14358,6 @@
         "Colonial Life - Gregory Starnes",
         "Colonial Life - Matthew Swain",
         "Colonial Life - Kendra Shipman",
-        "Colonial Life - Woody Craig",
         "Colonial Life - Steven Gregory",
         "Colonial Life - Michael Robbins",
         "Colonial Life - Nathan Walker",
@@ -14420,7 +14373,6 @@
         "Colonial Life - Nathan Walker",
         "Colonial Life - Steven Gregory",
         "Colonial Life - James Mize",
-        "Colonial Life - Woody Craig",
         "Colonial Life - James Hinton",
         "Colonial Life - Mark White (Mississippi)",
         "Colonial Life - Rush Miller",
@@ -14429,10 +14381,11 @@
         "Colonial Life - Rich Navari",
         "Colonial Life - Sian Fazende",
         "Colonial Life - Richard Navari",
-        "Colonial Life - Tyler Akers"
+        "Colonial Life - Tyler Akers",
+        "Colonial Life - Woody Craig"
       ],
       "emails": [
-        "JHHinton@ColonialLife.com",
+        "jhhinton@coloniallife.com",
         "mwhite2@coloniallife.com"
       ],
       "subject": "Colonial_MS_MASTER",
@@ -15505,11 +15458,9 @@
         "Colonial Life - Rincon District"
       ],
       "emails": [
-        "JefferyF.Barnett@coloniallifesales.com",
-        "Paul.Cariglio@coloniallifesales.com",
-        "Trey.Meehan@coloniallifesales.com",
-        "Andy.Roosna@coloniallifesales.com",
-        "Howard.Rincon@coloniallifesales.com",
+        "jefferyf.barnett@coloniallifesales.com",
+        "paul.cariglio@coloniallifesales.com",
+        "trey.meehan@coloniallifesales.com",
         "delmar.johnson@coloniallifesales.com",
         "jhershey@coloniallife.com",
         "shahab.mazaheri@coloniallifesales.com",
@@ -15517,7 +15468,6 @@
         "troy.fox@coloniallifesales.com",
         "kevin.brown@coloniallifesales.com",
         "julie.cariglio@coloniallifesales.com",
-        "michael.fernandez1@coloniallifesales.com",
         "john.gallagher@coloniallifesales.com",
         "lynn.morris@coloniallifesales.com",
         "melinda.mitchell@coloniallifesales.com",
@@ -15525,7 +15475,6 @@
         "kim.palmer@coloniallifesales.com",
         "sam.rennard@coloniallifesales.com",
         "steve.richendollar@coloniallifesales.com",
-        "candace.rodriguez@coloniallifesales.com",
         "lmiddleton@coloniallife.com",
         "jamal.brown@coloniallifesales.com"
       ],
@@ -16209,7 +16158,8 @@
         "Colonial Life - Brock Powell"
       ],
       "emails": [
-        "ryan@enrollwithrogle.com"
+        "ryan@enrollwithrogle.com",
+        "alison.schweitzer@coloniallifesales.com"
       ],
       "subject": "Colonial_Ogle",
       "rowsort": 0,
@@ -16245,8 +16195,7 @@
       ],
       "emails": [
         "rmulligan2@coloniallife.com",
-        "ALanswick@ColonialLife.com",
-        "AHowell@ColonialLife.com",
+        "alanswick@coloniallife.com",
         "koneal@coloniallife.com",
         "dmason@coloniallife.com"
       ],
@@ -17132,7 +17081,6 @@
         "Colonial Voluntary Benefits - Upstate NY",
         "Colonial Voluntary Benefits - Eric Hansen",
         "Colonial Life - Tony Mangione",
-        "Colonial Life - Todd Hennessy",
         "Colonial Life - Timothy Fraser",
         "Colonial Life - Steve Joyce",
         "Colonial Life - Steve Elliott",
@@ -17159,7 +17107,6 @@
         "Colonial Life - Anthony Matrone",
         "Colonial Life - Amber Rivera",
         "Colonial Voluntary Benefits - Matt Zahn",
-        "Paul Revere ? NY (Upstate)",
         "Colonial Life - Cody Mangalsingh",
         "Paul Revere - NY (Upstate)",
         "Colonial Life - Perry Kanfer",
@@ -17167,10 +17114,11 @@
         "Colonial Life - David Amazon",
         "Colonial Life - Jennifer Mellon",
         "Colonial Voluntary Benefits - Carrie Hardy",
-        "Colonial Life - Conrado Caballero"
+        "Colonial Life - Conrado Caballero",
+        "Colonial Life - Todd Hennessy"
       ],
       "emails": [
-        "JReynolds@ColonialLife.com",
+        "jreynolds@coloniallife.com",
         "aackerman@coloniallife.com"
       ],
       "subject": "Colonial_Upstate_NY",
@@ -22556,7 +22504,9 @@
         "Heartland Retirement Group"
       ],
       "emails": [
-        "aprestoy@yourhrg.com"
+        "aprestoy@yourhrg.com",
+        "nbeane@yourhrg.com",
+        "ffowler@yourhrg.com"
       ],
       "subject": "HRG",
       "rowsort": 0,
@@ -28128,11 +28078,12 @@
         "NAA - Kirk Launius Group",
         "NAA # - Ciera Kelly Group",
         "NAA #339500 - Blaine Leifer Group",
-        "NAA - Brenda Marles-Osberg Agency"
+        "NAA - Brenda Marles-Osberg Agency",
+        "NAA - Martin Corza group"
       ],
       "emails": [
         "diane@lampecompany.com",
-        "Alex@lampecompany.com",
+        "alex@lampecompany.com",
         "josiah@lampecompany.com",
         "support@lampecompany.com"
       ],
@@ -36402,8 +36353,7 @@
         "Northwestern Mutual - Iowa City"
       ],
       "emails": [
-        "kaela.halvorson@nm.com",
-        "jackie.kratofil@nm.com"
+        "kaela.halvorson@nm.com"
       ],
       "subject": "NWM_IC",
       "rowsort": 0,
@@ -37032,8 +36982,7 @@
         "Northwestern Mutual - Newport"
       ],
       "emails": [
-        "Michelle.Pomerleau@nm.com",
-        "lena.gulesserian@nm.com",
+        "michelle.pomerleau@nm.com",
         "sara.simon@nm.com",
         "sarah.yang@nm.com",
         "danielle.n.shaver@nm.com"
@@ -38782,17 +38731,15 @@
         "shochreiter@ariasagencies.com",
         "rrennich@ariasagencies.com",
         "jconard@ariasagencies.com",
-        "mfletcher@ariasagencies.com",
         "jbratin@ariasagencies.com",
         "cferrari@ariasagencies.com",
         "jmccallister@ariasagencies.com",
-        "Jbattistahr@outlook.com",
+        "jbattistahr@outlook.com",
         "bcosta@ariasagencies.com",
         "n.hall@ariasagencies.com",
         "mrussin@ariasagencies.com",
         "tvaughn@ariasagencies.com",
         "chartman@ariasagencies.com",
-        "ahaynes@ariasagencies.com",
         "skamalvand@ariasagencies.com",
         "mcessna@ariasagencies.com",
         "sweber@ariasagencies.com",
@@ -38800,12 +38747,8 @@
         "sboyle@ariasagencies.com",
         "sblaney@ariasagencies.com",
         "nstuck@ariasagencies.com",
-        "wdugan@ariasagencies.com",
-        "spowell@ariasagencies.com",
-        "khoffman@ariasagencies.com",
         "mrussin@ariasagencies.com",
         "ryocca@ariasagencies.com",
-        "rwright@ariasagencies.com",
         "justinadams@ariasagencies.com",
         "ameyer@ariasagencies.com",
         "whodgson@ariasagencies.com",
@@ -38814,7 +38757,6 @@
         "jgrula@ariasagencies.com",
         "mclemente@ariasagencies.com",
         "dhess@ariasagencies.com",
-        "mbeattie@ariasagencies.com",
         "jcatalano@ariasagencies.com"
       ],
       "subject": "AIL_Arias_Master",
@@ -39762,7 +39704,6 @@
         "tvena@ariasagencies.com",
         "mcessna@ariasagencies.com",
         "bevanson@ariasagencies.com",
-        "cferrari@ariasagencies.com",
         "jtasky@ariasagencies.com",
         "bfrancis@ariasagencies.com",
         "jgilbert@ariasagencies.com",
@@ -39772,12 +39713,10 @@
         "shochreiter@ariasagencies.com",
         "emills@ariasagencies.com",
         "jmccallister@ariasagencies.com",
-        "Hwelty@ariasagencies.com",
+        "hwelty@ariasagencies.com",
         "mcessna@ariasagencies.com",
-        "sweber@ariasagencies.com",
         "pfraas@ariasagencies.com",
         "mmorgain@ariasagencies.com",
-        "sboyle@ariasagencies.com",
         "rohm@ariasagencies.com",
         "tbugge@ariasagencies.com",
         "ryocca@ariasagencies.com",
@@ -39788,7 +39727,6 @@
         "ssofranko@ariasagencies.com",
         "jlamb@ariasagencies.com",
         "rzinsky@ariasagencies.com",
-        "whodgson@ariasagencies.com",
         "mauvil@ariasagencies.com",
         "ebutts@ariasagencies.com",
         "jmarks@ariasagencies.com",
@@ -39818,7 +39756,8 @@
         "aricaburton@ailokc.net",
         "madi.e.kilburn@gmail.com",
         "aprilbaxterail@gmail.com",
-        "karlya.williams@outlook.com"
+        "karlya.williams@outlook.com",
+        "olixa2020@yahoo.com"
       ],
       "subject": "AIL_Potts",
       "rowsort": 0,
@@ -43187,7 +43126,6 @@
       "id": 2105,
       "departments": [
         "SFG - Ben Seifipour Agency",
-        "SFG - ISMAEL MARTINEZ GROUP",
         "SFG - Randy VanderVaate Group",
         "SFG - Anita Jarrell-Robertson Group",
         "SFG - Carmen Campisi Group",
@@ -43200,8 +43138,10 @@
         "SFG - Gee Agency",
         "SFG - Emily Hotop Agency",
         "SFG - Castillo Financial Solutions",
-        "SFG - ISMAEL MARTINEZ GROUP",
-        "SFG - James Wadley Agency"
+        "SFG - James Wadley Agency",
+        "SFG - Josh Bostick Agency",
+        "SFG - George Stiles Agency",
+        "SFG - ISMAEL MARTINEZ GROUP"
       ],
       "emails": [
         "bseifipour@sfgdallas.com"
@@ -45272,7 +45212,8 @@
         "SFG - Linda Pollard Agency",
         "SFG - Peggy Rhem Agency",
         "SFG - Latascha Lewis Agency",
-        "SFG - Tony Dodd Agency"
+        "SFG - Tony Dodd Agency",
+        "SFG - Jordan Platt Agency"
       ],
       "emails": [
         "lgriffin7054@gmail.com",
@@ -46919,7 +46860,8 @@
         "AIL - Eric Thompson",
         "AIL - Ian Zollos",
         "AIL - Jonathan Giaco",
-        "Matt Conrad"
+        "Matt Conrad",
+        "AIL - Chris Montoni"
       ],
       "emails": [
         "candice@ailoh.com",
@@ -55556,7 +55498,8 @@
       "departments": [
         "WFG - Lisa Bayona Group",
         "WFG - Matthew Schloss Group",
-        "WFG - Jayne Icban Group"
+        "WFG - Jayne Icban Group",
+        "WFG - Eileen San Diego"
       ],
       "emails": [
         "lionstarlicensing@gmail.com"
@@ -60921,7 +60864,8 @@
       "emails": [
         "dhoory@newyorklife.com",
         "aagha@newyorklife.com",
-        "mwinckowski@newyorklife.com"
+        "mwinckowski@newyorklife.com",
+        "yhass01@newyorklife.com"
       ],
       "subject": "2021_NYL_Brooklyn_GO",
       "rowsort": 0,
@@ -61909,7 +61853,8 @@
       "emails": [
         "sasolonch@newyorklife.com",
         "keloveland@newyorklife.com",
-        "pmhowell@newyorklife.com"
+        "pmhowell@newyorklife.com",
+        "eburrows@newyorklife.com"
       ],
       "subject": "2021_NYL_ConnecticutValley_GO",
       "rowsort": 0,
@@ -67013,7 +66958,8 @@
         "jastobbe@newyorklife.com",
         "dmetzler@newyorklife.com",
         "mscott05@newyorklife.com",
-        "jkwilson@newyorklife.com"
+        "jkwilson@newyorklife.com",
+        "jjewell@newyorklife.com"
       ],
       "subject": "2022_NYL_Kentucky_GO",
       "rowsort": 0,
@@ -76421,9 +76367,11 @@
       "emails": [
         "cchaney@southwestern.com",
         "hschlegel@thinkingahead.com",
-        "dre@prioritylifegroup.com",
         "gmichels@southwesternconsulting.com",
-        "lmorgan@southwestern.com"
+        "lmorgan@southwestern.com",
+        "thlstephanie@yahoo.com",
+        "anthonywelti@peaceinsurancegroup.com",
+        "nadia@fflnortheast.com"
       ],
       "subject": "FFL_Southwestern",
       "rowsort": 0,
@@ -85993,7 +85941,8 @@
     },
     {
       "departments": [
-        "Senior Life - Helen Adams"
+        "Senior Life - Helen Adams",
+        "Senior Life - Keely Pillmon-Holley"
       ],
       "emails": [
         "hba1959@gmail.com"
@@ -86584,11 +86533,14 @@
         "Colonial Life - Brandon Deshazer",
         "Colonial Life - Lakendric Westbrook",
         "Colonial Life - Rob Pilkenton",
-        "Colonial Life - Sohail Khan"
+        "Colonial Life - Sohail Khan",
+        "Colonial Life - Xavier Marroquin"
       ],
       "emails": [
-        "MLewis2@ColonialLife.com",
-        "anewman@coloniallife.com"
+        "mlewis2@coloniallife.com",
+        "anewman@coloniallife.com",
+        "bpotter@coloniallife.com",
+        "amckinley@coloniallife.com"
       ],
       "subject": "Colonial_Life_Houston",
       "rowsort": 0,
@@ -88508,8 +88460,12 @@
       "emails": [
         "jessica_perez@us.aflac.com",
         "jessica.perez.helpdesk@gmail.com",
-        "Melinda_Saechao@us.aflac.com",
-        "hector_ramirez@us.aflac.com"
+        "melinda_saechao@us.aflac.com",
+        "a_garcia@us.aflac.com",
+        "dkwon_stackhouse@us.aflac.com",
+        "trena_knight@us.aflac.com",
+        "juanita_burks@us.aflac.com",
+        "arlene_perez@us.aflac.com"
       ],
       "subject": "Aflac_Jessica_Perez_Agency",
       "rowsort": 0,
@@ -94210,10 +94166,10 @@
         "Northwestern Mutual - FT Minneapolis",
         "Northwestern Mutual - FT Edina",
         "Northwestern Mutual - FT Minnetonka/Deephaven",
-        "Northwestern Mutual - FT Woodbury",
         "Northwestern Mutual - FT St. Cloud",
         "Northwestern Mutual - FT Duluth",
-        "Northwestern Mutual - AFR"
+        "Northwestern Mutual - AFR",
+        "Northwestern Mutual - FT Lake Elmo"
       ],
       "emails": [
         "alexandra.jacobson@nm.com",
@@ -102637,7 +102593,8 @@
         "walter.icaza@icazaorg.com",
         "taleb.jammoul@icazaorg.com",
         "maria.bonilla@icazaorg.com",
-        "daniela.rangel@icazaorg.com"
+        "daniela.rangel@icazaorg.com",
+        "rocsina.icaza@icazaorg.com"
       ],
       "subject": "Icaza_Organization",
       "rowsort": 0,
@@ -103600,7 +103557,8 @@
         "aalmeida@ail-md.com",
         "jmoreno@ail-md.com",
         "khugel@ail-md.com",
-        "smetzner@ail-md.com"
+        "smetzner@ail-md.com",
+        "hpope@ail-md.com"
       ],
       "subject": "AIL_Anthony_Almeida_Agency",
       "rowsort": 0,
@@ -112976,13 +112934,14 @@
     },
     {
       "departments": [
-        "Northwestern Mutual - FT Woodbury"
+        "Northwestern Mutual - FT Woodbury",
+        "Northwestern Mutual - FT Lake Elmo"
       ],
       "emails": [
         "debbie.blattner@nm.com",
         "jasmine.webber@nm.com"
       ],
-      "subject": "NM_Woodbury",
+      "subject": "NM_Lake_Elmo",
       "rowsort": 0,
       "cc_email": null,
       "columnsort": 0,
@@ -113952,12 +113911,13 @@
     },
     {
       "departments": [
-        "Northwestern Mutual - Woodbury"
+        "Northwestern Mutual - Woodbury",
+        "Northwestern Mutual - Interns Lake Elmo"
       ],
       "emails": [
         "debbie.blattner@nm.com"
       ],
-      "subject": "NM_Woodbury_Interns",
+      "subject": "NM_Lake_Elmo_Interns",
       "rowsort": 0,
       "cc_email": null,
       "columnsort": 0,
@@ -114841,12 +114801,12 @@
     },
     {
       "departments": [
-        "Auto Pilot - Drew Fincher"
+        "State Farm - Drew Fincher"
       ],
       "emails": [
         "drew.fincher.f6bo@statefarm.com"
       ],
-      "subject": "AutoPilot_Fincher",
+      "subject": "StateFarm_Fincher",
       "rowsort": 0,
       "cc_email": null,
       "columnsort": 0,
@@ -115806,7 +115766,6 @@
       "emails": [
         "reports@xceltesting.com",
         "nickigriffiths@altig.com",
-        "barbara.s.masters@gmail.com",
         "kateroberts@altig.com"
       ],
       "subject": "AO_NICKI_GRIFFITHS",
@@ -127322,7 +127281,8 @@
       "emails": [
         "shane_stickle@us.aflac.com",
         "j_hawk@us.aflac.com",
-        "becca_toth1@us.aflac.com"
+        "becca_toth1@us.aflac.com",
+        "samantha_carozzolo3@us.aflac.com"
       ],
       "subject": "Aflac_Shane_Stickle_Agency",
       "rowsort": 0,
@@ -127580,7 +127540,10 @@
         "dlrigney@holtzagency.com",
         "kmholtz@holtzagency.com",
         "stephengordon.holtzagency@gmail.com",
-        "spencercooney.holtzagency@gmail.com"
+        "spencercooney.holtzagency@gmail.com",
+        "kevindempsey.hragency@gmail.com",
+        "jameehatch.holtzagency@gmail.com",
+        "crystalsulzer@gmail.com"
       ],
       "subject": "AIL_Holtz-Rigney",
       "rowsort": 0,
@@ -165547,7 +165510,7 @@
       ],
       "emails": [
         "empowerinsurance@gmail.com",
-        "alison@allyrd.com"
+        "honey.empowerinsurance@gmail.com"
       ],
       "subject": "FFL_Empower",
       "rowsort": 0,
@@ -166111,7 +166074,8 @@
         "Matt Conrad",
         "Daryl Graham",
         "AIL - Eric Thompson",
-        "Cleveland"
+        "Cleveland",
+        "AIL - Chris Montoni"
       ],
       "emails": [
         "mparks@ailoh.com",
@@ -167889,7 +167853,8 @@
         "WFG - Therese Nkezea Group",
         "WFG - Odette Ngalla Group",
         "WFG - Therese Tsogo Group",
-        "WFG - Jones Takor Group"
+        "WFG - Jones Takor Group",
+        "WFG - Daniel Kotey Group"
       ],
       "emails": [
         "legacystarwfg@gmail.com"
@@ -168538,11 +168503,13 @@
         "WFG - Reed Meyer Group",
         "WFG - Chris Felton Group",
         "WFG - Abe Fitzsimmons Group",
-        "WFG - Marlys Nash Group"
+        "WFG - Marlys Nash Group",
+        "WFG - Carlos Diaz Group"
       ],
       "emails": [
         "clfelton@yahoo.com",
-        "j.beck@tfaconnect.com"
+        "j.beck@tfaconnect.com",
+        "beckjenny72@gmail.com"
       ],
       "subject": "WFG_Felton",
       "rowsort": 0,
@@ -169135,7 +169102,8 @@
         "NAA - Susan Patchen Group",
         "NAA #317440 - Nicholas Thayse Group",
         "NAA #313908 - Stephanie Wilkerson Group",
-        "NAA #311125 - Betty Wani Group"
+        "NAA #311125 - Betty Wani Group",
+        "NAA - Mark Burrows Group"
       ],
       "emails": [
         "jakecrause@gmail.com",
@@ -170178,7 +170146,8 @@
         "Goosehead Insurance - Meagen Fink Turner"
       ],
       "emails": [
-        "meagen.fink@goosehead.com"
+        "meagen.fink@goosehead.com",
+        "joe.saldana@goosehead.com"
       ],
       "subject": "GooseHead_Fink",
       "rowsort": 0,
@@ -170216,7 +170185,8 @@
         "Aflac - Chris Feazel Agency"
       ],
       "emails": [
-        "christopher_feazel@us.aflac.com"
+        "christopher_feazel@us.aflac.com",
+        "kim_trudeau@us.aflac.com"
       ],
       "subject": "Aflac_Chris_Feazel_Agency",
       "rowsort": 0,
@@ -170990,6 +170960,786 @@
       "ple_only": 0,
       "summary_only": 0,
       "id": 8736
+    },
+    {
+      "departments": [
+        "NAA - Martin Corza group"
+      ],
+      "emails": [
+        "corzamartin@gmail.com"
+      ],
+      "subject": "NAA_Martin_Corza_group",
+      "rowsort": 0,
+      "cc_email": null,
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 8737
+    },
+    {
+      "departments": [
+        "Allstate - Michael Pelini"
+      ],
+      "emails": [
+        "mpelini2@allstate.com"
+      ],
+      "subject": "Allstate_Michael_Pelini",
+      "rowsort": 0,
+      "cc_email": null,
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 8738
+    },
+    {
+      "departments": [
+        "Senior Life - Keely Pillmon-Holley"
+      ],
+      "emails": [
+        "thekjphgroup@gmail.com"
+      ],
+      "subject": "Senior_Life_Keely_Pillmon-Holley",
+      "rowsort": 0,
+      "cc_email": null,
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 8739
+    },
+    {
+      "departments": [
+        "Auto Pilot - David Canale"
+      ],
+      "emails": [
+        "david.canale.tpyu@statefarm.com"
+      ],
+      "subject": "AutoPilot_Canale",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 8740
+    },
+    {
+      "departments": [
+        "HARRIS EMPIRE"
+      ],
+      "emails": [
+        "harris.empire12@gmail.com"
+      ],
+      "subject": "Harris_Empire",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 8741
+    },
+    {
+      "departments": [
+        "AIL - Chris Montoni"
+      ],
+      "emails": [
+        "ailchrismontoni@gmail.com"
+      ],
+      "subject": "AIL_Chris_Montoni",
+      "rowsort": 0,
+      "cc_email": null,
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 8742
+    },
+    {
+      "departments": [
+        "SFG - Journey Peterson Agency"
+      ],
+      "emails": [
+        "petersoninsurancesfg@gmail.com"
+      ],
+      "subject": "SFG_Journey_Peterson_Agency",
+      "rowsort": 0,
+      "cc_email": null,
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 8743
+    },
+    {
+      "departments": [
+        "Primerica - Jacksonville"
+      ],
+      "emails": [
+        "crturnage@bellsouth.net"
+      ],
+      "subject": "Primerica_Jacksonville_CRTurnage",
+      "rowsort": 0,
+      "cc_email": null,
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 8744
+    },
+    {
+      "departments": [
+        "SFG - Jordan Platt Agency"
+      ],
+      "emails": [
+        "jordan.platt@lifehubinsurance.com"
+      ],
+      "subject": "SFG_Jordan_Platt_Agency",
+      "rowsort": 0,
+      "cc_email": null,
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 8745
+    },
+    {
+      "departments": [
+        "Auto Pilot - Chris Booth"
+      ],
+      "emails": [
+        "chris.booth.do8g@statefarm.com"
+      ],
+      "subject": "AutoPilot_Booth",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 8746
+    },
+    {
+      "departments": [
+        "Auto Pilot - Billy Williamson"
+      ],
+      "emails": [
+        "billy.williamson.wxo3@statefarm.com"
+      ],
+      "subject": "AutoPilot_Williamson",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 8747
+    },
+    {
+      "departments": [
+        "The Assurance Group - Thomas Lahner"
+      ],
+      "emails": [
+        "tglahner@assuregrp.com"
+      ],
+      "subject": "TAG_Thomas_Lahner",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 8748
+    },
+    {
+      "departments": [
+        "Colonial Life - Xavier Marroquin"
+      ],
+      "emails": [
+        "xavier.marroquin@coloniallifesales.com"
+      ],
+      "subject": "Colonial_Marroquin",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 8749
+    },
+    {
+      "departments": [
+        "Philam Insurance"
+      ],
+      "emails": [
+        "roche@philaminsurance.com"
+      ],
+      "subject": "Philam_Insurance",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 8750
+    },
+    {
+      "departments": [
+        "WFG - Chandni Patel Group"
+      ],
+      "emails": [
+        "wfgchandnip@gmail.com"
+      ],
+      "subject": "WFG_Chandni_Patel",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 8751
+    },
+    {
+      "departments": [
+        "Auto Pilot - Brandon Burke"
+      ],
+      "emails": [
+        "brandon.burke.puy1@statefarm.com"
+      ],
+      "subject": "AutoPilot_Burke",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 8752
+    },
+    {
+      "departments": [
+        "SFG - Tyler-Joe Thompson Agency"
+      ],
+      "emails": [
+        "thompson.sfg2020@gmail.com"
+      ],
+      "subject": "SFG_Tyler-Joe_Thompson_Agency",
+      "rowsort": 0,
+      "cc_email": null,
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 8753
+    },
+    {
+      "departments": [
+        "SFG - Kevin Johnson Agency"
+      ],
+      "emails": [
+        "constantquestagency@gmail.com"
+      ],
+      "subject": "SFG_Kevin_Johnson_Agency",
+      "rowsort": 0,
+      "cc_email": null,
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 8754
+    },
+    {
+      "departments": [
+        "Medicare Medicaid Advisors USA, Inc"
+      ],
+      "emails": [
+        "sabrina@askmma.com"
+      ],
+      "subject": "MMA",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 8755
+    },
+    {
+      "departments": [
+        "Auto Pilot - Leisa Mansfield"
+      ],
+      "emails": [
+        "leisa.mansfield.tfre@statefarm.com"
+      ],
+      "subject": "AutoPilot_Mansfield",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 8756
+    },
+    {
+      "departments": [
+        "Final Wishes Advisors"
+      ],
+      "emails": [
+        "rusty@finalwishesadvisors.com"
+      ],
+      "subject": "Final_Wishes_Advisors",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 8757
+    },
+    {
+      "departments": [
+        "WFG - James Shoblo Group"
+      ],
+      "emails": [
+        "tmshoblo.wfg@gmail.com"
+      ],
+      "subject": "WFG_Shoblo",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 8758
+    },
+    {
+      "departments": [
+        "WFG - Martina Ohiemu Group"
+      ],
+      "emails": [
+        "ohiemumartina@gmail.com"
+      ],
+      "subject": "WFG_Ohiemu",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 8759
+    },
+    {
+      "departments": [
+        "Farmers - David Redfield"
+      ],
+      "emails": [
+        "dredfield@farmersagent.com",
+        "derendamiller01@gmail.com"
+      ],
+      "subject": "Farmers_Redfield",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 8760
+    },
+    {
+      "departments": [
+        "WFG - Eileen San Diego"
+      ],
+      "emails": [
+        "wfg.esandiego@gmail.com"
+      ],
+      "subject": "WFG_SanDiego",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 8761
+    },
+    {
+      "departments": [
+        "WFG - Ilelabayo Ogunleye Group"
+      ],
+      "emails": [
+        "shegxylab@yahoo.com"
+      ],
+      "subject": "WFG_Ilelabayo_Ogunleye",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 8762
+    },
+    {
+      "departments": [
+        "Auto Pilot - Bill Nelson"
+      ],
+      "emails": [
+        "kelley.nelson.sdx1@statefarm.com"
+      ],
+      "subject": "AutoPilot_Bill_Nelson",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 8763
+    },
+    {
+      "departments": [
+        "BiG Agency"
+      ],
+      "emails": [
+        "travis@wrbig.com"
+      ],
+      "subject": "BiG_Agency",
+      "rowsort": 0,
+      "cc_email": null,
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 8764
+    },
+    {
+      "departments": [
+        "NAA - LCorine Gilchrist Group"
+      ],
+      "emails": [
+        "lcorinegilchrist@gmail.com"
+      ],
+      "subject": "NAA_LCorine_Gilchrist_Group",
+      "rowsort": 0,
+      "cc_email": null,
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 8765
+    },
+    {
+      "departments": [
+        "SFG - Alan Meadows Agency"
+      ],
+      "emails": [
+        "sfgalanmeadows@gmail.com"
+      ],
+      "subject": "SFG_Alan_Meadows_Agency",
+      "rowsort": 0,
+      "cc_email": null,
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 8766
+    },
+    {
+      "departments": [
+        "SFG - Felicia Davis Agency"
+      ],
+      "emails": [
+        "feliciadcovers@gmail.com"
+      ],
+      "subject": "SFG_Felicia_Davis_Agency",
+      "rowsort": 0,
+      "cc_email": null,
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 8767
+    },
+    {
+      "departments": [
+        "Colonial Life - Todd Hennessy"
+      ],
+      "emails": [
+        "todd.hennessy@coloniallifesales.com"
+      ],
+      "subject": "Colonial_Hennessy",
+      "rowsort": 0,
+      "cc_email": null,
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 8768
+    },
+    {
+      "departments": [
+        "Pat Hurley Agency"
+      ],
+      "emails": [
+        "pat.protectionplan@gmail.com"
+      ],
+      "subject": "Pat_Hurley_Agency",
+      "rowsort": 0,
+      "cc_email": null,
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 8769
+    },
+    {
+      "departments": [
+        "SFG - Diana Alston Summers Agency"
+      ],
+      "emails": [
+        "dainsuresfg@gmail.com"
+      ],
+      "subject": "SFG_Diana_Alston_Summers_Agency",
+      "rowsort": 0,
+      "cc_email": null,
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 8770
+    },
+    {
+      "departments": [
+        "SFG - Allie McDonough-Meyers Agency"
+      ],
+      "emails": [
+        "allison.insure1@gmail.com"
+      ],
+      "subject": "SFG_Allie_McDonough-Meyers_Agency",
+      "rowsort": 0,
+      "cc_email": null,
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 8771
+    },
+    {
+      "departments": [
+        "SFG - Jaquise Webber Agency"
+      ],
+      "emails": [
+        "jaquiseinsures@gmail.com"
+      ],
+      "subject": "SFG_Jaquise_Webber_Agency",
+      "rowsort": 0,
+      "cc_email": null,
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 8772
+    },
+    {
+      "departments": [
+        "SFG - Caitlyn Marble Agency"
+      ],
+      "emails": [
+        "caitlinmarblesfg@gmail.com"
+      ],
+      "subject": "SFG_Caitlyn_Marble_Agency",
+      "rowsort": 0,
+      "cc_email": null,
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 8773
+    },
+    {
+      "departments": [
+        "NAA - Kelsey Proper Group"
+      ],
+      "emails": [
+        "kelsey@insuredbydavila.com"
+      ],
+      "subject": "NAA_Kelsey_Proper_Group",
+      "rowsort": 0,
+      "cc_email": null,
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 8774
+    },
+    {
+      "departments": [
+        "Senior Life - Anthony Parker"
+      ],
+      "emails": [
+        "parkerseniorbenefits@gmail.com"
+      ],
+      "subject": "Senior_Life_Anthony_Parker",
+      "rowsort": 0,
+      "cc_email": null,
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 8775
+    },
+    {
+      "departments": [
+        "LBN - Luke Bailey Agency"
+      ],
+      "emails": [
+        "lobailey@libnat.com"
+      ],
+      "subject": "LBN_Luke_Bailey_Agency",
+      "rowsort": 0,
+      "cc_email": null,
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 8776
+    },
+    {
+      "departments": [
+        "NAA - Mark Burrows Group"
+      ],
+      "emails": [
+        "scoutpilotinsurance@gmail.com"
+      ],
+      "subject": "NAA_Mark_Burrows_Group",
+      "rowsort": 0,
+      "cc_email": null,
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 8777
     }
   ]
 }

@@ -1,10 +1,11 @@
 <template>
   <Navbar />
-  <AddReport v-if="showAddReport" @add-new-report="addNewReportToList" @close-add-report="showAddReport = false" />
-  <EditReport v-if="showEditReport" @submit-edit-report="onEditReport" :report="selectedReport" @close-edit-report="showEditReport = false" />
-  <BulkInput v-if="showBulkInput" @add-bulk-reports="addBulkReportsToList" @close-bulk-input="showBulkInput = false"></BulkInput>
-  <div class="container-fluid">
-    <div class="text-left" style="margin-top: 4rem;">
+  <div class="container-fluid" id="main-reports-container">
+    <AddReport v-if="showAddReport" @add-new-report="addNewReportToList" @close-add-report="showAddReport = false" />
+    <EditReport v-if="showEditReport" @submit-edit-report="onEditReport" :report="selectedReport" @close-edit-report="showEditReport = false" />
+    <BulkInput v-if="showBulkInput" @add-bulk-reports="addBulkReportsToList" @close-bulk-input="showBulkInput = false"></BulkInput>
+  
+    <div class="text-left">
       <Button text="new report" color="btn-primary" @btn-click="toggleAddReport" />
       <Button text="bulk input" color="btn-info" style="margin-left: 1rem;" @btn-click="toggleBulkInput" />
     </div>
@@ -154,4 +155,9 @@ export default {
   text-align: center;
   color: #2c3e50;
 }
+
+#main-reports-container {
+  margin-top: 4rem;
+}
+
 </style>
