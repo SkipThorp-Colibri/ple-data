@@ -4,10 +4,12 @@
     <AddReport v-if="showAddReport" @add-new-report="addNewReportToList" @close-add-report="showAddReport = false" />
     <EditReport v-if="showEditReport" @submit-edit-report="onEditReport" :report="selectedReport" @close-edit-report="showEditReport = false" />
     <BulkInput v-if="showBulkInput" @add-bulk-reports="addBulkReportsToList" @close-bulk-input="showBulkInput = false"></BulkInput>
+    <BulkEmailAdd v-if="showBulkEmailAdd" @close-bulk-input="showBulkEmailAdd = false" />
   
     <div class="text-left">
       <Button text="new report" color="btn-primary" @btn-click="toggleAddReport" />
       <Button text="bulk input" color="btn-info" style="margin-left: 1rem;" @btn-click="toggleBulkInput" />
+      <Button text="add email to reports" color="btn-info" style="margin-left: 1rem;" @btn-click="toggleBulkEmailAdd" />
     </div>
     
 
@@ -18,6 +20,7 @@
 </template>
 
 <script>
+import BulkEmailAdd from './components/BulkEmailAdd.vue'
 import AddReport from './components/AddReport.vue'
 import BulkInput from './components/BulkInput.vue'
 import Button from './components/Button.vue'
@@ -29,6 +32,7 @@ import UpdateTable from './components/UpdateTable.vue'
 export default {
   name: 'App',
   components: {
+    BulkEmailAdd,
     AddReport,
     BulkInput,
     Button,
@@ -44,30 +48,48 @@ export default {
       showAddReport: false,
       showEditReport: false,
       showBulkInput: false,
+      showBulkEmailAdd: false,
       selectedReport: null,
       isEdit: false
     }
   },
   methods: {
+    closeAll() {
+      this.showAddReport = false
+      this.showEditReport = false
+      this.showBulkInput = false
+      this.showBulkEmailAdd = false
+    },
     toggleAddReport() {
-      this.showAddReport = !this.showAddReport
       if(this.showAddReport) {
-        this.showEditReport = false
-      }
+        this.closeAll()
+      } else {
+        this.showAddReport = !this.showAddReport
+      }      
     },
     toggleEditReport() {
-      this.showEditReport = !this.showEditReport
-    },
+      if(this.showEditReport) {
+        this.closeAll()
+      } else {
+        this.showEditReport = !this.showEditReport
+      }    },
     toggleBulkInput() {
-      this.showBulkInput = !this.showBulkInput
       if(this.showBulkInput) {
-        this.showEditReport = false
+        this.closeAll()
+      } else {
+        this.showBulkInput = !this.showBulkInput
+      }
+    },
+    toggleBulkEmailAdd() {
+      if(this.showBulkEmailAdd) {
+        this.closeAll()
+      } else {
+        this.showBulkEmailAdd = !this.showBulkEmailAdd
       }
     },
     async addNewReportToList(report) {
 
-      this.showAddReport = false
-      this.showBulkInput = false
+      this.closeAll()
 
       const stringifyReport = JSON.stringify(report)
 
