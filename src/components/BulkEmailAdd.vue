@@ -9,13 +9,10 @@
                     
                 </div>
                 <div class="col">
-                    <h5>Reports</h5>
+                    <h5>Paste List of Report Names</h5>
                     
                 </div>
-                <div class="col">
-                    <h5>temp</h5>
-                    
-                </div>
+                <div class="col"></div>
                 
             </div>
             <div class="form-row">
@@ -25,21 +22,13 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div>
-                        <textarea class="form-control" v-model="reportNames"></textarea>
-                    </div>
+                    <textarea id="bulk-input-text" style="width: 100%; height: 200px;" v-model="reportsList"></textarea>
                 </div>
-                <div class="col">
-                    <div>
-                        
-                    </div>
-                </div>
-                
+                <div class="col"></div>
             </div>
             <hr />
             <div class="form-row">
-                
-                <Button text="submit edit" color="btn-success" @btn-click="onBulkEmailSubmit" />
+                <Button text="process bulk" color="btn-success" @btn-click="onProcessBulkEmailAdd" />
                 <Button text="cancel" color="btn-danger" @btn-click="closeBulkEmailAdd" class="ml-1" />
             </div>
         </form>
@@ -59,41 +48,97 @@ export default {
     },
     data() {
         return {
-            departments: [],
-            emails: [],
-            newDepartment: '',
-            newEmail: '',
-            newSubject: null,
-            showAddDepartment: false,
-            showAddEmail: false,
-            showAddSubject: false
+            reportsList: []
         }
     },
     methods: {
-        onReportSubmit() {
-            for(let i = 0; i < this.report.emails.length; i++) {
-                this.report.emails[i] = this.report.emails[i].toLowerCase()
-            }
-            this.$emit('submit-edit-report', this.report)
-            this.subject = ''
-            this.departments = []
-            this.emails = []
-        },
-        submitDepartment() {
-            if(this.newDepartment != ''){
-                let newDeptArray = this.newDepartment.split('%')
+        onProcessBulkEmailAdd() {
+            const tsv = this.tsvText
+            let result = []
+            let tsvLines = tsv.split('\n')
 
-                newDeptArray.forEach((value) => {
-                    value = value.replace(/\u2013|\u2014/g, "-")
-                    this.report.departments = [...this.report.departments, value]
+            tsvLines.forEach(line => {
+                let lineObj = {}
+                let tsvLine = line.split('\t')
+
+                let departments = tsvLine[0].split('%')
+                let cleanDepts = []
+                departments.forEach((dept) => {
+                    cleanDepts = [ ...cleanDepts, this.cleanDepartment(dept) ]
                 })
 
-                this.newDepartment = ''
-                this.toggleAddDepartment()
-            }
+                let emails = tsvLine[1].split(';')
+                let cleanEmails = []
+                emails.forEach((email) => {
+                    cleanEmails = [ ...cleanEmails, this.cleanEmail(email) ]
+                })
+
+                let subject = tsvLine[2]
+                let cleanSubject = ''
+                if(subject == undefined || subject == '') {
+                    cleanSubject = this.createSubject(departments[0])
+                } else {
+                    cleanSubject = subject.replace(/\u2013|\u2014/g, "-")
+                    cleanSubject = cleanSubject.replace(/ - /g,"_")
+                    cleanSubject = cleanSubject.replace(/,/g," ")
+                    cleanSubject = cleanSubject.replace(/ /g,"_")
+                    cleanSubject = cleanSubject.replace(/__/g,"_")
+                    cleanSubject = cleanSubject.trim()
+                }
+
+                lineObj["departments"] = cleanDepts
+                lineObj["emails"] = cleanEmails
+                lineObj["subject"] = cleanSubject
+
+                lineObj["rowsort"] = 0
+                lineObj["cc_email"] = ""
+                lineObj["columnsort"] = 0
+                lineObj["login_filter"] = 0
+                lineObj["completion_filter"] = 0
+                lineObj["remove_button"] = 0
+                lineObj["course_type_only"] = 0
+                lineObj["ple_only"] = 0
+                lineObj["summary_only"] = 0
+                
+                result.push(lineObj)
+            })
+            
+            this.$emit('add-bulk-reports', result)
+        },
+        parseRecords(records) {
+            return records.split('\n')
+        },
+        parseSingleRecord(text) {
+            return text.split('\t')
         },
         closeBulkEmailAdd() {
-            this.$emit('close-bulk-email-add')
+            this.$emit('close-bulk-email-input')
+        },
+        createSubject(subjectText) {
+            subjectText = subjectText.replace(/\u2013|\u2014/g, "-")
+            subjectText = subjectText.replace(/ - /g,"_")
+            subjectText = subjectText.replace(/,/g," ")
+            subjectText = subjectText.replace(/ /g,"_")
+            subjectText = subjectText.replace(/__/g,"_")
+
+            return subjectText.trim()
+        },
+        cleanDepartment(dept) {
+            let newDept = dept.trim()
+
+            if(newDept != '' && newDept != undefined){
+                newDept = newDept.replace(/\u2013|\u2014/g, "-")
+                newDept = newDept.replace(/^a-zA-Z0-9 ]/g, '')
+            }
+
+            return newDept
+        },
+        cleanEmail(email) {
+            let newEmail = email.trim()
+            if(newEmail != '' && newEmail != undefined){
+                newEmail = newEmail.toLowerCase()
+            }
+            return newEmail
         }
     }
 }

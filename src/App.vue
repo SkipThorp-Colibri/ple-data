@@ -4,7 +4,7 @@
     <AddReport v-if="showAddReport" @add-new-report="addNewReportToList" @close-add-report="showAddReport = false" />
     <EditReport v-if="showEditReport" @submit-edit-report="onEditReport" :report="selectedReport" @close-edit-report="showEditReport = false" />
     <BulkInput v-if="showBulkInput" @add-bulk-reports="addBulkReportsToList" @close-bulk-input="showBulkInput = false"></BulkInput>
-    <BulkEmailAdd v-if="showBulkEmailAdd" @close-bulk-input="showBulkEmailAdd = false" />
+    <BulkEmailAdd v-if="showBulkEmailAdd" @close-bulk-email-input="showBulkEmailAdd = false" />
   
     <div class="text-left">
       <Button text="new report" color="btn-primary" @btn-click="toggleAddReport" />
