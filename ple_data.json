@@ -110069,7 +110069,9 @@
         "WFG - Pavlina Bramson Group"
       ],
       "emails": [
-        "ceoalphawolf@gmail.com"
+        "ceoalphawolf@gmail.com",
+        "kimberly@exclusivesolutionsgrp.com",
+        "dix.v@rauxon.com"
       ],
       "subject": "WFG_Bramson",
       "rowsort": 0,
@@ -175308,6 +175310,63 @@
       "ple_only": 0,
       "summary_only": 0,
       "id": 8970
+    },
+    {
+      "departments": [
+        "Auto Pilot - Kate Topolnicki"
+      ],
+      "emails": [
+        "kate.topolnicki.tlx9@statefarm.com"
+      ],
+      "subject": "AutoPilot_Topolnicki",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 8971
+    },
+    {
+      "departments": [
+        "Auto Pilot - Brooke Palmer"
+      ],
+      "emails": [
+        "brooke.palmer.prdc@statefarm.com"
+      ],
+      "subject": "AutoPilot_Palmer",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 8972
+    },
+    {
+      "departments": [
+        "WFG - Veronica Njwaba Group"
+      ],
+      "emails": [
+        "veronicanjwaba@yahoo.com"
+      ],
+      "subject": "WFG_Njwaba",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 8973
     }
   ]
 }
