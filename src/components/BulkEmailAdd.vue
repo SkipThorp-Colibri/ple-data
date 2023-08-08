@@ -93,7 +93,7 @@ export default {
             }
         },
         closeBulkEmailAdd() {
-            this.$emit('close-bulk-email-add')
+            this.$emit('close-bulk-email-input')
         }
     }
 }
