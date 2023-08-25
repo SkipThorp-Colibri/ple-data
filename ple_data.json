@@ -7957,11 +7957,11 @@
       "emails": [
         "wayne.creeden@bankerslife.com",
         "kathy.fansler@bankerslife.com",
-        "Jeffrey.Drury@bankerslife.com",
+        "jeffrey.drury@bankerslife.com",
         "codi.calloway@bankerslife.com",
         "michael.connor@bankerslife.com",
         "antoinette.redji@bankerslife.com",
-        "robert.ergenzinger@bankerslife.com"
+        "jennifer.mchugh@bankerslife.com"
       ],
       "subject": "Bankers_MD_DE",
       "rowsort": 0,
@@ -8236,9 +8236,8 @@
         "Bankers Life - Iron Mountain, MI"
       ],
       "emails": [
-        "Megin.Roper@bankerslife.com",
-        "Juli.Boden@bankerslife.com",
-        "sandra.rabideau@bankerslife.com"
+        "sandra.rabideau@bankerslife.com",
+        "jason.vandenelzen@bankerslife.com"
       ],
       "subject": "Bankers_Iron_Mountain",
       "rowsort": 0,
@@ -8761,7 +8760,6 @@
         "michael.blessington@bankerslife.com",
         "kurt.hayn@bankerslife.com",
         "richard.kearney@bankerslife.com",
-        "candice.brubaker@bankerslife.com",
         "herbert.huffman@bankerslife.com",
         "edmund.john@bankerslife.com",
         "brittany.allenson@bankerslife.com",
@@ -8769,7 +8767,8 @@
         "sean.eicher@bankerslife.com",
         "shane.levey@bankerslife.com",
         "karl.hanson@bankerslife.com",
-        "orsen.sowell@bankerslife.com"
+        "orsen.sowell@bankerslife.com",
+        "daniel.wielage@bankerslife.com"
       ],
       "subject": "Bankers_LaVerdiere",
       "rowsort": 0,
@@ -8854,14 +8853,15 @@
         "Bankers Life - Portland, ME"
       ],
       "emails": [
-        "Robert.Harmatys@bankerslife.com",
-        "Scott.barker@bankerslife.com",
-        "debra.corey-kehoe@bankerslife.com",
-        "Shannon.robertson@bankerslife.com",
+        "robert.harmatys@bankerslife.com",
+        "scott.barker@bankerslife.com",
+        "shannon.robertson@bankerslife.com",
         "timothy.sereyko@bankerslife.com",
-        "Michael.secord@bankerslife.com",
-        "Megan.Linscott@bankerslife.com",
-        "amber.shaw@bankerslife.com"
+        "michael.secord@bankerslife.com",
+        "megan.linscott@bankerslife.com",
+        "amber.shaw@bankerslife.com",
+        "janet.bowie@bankerslife.com",
+        "jason.margeson@bankerslife.com"
       ],
       "subject": "Bankers_Portland",
       "rowsort": 0,
@@ -8942,16 +8942,17 @@
     {
       "id": 420,
       "departments": [
-        "Bankers Life - Sacramento, CA"
+        "Bankers Life - Sacramento, CA",
+        "Bankers Life - Stockton, CA"
       ],
       "emails": [
-        "Stephanie.Espinoza@bankerslife.com",
-        "Irene.Galben2@bankerslife.com",
-        "Yacoub.Fakhouri@bankerslife.com",
+        "stephanie.espinoza@bankerslife.com",
+        "irene.galben2@bankerslife.com",
+        "yacoub.fakhouri@bankerslife.com",
         "waiel.ibrahim@bankerslife.com",
-        "Scott.Marlin@bankerslife.com",
-        "Azeez.Khairallah@bankerslife.com",
-        "Florbela.kinsey@bankerslife.com",
+        "scott.marlin@bankerslife.com",
+        "azeez.khairallah@bankerslife.com",
+        "florbela.kinsey@bankerslife.com",
         "scott.alexander@bankerslife.com",
         "norton.perilla@bankerslife.com"
       ],
@@ -9348,7 +9349,9 @@
         "Bankers Life - Eau Claire"
       ],
       "emails": [
-        "sandra.rabideau@bankerslife.com"
+        "sandra.rabideau@bankerslife.com",
+        "joshua.ford@bankerslife.com",
+        "jared.dodge@bankerslife.com"
       ],
       "subject": "Bankers_Wausau",
       "rowsort": 0,
@@ -11667,7 +11670,10 @@
         "frank.ricobene@coloniallifesales.com",
         "billy.kirkham@coloniallifesales.com",
         "aaron.vanpelt@coloniallifesales.com",
-        "mary.mitchell@coloniallifesales.com"
+        "mary.mitchell@coloniallifesales.com",
+        "damon.martin@coloniallifesales.com",
+        "michelle.beswick@coloniallifesales.com",
+        "justin.roney@coloniallifesales.com"
       ],
       "subject": "Colonial_Van_Pelt",
       "rowsort": 0,
@@ -12026,7 +12032,8 @@
         "Colonial Life - Lori Nishimori",
         "Colonial Life - Bruce Nguyen",
         "Colonial Life - Dean Grant",
-        "Colonial Life - Central California"
+        "Colonial Life - Central California",
+        "Colonial Life - Kent Sherman"
       ],
       "emails": [
         "apowers3@coloniallife.com",
@@ -19324,7 +19331,8 @@
         "eric.shanaberger@familyheritagelife.com",
         "robert.schmidt@familyheritagelife.com",
         "martin.scirratt@familyheritagelife.com",
-        "erlorette@globe.life"
+        "erlorette@globe.life",
+        "emma.lorette@globe.life"
       ],
       "subject": "Family_Heritage_Life",
       "rowsort": 0,
@@ -24070,7 +24078,10 @@
         "kpierre.libnat@gmail.com",
         "klombas.libnat@gmail.com",
         "kjohnson.libnat@gmail.com",
-        "shanjazzanderson.libnat@gmail.com"
+        "shanjazzanderson.libnat@gmail.com",
+        "egusman.libnat@gmail.com",
+        "kpierre.libnat@gmail.com",
+        "richardson.libnat@gmail.com"
       ],
       "subject": "LBN_McDaniel",
       "rowsort": 0,
@@ -35590,11 +35601,10 @@
         "Northwestern Mutual - Waterloo"
       ],
       "emails": [
-        "Jessica.boyle@nm.com",
+        "jessica.boyle@nm.com",
         "angela.cisler@nm.com",
-        "kaela.halvorson@nm.com",
-        "haley.m.young@nm.com",
-        "bridget.f.martin@nm.com"
+        "bridget.f.martin@nm.com",
+        "stephanie.kaefring@nm.com"
       ],
       "subject": "NM_GA018",
       "rowsort": 0,
@@ -36008,7 +36018,8 @@
         "Northwestern Mutual - Dinger Network"
       ],
       "emails": [
-        "michelle.l.ristvedt@nm.com"
+        "michelle.l.ristvedt@nm.com",
+        "holly.boroos@nm.com"
       ],
       "subject": "NM_Dinger",
       "rowsort": 0,
@@ -36756,16 +36767,16 @@
         "Northwestern Mutual - Lincoln"
       ],
       "emails": [
-        "Nate.kruse@nm.com",
-        "Adrian.walker@nm.com",
-        "Laurie.sagehorn@nm.com",
-        "Taylor.m.barnes@nm.com",
-        "Gabrielle.grasso@nm.com",
-        "Cody.j.eiler@nm.com",
-        "Kolby.schlueter@nm.com",
-        "John.p.ruhl@nm.com",
-        "sara.reyes@nm.com",
-        "klay.a.uher@nm.com"
+        "nate.kruse@nm.com",
+        "adrian.walker@nm.com",
+        "laurie.sagehorn@nm.com",
+        "taylor.m.barnes@nm.com",
+        "gabrielle.grasso@nm.com",
+        "cody.j.eiler@nm.com",
+        "kolby.schlueter@nm.com",
+        "john.p.ruhl@nm.com",
+        "klay.a.uher@nm.com",
+        "marlie.voss@nm.com"
       ],
       "subject": "NM_Lincoln",
       "rowsort": 0,
@@ -41362,10 +41373,12 @@
         "Senior Life - Tracie Dobson",
         "Senior Life - Michael Barr",
         "Senior Life - Daniel Ramsey",
-        "Senior Life - Larry Hall"
+        "Senior Life - Carlos William Byrd",
+        "Senior Life - Latosha Williams",
+        "Senior Life - Vicki Travis"
       ],
       "emails": [
-        "Charaka@cookmanagementgroup.com",
+        "charaka@cookmanagementgroup.com",
         "cookgroupinsurance@gmail.com"
       ],
       "subject": "SLIC_Cook",
@@ -42231,10 +42244,11 @@
       "departments": [
         "Senior Life Insurance Company - Lewis Burns Jr",
         "Senior Life Insurance Company - Charaka Cook",
-        "The MVP Group"
+        "The MVP Group",
+        "Senior Life - Larry Hall"
       ],
       "emails": [
-        "LEWIS.BURNSJR@GMAIL.COM"
+        "lewis.burnsjr@gmail.com"
       ],
       "subject": "SL_Burns",
       "rowsort": 0,
@@ -46898,19 +46912,29 @@
         "Lexington",
         "Columbus",
         "AIL - Louisville, KY",
-        "Dayton"
+        "Dayton",
+        "AIL - Travis Picklesimer",
+        "AIL - Avion Johnson",
+        "AIL - Beau Minnick",
+        "AIL - Sierra Hartwig",
+        "AIL - Dillon Zartman",
+        "AIL - Chase Miller",
+        "AIL - Nick Chuma",
+        "AIL - Danny Juskiw",
+        "AIL - Tyler Teague",
+        "AIL - Jeff Thiel"
       ],
       "emails": [
-        "Nchuma@ailoh.com",
-        "Cmiller@ailoh.com",
-        "Tgeer@ailoh.com",
-        "Jthiel@ailoh.com",
-        "Awenning@ailoh.com",
-        "Pb@ailoh.com",
-        "Dhartwig@ailoh.com",
-        "Kmcfarland@ailoh.com",
+        "nchuma@ailoh.com",
+        "cmiller@ailoh.com",
+        "tgeer@ailoh.com",
+        "jthiel@ailoh.com",
+        "awenning@ailoh.com",
+        "pb@ailoh.com",
+        "dhartwig@ailoh.com",
+        "kmcfarland@ailoh.com",
         "shartwig@ailoh.com",
-        "Bminnick@ailoh.com",
+        "bminnick@ailoh.com",
         "tpicklesimer@ailoh.com",
         "dzartman@ailoh.com",
         "tteague@ailoh.com",
@@ -54333,7 +54357,8 @@
         "WFG - Troy Swallow Group",
         "WFG - Oz Tzvi Group",
         "WFG - Laura Sacks Group",
-        "WFG - Nate Grenko Group"
+        "WFG - Nate Grenko Group",
+        "WFG - Paul Vorwaller Group"
       ],
       "emails": [
         "rfmassistmm@gmail.com"
@@ -65071,8 +65096,8 @@
         "New York Life - Greg Wright"
       ],
       "emails": [
-        "bnanna@newyorklife.com",
-        "ljmoe@newyorklife.com"
+        "ljmoe@newyorklife.com",
+        "bmkohnen@newyorklife.com"
       ],
       "subject": "2021_NYL_Indiana_GO",
       "rowsort": 0,
@@ -70037,7 +70062,8 @@
       "emails": [
         "rmclark@newyorklife.com",
         "lairdjsmith@newyorklife.com",
-        "dhand@newyorklife.com"
+        "dhand@newyorklife.com",
+        "jnatuzzi@newyorklife.com"
       ],
       "subject": "2021_NYL_NorthernCA_GO",
       "rowsort": 0,
@@ -82228,7 +82254,8 @@
         "zimmie103@gmail.com",
         "m0d.cheryl.vinco@gmail.com",
         "anjanette.alibudbud.va@gmail.com",
-        "bribyrd012@gmail.com"
+        "bribyrd012@gmail.com",
+        "orientedoutsourcing@gmail.com"
       ],
       "subject": "WFG_Shannon_Novosel_Group",
       "rowsort": 0,
@@ -85919,7 +85946,8 @@
     {
       "departments": [
         "Senior Life - Helen Adams",
-        "Senior Life - Keely Pillmon-Holley"
+        "Senior Life - Keely Pillmon-Holley",
+        "Senior Life - Ivy Simon"
       ],
       "emails": [
         "hba1959@gmail.com"
@@ -88358,7 +88386,8 @@
         "Aflac AZ - Kelly McGarry Agency"
       ],
       "emails": [
-        "kelly_mcgarry@us.aflac.com"
+        "kelly_mcgarry@us.aflac.com",
+        "liana_jones1@us.aflac.com"
       ],
       "subject": "Aflac_AZ_Kelly_McGarry_Agency",
       "rowsort": 0,
@@ -90640,8 +90669,7 @@
         "Senior Life - John Tanner"
       ],
       "emails": [
-        "John@agentsresourcegroup.com",
-        "mlake@srlife.net"
+        "john@agentsresourcegroup.com"
       ],
       "subject": "Senior_Life_John_Tanner",
       "rowsort": 0,
@@ -91812,10 +91840,11 @@
     },
     {
       "departments": [
-        "WFG - Valerie & Roger Labuguen Group"
+        "WFG - Valerie & Roger Labuguen Group",
+        "WFG - Jaimee Bulason Group"
       ],
       "emails": [
-        "3LD.licensing@gmail.com"
+        "3ld.licensing@gmail.com"
       ],
       "subject": "WFG_Labuguen",
       "rowsort": 0,
@@ -112827,7 +112856,8 @@
         "WFG - Larissa Corso Group",
         "WFG - Amanda Cantrell Group",
         "WFG - Natalia Vargas Group",
-        "WFG - Ryan Mickley Group"
+        "WFG - Ryan Mickley Group",
+        "WFG - Ivan Castellanos Group"
       ],
       "emails": [
         "championsleaguetfa@gmail.com"
@@ -123202,7 +123232,8 @@
         "Aflac - Scott Braaten Agency"
       ],
       "emails": [
-        "scott_braaten@us.aflac.com"
+        "scott_braaten@us.aflac.com",
+        "becky_przybilla@us.aflac.com"
       ],
       "subject": "Aflac_Scott_Braaten_Agency",
       "rowsort": 0,
@@ -124420,7 +124451,8 @@
         "Farmers - Tyler Wright"
       ],
       "emails": [
-        "tyler.wright@farmersinsurance.com"
+        "tyler.wright@farmersinsurance.com",
+        "rkoltin@farmersagent.com"
       ],
       "subject": "Farmers_Wright",
       "rowsort": 0,
@@ -125920,7 +125952,7 @@
         "SFG - Henry Lam Agency"
       ],
       "emails": [
-        "sfg.hlam@gmail.com"
+        "hlam@sfglamagency.com"
       ],
       "subject": "SFG_Lam",
       "rowsort": 0,
@@ -127931,8 +127963,7 @@
       ],
       "emails": [
         "john.mwolk@farmersagency.com",
-        "ehays1@farmersagent.com",
-        "lisa.mwolk@farmersagency.com"
+        "ehays1@farmersagent.com"
       ],
       "subject": "Farmers_Wolk",
       "rowsort": 0,
@@ -132420,7 +132451,9 @@
     },
     {
       "departments": [
-        "Trinity - Chris & Erika Cobb"
+        "Trinity - Chris & Erika Cobb",
+        "Trinity - Shalonda Wallace",
+        "Trinity - Natalia & Karina Suazo"
       ],
       "emails": [
         "licensing.chosen@gmail.com"
@@ -164054,7 +164087,9 @@
       "emails": [
         "rustmangroup@gmail.com",
         "wesleyengbrecht@wesleyengbrecht.com",
-        "kevinfarrell4510@gmail.com"
+        "kevinfarrell4510@gmail.com",
+        "adelimpo.sfg@gmail.com",
+        "michelledelimpo.sfg@gmail.com"
       ],
       "subject": "SFG_James_Rustman",
       "rowsort": 0,
@@ -166875,7 +166910,8 @@
     },
     {
       "departments": [
-        "Primerica - Jacksonville"
+        "Primerica - Jacksonville",
+        "Primerica - Jason Cueva"
       ],
       "emails": [
         "mike.turnage@primerica.com",
@@ -168581,7 +168617,7 @@
         "WFG - Eric Mcarthur Group"
       ],
       "emails": [
-        "emcarthur@woh.rr.com"
+        "embd0109@gmail.com"
       ],
       "subject": "WFG_Mcarthur",
       "rowsort": 0,
@@ -172526,12 +172562,12 @@
     },
     {
       "departments": [
-        "Primerica - Jason Cuevas"
+        "Primerica - Jason Cueva"
       ],
       "emails": [
         "jcueva@primerica.com"
       ],
-      "subject": "Primerica_Cuevas",
+      "subject": "Primerica_Cueva",
       "rowsort": 0,
       "cc_email": "",
       "columnsort": 0,
@@ -176189,6 +176225,1279 @@
       "ple_only": 0,
       "summary_only": 0,
       "id": 9015
+    },
+    {
+      "departments": [
+        "AIL - Sierra Hartwig"
+      ],
+      "emails": [
+        "shartwig@ailoh.com"
+      ],
+      "subject": "AIL_Sierra_Hartwig",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 9016
+    },
+    {
+      "departments": [
+        "AIL - Nick Chuma"
+      ],
+      "emails": [
+        "nchuma@ailoh.com"
+      ],
+      "subject": "AIL_Nick_Chuma",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 9017
+    },
+    {
+      "departments": [
+        "AIL - Chase Miller"
+      ],
+      "emails": [
+        "cmiller@ailoh.com"
+      ],
+      "subject": "AIL_Chase_Miller",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 9018
+    },
+    {
+      "departments": [
+        "AIL - Dillon Zartman"
+      ],
+      "emails": [
+        "dzartman@ailoh.com"
+      ],
+      "subject": "AIL_Dillon_Zartman",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 9019
+    },
+    {
+      "departments": [
+        "AIL - Tyler Teague"
+      ],
+      "emails": [
+        "tteague@ailoh.com"
+      ],
+      "subject": "AIL_Tyler_Teague",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 9020
+    },
+    {
+      "departments": [
+        "AIL - Travis Picklesimer"
+      ],
+      "emails": [
+        "tpicklesimer@ailoh.com"
+      ],
+      "subject": "AIL_Travis_Picklesimer",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 9021
+    },
+    {
+      "departments": [
+        "AIL - Danny Juskiw"
+      ],
+      "emails": [
+        "djuskiw@ailoh.com"
+      ],
+      "subject": "AIL_Danny_Juskiw",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 9022
+    },
+    {
+      "departments": [
+        "AIL - Avion Johnson"
+      ],
+      "emails": [
+        "ajohnson@ailoh.com"
+      ],
+      "subject": "AIL_Avion_Johnson",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 9023
+    },
+    {
+      "departments": [
+        "AIL - Beau Minnick"
+      ],
+      "emails": [
+        "bminnick@ailoh.com"
+      ],
+      "subject": "AIL_Beau_Minnick",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 9024
+    },
+    {
+      "departments": [
+        "AIL - Jeff Thiel"
+      ],
+      "emails": [
+        "jthiel@ailoh.com"
+      ],
+      "subject": "AIL_Jeff_Thiel",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 9025
+    },
+    {
+      "departments": [
+        "Ferrer Organization"
+      ],
+      "emails": [
+        "ferrerzaida@ferrerorganization.com",
+        "isabellachacinsarcos25@gmail.com",
+        "casanchez@globe.life"
+      ],
+      "subject": "Ferrer_Organization",
+      "rowsort": 0,
+      "cc_email": null,
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 9026
+    },
+    {
+      "departments": [
+        "MEGA - Charles Cinco",
+        "MEGA - Josephine Cinco"
+      ],
+      "emails": [
+        "cincocharles@gmail.com"
+      ],
+      "subject": "MEGA_Charles_Cinco",
+      "rowsort": 0,
+      "cc_email": null,
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 9027
+    },
+    {
+      "departments": [
+        "MEGA - Josephine Cinco",
+        "MEGA - Jennifer Del Valle",
+        "MEGA - Maricar Cortez"
+      ],
+      "emails": [
+        "dra_joyk3@yahoo.com"
+      ],
+      "subject": "MEGA_Josephine_Cinco",
+      "rowsort": 0,
+      "cc_email": null,
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 9028
+    },
+    {
+      "departments": [
+        "MEGA - Jennifer Del Valle",
+        "MEGA - Tuesday Katada",
+        "MEGA - Maricar Cortez"
+      ],
+      "emails": [
+        "jennybaba122@gmail.com"
+      ],
+      "subject": "MEGA_Jennifer_Del_Valle",
+      "rowsort": 0,
+      "cc_email": null,
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 9029
+    },
+    {
+      "departments": [
+        "MEGA - Marlie Tabique",
+        "MEGA - Hermie Azores"
+      ],
+      "emails": [
+        "marlietabique@gmail.com"
+      ],
+      "subject": "MEGA_Marlie_Tabique",
+      "rowsort": 0,
+      "cc_email": null,
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 9030
+    },
+    {
+      "departments": [
+        "MEGA - Hermie Azores"
+      ],
+      "emails": [
+        "hermiemd@hotmail.com"
+      ],
+      "subject": "MEGA_Hermie_Azores",
+      "rowsort": 0,
+      "cc_email": null,
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 9031
+    },
+    {
+      "departments": [
+        "MEGA - Hermie Bacus",
+        "MEGA - Charles Cinco",
+        "MEGA - Haidee Collado",
+        "MEGA - Aneela Rafique"
+      ],
+      "emails": [
+        "hermie@hermiebacus.com"
+      ],
+      "subject": "MEGA_Hermie_Bacus",
+      "rowsort": 0,
+      "cc_email": null,
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 9032
+    },
+    {
+      "departments": [
+        "Northwestern Mutual - Birmingham, AL",
+        "Northwestern Mutual - Huntsville, AL",
+        "Northwestern Mutual - Bamaintern, AL"
+      ],
+      "emails": [
+        "ashlyn.brown@nm.com"
+      ],
+      "subject": "Northwestern_Mutual_Birmingham_AL",
+      "rowsort": 0,
+      "cc_email": null,
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 9033
+    },
+    {
+      "departments": [
+        "SFG - Jordan Shank Agency"
+      ],
+      "emails": [
+        "jordanshanksfg@gmail.com"
+      ],
+      "subject": "SFG_Jordan_Shank_Agency",
+      "rowsort": 0,
+      "cc_email": null,
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 9034
+    },
+    {
+      "departments": [
+        "WFG - Jeremiah Pangan Group"
+      ],
+      "emails": [
+        "jpangan.wfg@gmail.com"
+      ],
+      "subject": "WFG_Pangan",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 9035
+    },
+    {
+      "departments": [
+        "Auto Pilot - Lauren Fowler"
+      ],
+      "emails": [
+        "lauren.fowler.pocj@statefarm.com"
+      ],
+      "subject": "AutoPilot_Fowler",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 9036
+    },
+    {
+      "departments": [
+        "Auto Pilot - Gayla Parks"
+      ],
+      "emails": [
+        "gayla.parks.hbr4@statefarm.com"
+      ],
+      "subject": "AutoPilot_Parks",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 9037
+    },
+    {
+      "departments": [
+        "Senior Life - Emely Pichardo"
+      ],
+      "emails": [
+        "emely.pichardo@yahoo.com"
+      ],
+      "subject": "Senior_Life_Emely_Pichardo",
+      "rowsort": 0,
+      "cc_email": null,
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 9038
+    },
+    {
+      "departments": [
+        "Senior Life - Latosha Williams"
+      ],
+      "emails": [
+        "2020lastinglegacy@gmail.com"
+      ],
+      "subject": "Senior_Life_Latosha_Williams",
+      "rowsort": 0,
+      "cc_email": null,
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 9039
+    },
+    {
+      "departments": [
+        "WFG - Jace Baxter Group"
+      ],
+      "emails": [
+        "jacebaxter@icloud.com"
+      ],
+      "subject": "WFG_Baxter",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 9040
+    },
+    {
+      "departments": [
+        "Trinity - Shalonda Wallace"
+      ],
+      "emails": [
+        "wcfg@consultant.com"
+      ],
+      "subject": "Trinity_Wallace",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 9041
+    },
+    {
+      "departments": [
+        "Trinity - Natalia & Karina Suazo"
+      ],
+      "emails": [
+        "karinaiflores9@gmail.com"
+      ],
+      "subject": "Trinity_Suazo",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 9042
+    },
+    {
+      "departments": [
+        "Auto Pilot - Ben Tullos"
+      ],
+      "emails": [
+        "camille.linn.sfuv@statefarm.com"
+      ],
+      "subject": "AutoPilot_Tullos",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 9043
+    },
+    {
+      "departments": [
+        "Auto Pilot - Taylor Gwynn"
+      ],
+      "emails": [
+        "taylor.gwynn.vad96i@statefarm.com"
+      ],
+      "subject": "AutoPilot_Gwynn",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 9044
+    },
+    {
+      "departments": [
+        "Colonial Life - Kent Sherman"
+      ],
+      "emails": [
+        "kent.sherman@coloniallifesales.com"
+      ],
+      "subject": "Colonial_Kent_Sherman",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 9045
+    },
+    {
+      "departments": [
+        "Senior Life - Vicki Travis"
+      ],
+      "emails": [
+        "vicki@finalexpensesohio.com"
+      ],
+      "subject": "Senior_Life_Vicki_Travis",
+      "rowsort": 0,
+      "cc_email": null,
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 9046
+    },
+    {
+      "departments": [
+        "Aflac - Aaron Dunnill Agency"
+      ],
+      "emails": [
+        "aaron_dunnill@us.aflac.com",
+        "traci_suggs@us.aflac.com"
+      ],
+      "subject": "Aflac_Aaron_Dunnill_Agency",
+      "rowsort": 0,
+      "cc_email": null,
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 9047
+    },
+    {
+      "departments": [
+        "SFG - Desire Shropshire Agency"
+      ],
+      "emails": [
+        "desireshropshiresfg@gmail.com"
+      ],
+      "subject": "SFG_Desire_Shropshire_Agency",
+      "rowsort": 0,
+      "cc_email": null,
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 9048
+    },
+    {
+      "departments": [
+        "WFG - Jaimee Bulaso Group"
+      ],
+      "emails": [
+        "jaimee.bulaso@gmail.com"
+      ],
+      "subject": "WFG_Bulaso",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 9049
+    },
+    {
+      "departments": [
+        "Colonial Life - John Gaines"
+      ],
+      "emails": [
+        "john.gaines@coloniallifesales.com"
+      ],
+      "subject": "Colonial_Gaines",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 9050
+    },
+    {
+      "departments": [
+        "WFG - Paul Vorwaller Group"
+      ],
+      "emails": [
+        "paulvorwaller@gmail.com"
+      ],
+      "subject": "WFG_Vorwaller",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 9051
+    },
+    {
+      "departments": [
+        "WFG - Blessing Ogbebor Group"
+      ],
+      "emails": [
+        "ogbeborblessing5@gmail.com"
+      ],
+      "subject": "WFG_Ogbebor",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 9052
+    },
+    {
+      "departments": [
+        "WFG - Yvonne Agyare Adjepong Group"
+      ],
+      "emails": [
+        "yagyareadjepong@gmail.com"
+      ],
+      "subject": "WFG_AgyareAdjepong",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 9053
+    },
+    {
+      "departments": [
+        "PHP - Frieda Martin"
+      ],
+      "emails": [
+        "frieda.martinriley@gmail.com"
+      ],
+      "subject": "PHP_Frieda_Martin",
+      "rowsort": 0,
+      "cc_email": null,
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 9054
+    },
+    {
+      "departments": [
+        "North American Senior Benefits - Mario Foti"
+      ],
+      "emails": [
+        "foti.mario66@gmail.com"
+      ],
+      "subject": "North_American_Senior_Benefits_Mario_Foti",
+      "rowsort": 0,
+      "cc_email": null,
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 9055
+    },
+    {
+      "departments": [
+        "PHP - Erika Del Toro"
+      ],
+      "emails": [
+        "cqlicensing@gmail.com"
+      ],
+      "subject": "PHP_Erika_Del_Toro",
+      "rowsort": 0,
+      "cc_email": null,
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 9056
+    },
+    {
+      "departments": [
+        "New York Life - Michael Shain"
+      ],
+      "emails": [
+        "mshain@newyorklife.com"
+      ],
+      "subject": "New_York_Life_Michael_Shain",
+      "rowsort": 0,
+      "cc_email": null,
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 9057
+    },
+    {
+      "departments": [
+        "SFG - Marc Schenkel Agency"
+      ],
+      "emails": [
+        "ms@gogyv.com"
+      ],
+      "subject": "SFG_Marc_Schenkel_Agency",
+      "rowsort": 0,
+      "cc_email": null,
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 9058
+    },
+    {
+      "departments": [
+        "SFG - Khalil Blakey Agency"
+      ],
+      "emails": [
+        "ill_lil90@hotmail.com"
+      ],
+      "subject": "SFG_Khalil_Blakey_Agency",
+      "rowsort": 0,
+      "cc_email": null,
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 9059
+    },
+    {
+      "departments": [
+        "SFG - Gregg Adair Agency"
+      ],
+      "emails": [
+        "greggadair@outlook.com"
+      ],
+      "subject": "SFG_Gregg_Adair_Agency",
+      "rowsort": 0,
+      "cc_email": null,
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 9060
+    },
+    {
+      "departments": [
+        "WFG - Ivan Castellanos Group"
+      ],
+      "emails": [
+        "mikatracking1@gmail.com"
+      ],
+      "subject": "WFG_Castellanos",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 9061
+    },
+    {
+      "departments": [
+        "Webline Inc. Insurance agency"
+      ],
+      "emails": [
+        "rware@webline.us"
+      ],
+      "subject": "Webline_Insurance",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 9062
+    },
+    {
+      "departments": [
+        "Business System Builder"
+      ],
+      "emails": [
+        "rware@webline.us"
+      ],
+      "subject": "Business_System_Builder",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 9063
+    },
+    {
+      "departments": [
+        "WFG - Shan Xiang Group"
+      ],
+      "emails": [
+        "victoryxj@gmail.com",
+        "shanxiang06@gmail.com"
+      ],
+      "subject": "WFG_Xiang",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 9064
+    },
+    {
+      "departments": [
+        "North American Senior Benefits - William Richardson"
+      ],
+      "emails": [
+        "rich.sonfinancialnasb@gmail.com"
+      ],
+      "subject": "NASB_Richardson",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 9065
+    },
+    {
+      "departments": [
+        "Auto Pilot - Liz Portee"
+      ],
+      "emails": [
+        "liz.portee.tz1j@statefarm.com"
+      ],
+      "subject": "AutoPilot_Portee",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 9066
+    },
+    {
+      "departments": [
+        "HGI - Pavan Repala"
+      ],
+      "emails": [
+        "pavanfin@repalas.com"
+      ],
+      "subject": "HGI_Repala",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 9067
+    },
+    {
+      "departments": [
+        "Auto Pilot - Nathan Cool"
+      ],
+      "emails": [
+        "nate@natecool.com"
+      ],
+      "subject": "AutoPilot_Cool",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 9068
+    },
+    {
+      "departments": [
+        "WFG - T Nguyen Group"
+      ],
+      "emails": [
+        "t8182978301@gmail.com"
+      ],
+      "subject": "WFG_T_Nguyen",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 9069
+    },
+    {
+      "departments": [
+        "WFG - Jason Hamilton Group"
+      ],
+      "emails": [
+        "jhamilton.wbu@gmail.com"
+      ],
+      "subject": "WFG_Jason_Hamilton",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 9070
+    },
+    {
+      "departments": [
+        "Altig Organization - Maria Lagios"
+      ],
+      "emails": [
+        "marial.ao@yahoo.com"
+      ],
+      "subject": "AO_Maria_Lagios",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 9071
+    },
+    {
+      "departments": [
+        "Bishop & Brown Health Insurance Brokers"
+      ],
+      "emails": [
+        "brian@bishopbrown.com"
+      ],
+      "subject": "Bishop_Brown_Health_Insurance",
+      "rowsort": 0,
+      "cc_email": "",
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 9072
+    },
+    {
+      "departments": [
+        "SFG - Frank Coronel Agency"
+      ],
+      "emails": [
+        "insurancefrank.sfg@gmail.com"
+      ],
+      "subject": "SFG_Frank_Coronel_Agency",
+      "rowsort": 0,
+      "cc_email": null,
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 9073
+    },
+    {
+      "departments": [
+        "SFG - Mayra Harris Agency"
+      ],
+      "emails": [
+        "harris.mayra@gmail.com"
+      ],
+      "subject": "SFG_Mayra_Harris_Agency",
+      "rowsort": 0,
+      "cc_email": null,
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 9074
+    },
+    {
+      "departments": [
+        "Senior Life - Ivy Simon"
+      ],
+      "emails": [
+        "simonsayone@yahoo.com"
+      ],
+      "subject": "Senior_Life_Ivy_Simon",
+      "rowsort": 0,
+      "cc_email": null,
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 9075
+    },
+    {
+      "departments": [
+        "Family Heritage - Rivas Agency"
+      ],
+      "emails": [
+        "sean.rivas@integrityfhl.com",
+        "nikki.tobias@integrityfhl.com",
+        "jetheridgefhd@gmail.com"
+      ],
+      "subject": "Family_Heritage_Rivas_Agency",
+      "rowsort": 0,
+      "cc_email": null,
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 9076
+    },
+    {
+      "departments": [
+        "Family Heritage - Ross Agency"
+      ],
+      "emails": [
+        "nikki.tobias@integrityfhl.com",
+        "bross.fhd@gmail.com",
+        "phaftel.fhd@gmail.com"
+      ],
+      "subject": "Family_Heritage_Ross_Agency",
+      "rowsort": 0,
+      "cc_email": null,
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 9077
+    },
+    {
+      "departments": [
+        "AIL - Mary Ramirez"
+      ],
+      "emails": [
+        "maryramirezail@gmail.com"
+      ],
+      "subject": "AIL_Mary_Ramirez",
+      "rowsort": 0,
+      "cc_email": null,
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 9078
+    },
+    {
+      "departments": [
+        "PHP - Christina Hanks"
+      ],
+      "emails": [
+        "sciswolf76@msn.com"
+      ],
+      "subject": "PHP_Christina_Hanks",
+      "rowsort": 0,
+      "cc_email": null,
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 9079
+    },
+    {
+      "departments": [
+        "Lincoln Heritage - Nicholas Sutton"
+      ],
+      "emails": [
+        "nick@suttoninsurancegroup.com"
+      ],
+      "subject": "Lincoln_Heritage_Nicholas_Sutton",
+      "rowsort": 0,
+      "cc_email": null,
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 9080
+    },
+    {
+      "departments": [
+        "SFG - Charles Beames Agency"
+      ],
+      "emails": [
+        "symmetry.financial.ins@gmail.com"
+      ],
+      "subject": "SFG_Charles_Beames_Agency",
+      "rowsort": 0,
+      "cc_email": null,
+      "columnsort": 0,
+      "login_filter": 0,
+      "completion_filter": 0,
+      "remove_button": 0,
+      "course_type_only": 0,
+      "ple_only": 0,
+      "summary_only": 0,
+      "id": 9081
     }
   ]
 }
