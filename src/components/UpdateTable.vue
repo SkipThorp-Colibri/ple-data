@@ -13,7 +13,7 @@
         </tbody>
     </table>
     <Button text="download update csv" color="btn-success" @btn-click="downloadCsv" />
-    <Button text="refresh" class="ml-1" color="btn-info" @btn-click="convertToCsvText" />
+    <Button text="convert to CSV" class="ml-1" color="btn-info" @btn-click="convertToCsvText" />    
     <Button text="clear" class="ml-1" color="btn-danger" @btn-click="clearUpdateContent" />
   </div>
 </template>
@@ -69,7 +69,7 @@ export default {
             window.URL.revokeObjectURL(url)
         },
         clearUpdateContent() {
-            this.csvContent = ''
+            this.sqlContent = ''
             this.$emit('clear-update-list')
         }
     }

@@ -6,10 +6,12 @@
     <BulkInput v-if="showBulkInput" @add-bulk-reports="addBulkReportsToList" @close-bulk-input="showBulkInput = false"></BulkInput>
     <BulkEmailAdd v-if="showBulkEmailAdd" @close-bulk-email-input="showBulkEmailAdd = false" />
 
+
     <div class="text-left">
       <Button text="new report" color="btn-primary" @btn-click="toggleAddReport" />
       <Button text="bulk input" color="btn-info" style="margin-left: 1rem;" @btn-click="toggleBulkInput" />
       <Button text="add email to reports" color="btn-info" style="margin-left: 1rem;" @btn-click="toggleBulkEmailAdd" />
+      <Button text="convert to SQL" color="btn-info" style="margin-left: 1rem;" @btn-click="downloadSql" />
     </div>
     
     <UpdateTable :reportsUpdate="reportsUpdate" @clear-update-list="clearUpdateList" />
@@ -162,9 +164,44 @@ export default {
       this.reportsUpdate = []
     }
   },
-  async mounted() {
-    this.reports = await this.fetchReports()
-  }
+    convertToSqlText() {
+      console.log("entering convertToSqlText funtion")
+        this.reports.forEach((report) => {
+            var row = ``
+            row += report.id
+            row += ',`' + report.departments.join('%') + '`'
+            row += ',`' + report.emails.join(';') + '`'
+            row += `,${report.subject}`
+            row += `,${report.rowsort}`
+            row += `,${report.cc_email}`
+            row += `,${report.columnsort}`
+            row += `,${report.login_filter}`
+            row += `,${report.completion_filter}`
+            row += `,${report.remove_button}`
+            row += `,${report.course_type_only}`
+            row += `,${report.ple_only}`
+            row += `,${report.summary_only === 1 ? 1 : 0}\r\n`
+
+            this.sqlContent += row
+
+        })
+    },
+    downloadSql() {
+      console.log("downloadSql clicked")
+        this.convertToSqlText()
+
+        var a = document.createElement("a")
+        document.body.appendChild(a)
+        a.style = "display: none"
+        var blob = new Blob([this.sqlContent], {type: "text/sql"}), url = window.URL.createObjectURL(blob)
+        a.href = url
+        a.download = "SQL_Update.sql"
+        a.click()
+        window.URL.revokeObjectURL(url)
+    },
+    async mounted() {
+      this.reports = await this.fetchReports()
+    }
 }
 </script>
 
