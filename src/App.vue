@@ -11,7 +11,7 @@
       <Button text="new report" color="btn-primary" @btn-click="toggleAddReport" />
       <Button text="bulk input" color="btn-info" style="margin-left: 1rem;" @btn-click="toggleBulkInput" />
       <Button text="add email to reports" color="btn-info" style="margin-left: 1rem;" @btn-click="toggleBulkEmailAdd" />
-      <Button text="convert to mySQL" color="btn-info" style="margin-left: 1rem;" @btn-click="downloadSql" />
+      <!-- <Button text="convert to mySQL" color="btn-info" style="margin-left: 1rem;" @btn-click="downloadSql" /> -->
     </div>
     
     <UpdateTable :reportsUpdate="reportsUpdate" @clear-update-list="clearUpdateList" />
@@ -95,7 +95,7 @@ export default {
 
       const stringifyReport = JSON.stringify(report)
 
-      const res = await fetch('http://localhost:5000/reports', {
+      const res = await fetch('http://prepare2pass.com/p2p_db/ple_reports_data', {
         method: 'POST',
         headers: {
           'Content-type': 'application/json'
@@ -116,7 +116,7 @@ export default {
       
       const stringifyReport = JSON.stringify(report)
 
-      const res = await fetch(`http://localhost:5000/reports/${report.id}`, {
+      const res = await fetch(`http://prepare2pass.com/p2p_db/ple_reports_data/${report.id}`, {
         method: 'PUT',
         headers: {
           'Content-type': 'application/json'
@@ -130,7 +130,7 @@ export default {
       this.addReportToUpdateList(data)
     },
     async onDeleteReport(id) {
-      const res = await fetch(`http://localhost:5000/reports/${id}`, {
+      const res = await fetch(`http://prepare2pass.com/p2p_db/ple_reports_data/${id}`, {
         method: 'DELETE'
       })
     },
@@ -148,13 +148,23 @@ export default {
       }
       this.onDeleteReport(id)
     },
+    // async fetchReports() {
+    //   const res = await fetch('http://localhost:5000/reports')
+    //   const data = await res.json()
+    //   return data
+    // },
     async fetchReports() {
-      const res = await fetch('http://localhost:5000/reports')
+      const res = await fetch('http://prepare2pass.com/p2p_db/ple_reports_data', {
+        method: 'GET',
+        headers: {
+          'Content-type': 'application/json'
+        }        
+      })
       const data = await res.json()
       return data
     },
     async fetchReport(id) {
-      const res = await fetch(`http://localhost:5000/reports/${id}`)
+      const res = await fetch(`http://prepare2pass.com/p2p_db/ple_reports_data/${id}`)
       const data = await res.json()
       return data
     },
