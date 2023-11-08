@@ -11,7 +11,7 @@
       <Button text="new report" color="btn-primary" @btn-click="toggleAddReport" />
       <Button text="bulk input" color="btn-info" style="margin-left: 1rem;" @btn-click="toggleBulkInput" />
       <Button text="add email to reports" color="btn-info" style="margin-left: 1rem;" @btn-click="toggleBulkEmailAdd" />
-      <Button text="convert to SQL" color="btn-info" style="margin-left: 1rem;" @btn-click="downloadSql" />
+      <Button text="convert to mySQL" color="btn-info" style="margin-left: 1rem;" @btn-click="downloadSql" />
     </div>
     
     <UpdateTable :reportsUpdate="reportsUpdate" @clear-update-list="clearUpdateList" />
@@ -51,7 +51,8 @@ export default {
       showBulkInput: false,
       showBulkEmailAdd: false,
       selectedReport: {},
-      isEdit: false
+      isEdit: false,
+      sqlContent: ''
     }
   },
   methods: {
@@ -162,16 +163,16 @@ export default {
     },
     clearUpdateList() {
       this.reportsUpdate = []
-    }
-  },
+    },
     convertToSqlText() {
       console.log("entering convertToSqlText funtion")
-        this.reports.forEach((report) => {
-            var row = ``
-            row += report.id
-            row += ',`' + report.departments.join('%') + '`'
-            row += ',`' + report.emails.join(';') + '`'
-            row += `,${report.subject}`
+      this.sqlContent = 'INSERT INTO `ple_reports_data` VALUES\r\n'
+        this.reports.forEach((report,idx) => {
+            var row = ''
+            row += '(' + report.id
+            row += `,'` + report.departments.join('%') + `'`
+            row += `,'` + report.emails.join(';') + `'`
+            row += `,'` + report.subject + `'`
             row += `,${report.rowsort}`
             row += `,${report.cc_email}`
             row += `,${report.columnsort}`
@@ -180,7 +181,8 @@ export default {
             row += `,${report.remove_button}`
             row += `,${report.course_type_only}`
             row += `,${report.ple_only}`
-            row += `,${report.summary_only === 1 ? 1 : 0}\r\n`
+            row += `,${report.summary_only === 1 ? 1 : 0}`
+            row += parseInt(idx) < this.reports.length ? '),\r\n' : ')\r\n'
 
             this.sqlContent += row
 
@@ -198,7 +200,8 @@ export default {
         a.download = "SQL_Update.sql"
         a.click()
         window.URL.revokeObjectURL(url)
-    },
+    }
+  },
     async mounted() {
       this.reports = await this.fetchReports()
     }
