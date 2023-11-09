@@ -104,7 +104,7 @@ export default {
       const res = await addNewReportToList(report)
       const data = await res.json()
       this.reports = [...this.reports, data]
-      this.addReportToUpdateList(data)
+      addReportToUpdateList(data,stringifyReport)
     },
     async addBulkReportsToList(reports) {
       for(let i = 0;i < reports.length;i++){
@@ -134,10 +134,6 @@ export default {
     async deleteReport(id) {
       const res = await deleteReport(id)
     },
-    async fetchReports() {
-      const res = await fetchReports()
-      return res.json()
-    },
     async fetchReport(id) {
       const res = await fetchReport(id)
       return res.json()
@@ -150,7 +146,7 @@ export default {
     }
   },
     async mounted() {
-      this.reports = await this.fetchReports()
+      this.reports = await fetchReports()
     }
 }
 </script>

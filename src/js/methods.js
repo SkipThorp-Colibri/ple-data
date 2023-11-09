@@ -5,14 +5,14 @@ export function closeAll() {
     this.showBulkEmailAdd = false
 }
 
-export async function addNewReportToList(report) {
+export async function addNewReportToList(report,jsonReport) {
     const reports = [];
 
     this.closeAll()
 
-    const stringifyReport = JSON.stringify(report)
+    const stringifyReport = JSON.stringify(jsonReport)
 
-    const res = await fetch('api?action=create', {
+    const res = await fetch('/public/php-api/reports_api.php?action=create', {
       headers: {
         'Content-type': 'application/json'
       },
