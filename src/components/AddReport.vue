@@ -110,7 +110,7 @@ export default {
             emails: [],
             subject: '',
             rowsort: 0,
-            cc_email: "",
+            cc_email: null,
             columnsort: 0,
             login_filter: 0,
             completion_filter: 0,
