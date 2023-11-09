@@ -154,12 +154,7 @@ export default {
     //   return data
     // },
     async fetchReports() {
-      const res = await fetch('http://prepare2pass.com/p2p_db/ple_reports_data', {
-        method: 'GET',
-        headers: {
-          'Content-type': 'application/json'
-        }        
-      })
+      const res = await fetch('/src/api/index.php')
       const data = await res.json()
       return data
     },
