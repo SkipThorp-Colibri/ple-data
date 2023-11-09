@@ -11,7 +11,6 @@
       <Button text="new report" color="btn-primary" @btn-click="toggleAddReport" />
       <Button text="bulk input" color="btn-info" style="margin-left: 1rem;" @btn-click="toggleBulkInput" />
       <Button text="add email to reports" color="btn-info" style="margin-left: 1rem;" @btn-click="toggleBulkEmailAdd" />
-      <!-- <Button text="convert to mySQL" color="btn-info" style="margin-left: 1rem;" @btn-click="downloadSql" /> -->
     </div>
     
     <UpdateTable :reportsUpdate="reportsUpdate" @clear-update-list="clearUpdateList" />
@@ -29,6 +28,19 @@ import EditReport from './components/EditReport.vue'
 import Navbar from './components/Navbar.vue'
 import ReportsTable from './components/ReportsTable.vue'
 import UpdateTable from './components/UpdateTable.vue'
+import {
+  closeAll,
+  addNewReportToList,
+  addBulkReportsToList,
+  onEditReport,
+  onDeleteReport,
+  editReport,
+  deleteReport,
+  fetchReports,
+  fetchReport,
+  addReportToUpdateList,
+  clearUpdateList
+} from './js/methods.js'
 
 export default {
   name: 'App',
@@ -56,52 +68,40 @@ export default {
     }
   },
   methods: {
-    closeAll() {
-      this.showAddReport = false
-      this.showEditReport = false
-      this.showBulkInput = false
-      this.showBulkEmailAdd = false
-    },
     toggleAddReport() {
       if(this.showAddReport) {
-        this.closeAll()
+        closeAll()
       } else {
         this.showAddReport = !this.showAddReport
       }      
     },
     toggleEditReport() {
       if(this.showEditReport) {
-        this.closeAll()
+        closeAll()
       } else {
         this.showEditReport = !this.showEditReport
       }    },
     toggleBulkInput() {
       if(this.showBulkInput) {
-        this.closeAll()
+        closeAll()
       } else {
         this.showBulkInput = !this.showBulkInput
       }
     },
     toggleBulkEmailAdd() {
       if(this.showBulkEmailAdd) {
-        this.closeAll()
+        closeAll()
       } else {
         this.showBulkEmailAdd = !this.showBulkEmailAdd
       }
     },
     async addNewReportToList(report) {
 
-      this.closeAll()
+      closeAll()
 
       const stringifyReport = JSON.stringify(report)
 
-      const res = await fetch('http://prepare2pass.com/p2p_db/ple_reports_data', {
-        method: 'POST',
-        headers: {
-          'Content-type': 'application/json'
-        },
-        body: stringifyReport
-      })
+      const res = await addNewReportToList(report)
       const data = await res.json()
       this.reports = [...this.reports, data]
       this.addReportToUpdateList(data)
@@ -116,13 +116,7 @@ export default {
       
       const stringifyReport = JSON.stringify(report)
 
-      const res = await fetch(`http://prepare2pass.com/p2p_db/ple_reports_data/${report.id}`, {
-        method: 'PUT',
-        headers: {
-          'Content-type': 'application/json'
-        },
-        body: stringifyReport
-      })
+      const res = await editReport(report)
       const data = await res.json()
 
       let updatedItemIndex = this.reports.findIndex(r => r.id === data.id)
@@ -130,81 +124,29 @@ export default {
       this.addReportToUpdateList(data)
     },
     async onDeleteReport(id) {
-      const res = await fetch(`http://prepare2pass.com/p2p_db/ple_reports_data/${id}`, {
-        method: 'DELETE'
-      })
-    },
-    async editReport(id) {
-      this.selectedReport = await this.fetchReport(id)
-      this.showEditReport = true
-      this.showAddReport = false
-      document.body.scrollTop = document.documentElement.scrollTop = 0
-    },
-    async deleteReport(id) {
       let report = await this.fetchReport(id)
 
       if(confirm(`Do you want to delete ${report.subject}`)) {
           this.reports = this.reports.filter((r) => r.id !== id)
       }
-      this.onDeleteReport(id)
+      this.deleteReport(id)      
     },
-    // async fetchReports() {
-    //   const res = await fetch('http://localhost:5000/reports')
-    //   const data = await res.json()
-    //   return data
-    // },
+    async deleteReport(id) {
+      const res = await deleteReport(id)
+    },
     async fetchReports() {
-      const res = await fetch('/src/api/index.php')
-      const data = await res.json()
-      return data
+      const res = await fetchReports()
+      return res.json()
     },
     async fetchReport(id) {
-      const res = await fetch(`http://prepare2pass.com/p2p_db/ple_reports_data/${id}`)
-      const data = await res.json()
-      return data
+      const res = await fetchReport(id)
+      return res.json()
     },
     async addReportToUpdateList(report) {
       this.reportsUpdate = [...this.reportsUpdate, report]
     },
     clearUpdateList() {
       this.reportsUpdate = []
-    },
-    convertToSqlText() {
-      console.log("entering convertToSqlText funtion")
-      this.sqlContent = 'INSERT INTO `ple_reports_data` VALUES\r\n'
-        this.reports.forEach((report,idx) => {
-            var row = ''
-            row += '(' + report.id
-            row += `,'` + report.departments.join('%') + `'`
-            row += `,'` + report.emails.join(';') + `'`
-            row += `,'` + report.subject + `'`
-            row += `,${report.rowsort}`
-            row += `,${report.cc_email}`
-            row += `,${report.columnsort}`
-            row += `,${report.login_filter}`
-            row += `,${report.completion_filter}`
-            row += `,${report.remove_button}`
-            row += `,${report.course_type_only}`
-            row += `,${report.ple_only}`
-            row += `,${report.summary_only === 1 ? 1 : 0}`
-            row += parseInt(idx) < this.reports.length ? '),\r\n' : ')\r\n'
-
-            this.sqlContent += row
-
-        })
-    },
-    downloadSql() {
-      console.log("downloadSql clicked")
-        this.convertToSqlText()
-
-        var a = document.createElement("a")
-        document.body.appendChild(a)
-        a.style = "display: none"
-        var blob = new Blob([this.sqlContent], {type: "text/sql"}), url = window.URL.createObjectURL(blob)
-        a.href = url
-        a.download = "SQL_Update.sql"
-        a.click()
-        window.URL.revokeObjectURL(url)
     }
   },
     async mounted() {

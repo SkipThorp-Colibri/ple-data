@@ -4,8 +4,8 @@
     $pw = "Xcel@1234";
     $db_name = "Kenny";
     
-    $conn = new mysqli($host, $username, $pw, $db_name);
+    $connection = new mysqli($host, $username, $pw, $db_name);
     
-    if(!$conn){
+    if(!$connection){
         die("Database Connection Failed");
     }
