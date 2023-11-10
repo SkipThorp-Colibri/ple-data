@@ -33,7 +33,6 @@ import {
   addNewReportToList,
   addBulkReportsToList,
   onEditReport,
-  onDeleteReport,
   editReport,
   deleteReport,
   fetchReports,
