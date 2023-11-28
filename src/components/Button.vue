@@ -14,7 +14,10 @@ export default {
         onButtonClick() {
             this.$emit('btn-click')
         }
-    }
+    },
+    emits: [
+      'btn-click'
+    ]
 }
 </script>
 

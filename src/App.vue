@@ -1,5 +1,5 @@
 <template>
-  <Navbar />
+  <Navbar @search-reports="searchReports" />
   <div class="container-fluid" id="main-reports-container">
     <AddReport v-if="showAddReport" @add-new-report="addNewReportToList" @close-add-report="showAddReport = false" />
     <EditReport v-if="showEditReport" @submit-edit-report="onEditReport" :report="selectedReport" @close-edit-report="showEditReport = false" />
@@ -14,7 +14,7 @@
     
     <UpdateTable :reportsUpdate="reportsUpdate" @clear-update-list="clearUpdateList" />
 
-    <ReportsTable :reports="reports" @edit-report="editReport" @delete-report="deleteReport" />
+    <ReportsTable :reports="reports" :currentPage="currentPage" @edit-report="editReport" @delete-report="deleteReport" @get-page="fetchReports" />
   </div>
 </template>
 
@@ -43,6 +43,8 @@ export default {
   data() {
     return {
       reports: [],
+      currentPage: 0,
+      searchTerm: String,
       reportsUpdate: [],
       showAddReport: false,
       showEditReport: false,
@@ -86,6 +88,10 @@ export default {
         this.showBulkEmailAdd = !this.showBulkEmailAdd
       }
     },
+    async getNextPage() {
+      console.log("get next page")
+    }
+    ,
     async addNewReportToList(report) {
 
       this.closeAll()
@@ -145,10 +151,16 @@ export default {
       }
       this.onDeleteReport(id)
     },
-    async fetchReports() {
-      const res = await fetch('http://localhost:5000/reports')
+    async searchReports(term) {
+      this.searchTerm = term
+      console.log("search for: ", this.searchTerm)
+    },
+    async fetchReports(page) {
+      this.currentPage = page
+      this.reports = []
+      const res = await fetch(`http://localhost:5000/reports?_page=${this.currentPage}&_limit=20`)
       const data = await res.json()
-      return data
+      this.reports = data
     },
     async fetchReport(id) {
       const res = await fetch(`http://localhost:5000/reports/${id}`)
@@ -163,7 +175,8 @@ export default {
     }
   },
   async mounted() {
-    this.reports = await this.fetchReports()
+    this.currentPage = 2
+    await this.fetchReports(this.currentPage)
   }
 }
 </script>
