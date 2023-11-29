@@ -1,19 +1,30 @@
 <template>
   <nav class="navbar navbar-dark bg-dark fixed-top">
   <span class="navbar-brand mb-0 h1">PLE Report Add/Update</span>
+  <span class="text-middle"><SearchForm @search-reports="searchReports" /></span>
   <span class="scroll-btn"><Button text="top" color="btn-secondary" @btn-click="scrollToTop" /></span>
 </nav>
 </template>
 
 <script>
 import Button from './Button.vue'
+import SearchForm from './SearchForm.vue'
 
 export default {
   name: "Navbar",
   components: {
-    Button
+    Button,
+    SearchForm
+  },
+  data () {
+    return {
+      searchTerm: String
+    }
   },
   methods: {
+    async searchReports(searchTerm) {
+      this.$emit("search-reports", searchTerm)
+    },
     scrollToTop() {
       window.scrollTo({
         top: 0,
@@ -21,7 +32,10 @@ export default {
         behavior: "smooth"
       });
     }
-  } 
+  },
+  emits: [
+    'search-reports'
+  ]
 }
 
 
