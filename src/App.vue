@@ -178,7 +178,7 @@ export default {
     }
   },
   async mounted() {
-    this.currentPage = 2
+    this.currentPage = 1
     await this.fetchReports(this.currentPage)
   }
 }
