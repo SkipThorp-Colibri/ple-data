@@ -23,8 +23,7 @@ export default {
   },
   methods: {
     async searchReports(searchTerm) {
-      console.log("search term: ", searchTerm)
-      this.$emit("search-reports", this.searchTerm)
+      this.$emit("search-reports", searchTerm)
     },
     scrollToTop() {
       window.scrollTo({

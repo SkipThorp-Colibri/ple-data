@@ -153,7 +153,10 @@ export default {
     },
     async searchReports(term) {
       this.searchTerm = term
-      console.log("search for: ", this.searchTerm)
+      this.reports = []
+      const res = await fetch(`http://localhost:5000/reports?q=${this.searchTerm}`)
+      const data = await res.json()
+      this.reports = data
     },
     async fetchReports(page) {
       this.currentPage = page

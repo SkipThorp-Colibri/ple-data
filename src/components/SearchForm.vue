@@ -22,7 +22,6 @@ export default {
   },
   methods: {
     async searchReports() {
-      console.log("searchTerm in SearchForm: ", this.searchTerm)
       this.$emit('search-reports', this.searchTerm)
     }
   },
