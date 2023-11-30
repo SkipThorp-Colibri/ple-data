@@ -26,7 +26,7 @@ export default {
       this.$emit("search-reports", searchTerm)
     },
     async resetReports() {
-      this.$emit("reset-reports")
+      this.$emit("reset-reports",{ "page": 1, "take": 100 })
     },
     scrollToTop() {
       window.scrollTo({

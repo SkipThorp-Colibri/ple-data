@@ -48,10 +48,10 @@ export default {
           this.$emit('delete-report', report.id)
         },
         getNextPage(page) {
-          this.$emit('get-page', page + 1)
+          this.$emit('get-page', { "page": page + 1, "take": 100 })
         },
         getPrevPage(page) {
-          this.$emit('get-page', page - 1)
+          this.$emit('get-page', { "page": page - 1, "take": 100 })
         }
     },
     emits: [
