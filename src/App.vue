@@ -1,5 +1,5 @@
 <template>
-  <Navbar @search-reports="searchReports" />
+  <Navbar @search-reports="searchReports" @reset-reports="fetchReports(1)" />
   <div class="container-fluid" id="main-reports-container">
     <AddReport v-if="showAddReport" @add-new-report="addNewReportToList" @close-add-report="showAddReport = false" />
     <EditReport v-if="showEditReport" @submit-edit-report="onEditReport" :report="selectedReport" @close-edit-report="showEditReport = false" />
