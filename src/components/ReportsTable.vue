@@ -1,4 +1,8 @@
 <template>
+  <div>
+    <span class="m-2"><Button color="btn-primary" text="prev" @btn-click="getPrevPage(currentPage)" /></span>
+    <span class="m-2"><Button color="btn-primary" text="next" @btn-click="getNextPage(currentPage)" /></span>
+  </div>
   <table class="table">
     <thead>
       <tr>
@@ -34,6 +38,7 @@ export default {
     },
     props: {
         reports: Array,
+        currentPage: Number
     },
     methods: {
         editLine(report) {
@@ -41,11 +46,18 @@ export default {
         },
         deleteLine(report) {
           this.$emit('delete-report', report.id)
+        },
+        getNextPage(page) {
+          this.$emit('get-page', page + 1)
+        },
+        getPrevPage(page) {
+          this.$emit('get-page', page - 1)
         }
     },
     emits: [
       'edit-report',
-      'delete-report'
+      'delete-report',
+      'get-page'
     ]
 }
 </script>
