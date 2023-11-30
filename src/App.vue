@@ -1,5 +1,5 @@
 <template>
-  <Navbar @search-reports="searchReports" @reset-reports="fetchReports(1)" />
+  <Navbar @search-reports="searchReports" @reset-reports="fetchReports(1,100)" />
   <div class="container-fluid" id="main-reports-container">
     <AddReport v-if="showAddReport" @add-new-report="addNewReportToList" @close-add-report="showAddReport = false" />
     <EditReport v-if="showEditReport" @submit-edit-report="onEditReport" :report="selectedReport" @close-edit-report="showEditReport = false" />
@@ -158,10 +158,10 @@ export default {
       const data = await res.json()
       this.reports = data
     },
-    async fetchReports(page) {
+    async fetchReports(page, takeRecords) {
       this.currentPage = page
       this.reports = []
-      const res = await fetch(`http://localhost:5000/reports?_page=${this.currentPage}&_limit=20`)
+      const res = await fetch(`http://localhost:5000/reports?_page=${this.currentPage}&_limit=${takeRecords}`)
       const data = await res.json()
       this.reports = data
     },
@@ -179,7 +179,7 @@ export default {
   },
   async mounted() {
     this.currentPage = 1
-    await this.fetchReports(this.currentPage)
+    await this.fetchReports(this.currentPage, 100)
   }
 }
 </script>
