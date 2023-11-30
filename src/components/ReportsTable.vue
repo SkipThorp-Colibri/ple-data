@@ -1,7 +1,7 @@
 <template>
   <div>
-    <Button color="btn-primary" text="prev" @btn-click="getPrevPage(currentPage)" />
-    <Button color="btn-primary" text="next" @btn-click="getNextPage(currentPage)" />
+    <span class="m-2"><Button color="btn-primary" text="prev" @btn-click="getPrevPage(currentPage)" /></span>
+    <span class="m-2"><Button color="btn-primary" text="next" @btn-click="getNextPage(currentPage)" /></span>
   </div>
   <table class="table">
     <thead>
