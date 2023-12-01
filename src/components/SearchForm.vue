@@ -5,7 +5,7 @@
       <Button text="reset" color="btn-danger" @btn-click="resetReports" />
     </div>
     <div class="input-group-append">
-      <Button text="search" color="btn-primary" @btn-click="searchReports(searchTerm)" />
+      <Button text="search" color="btn-primary" @btn-click="searchReports" />
     </div>
   </div>
 </template>
