@@ -88,10 +88,6 @@ export default {
         this.showBulkEmailAdd = !this.showBulkEmailAdd
       }
     },
-    async getNextPage() {
-      console.log("get next page")
-    }
-    ,
     async addNewReportToList(report) {
 
       this.closeAll()

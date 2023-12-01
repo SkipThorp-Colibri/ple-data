@@ -134,6 +134,7 @@ export default {
     #bulk-input-container {
         background-color: #eeeeee;
         padding: 1rem;
+        margin-bottom: 3rem;
     }
     ul {
         list-style: none;

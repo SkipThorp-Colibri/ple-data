@@ -79,5 +79,6 @@ export default {
 <style scoped>
     #updateTableContainer {
         background-color: rgb(224, 246, 255);
+        margin-bottom: 3rem;
     }
 </style>
