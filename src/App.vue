@@ -1,20 +1,63 @@
 <template>
-  <Navbar @search-reports="searchReports" @reset-reports="fetchReports" />
+  <Navbar 
+    @search-reports="searchReports" 
+    @reset-reports="fetchReports"
+  />
   <div class="container-fluid" id="main-reports-container">
-    <AddReport v-if="showAddReport" @add-new-report="addNewReportToList" @close-add-report="showAddReport = false" />
-    <EditReport v-if="showEditReport" @submit-edit-report="onEditReport" :report="selectedReport" @close-edit-report="showEditReport = false" />
-    <BulkInput v-if="showBulkInput" @add-bulk-reports="addBulkReportsToList" @close-bulk-input="showBulkInput = false"></BulkInput>
-    <BulkEmailAdd v-if="showBulkEmailAdd" @close-bulk-email-input="showBulkEmailAdd = false" />
+    <AddReport 
+      v-if="showAddReport" 
+      @add-new-report="addNewReportToList" 
+      @close-add-report="showAddReport = false" 
+    />
+    <EditReport 
+      v-if="showEditReport" 
+      @submit-edit-report="onEditReport" 
+      :report="selectedReport" 
+      @close-edit-report="showEditReport = false" 
+    />
+    <BulkInput 
+      v-if="showBulkInput" 
+      @add-bulk-reports="addBulkReportsToList" 
+      @close-bulk-input="showBulkInput = false" 
+    />
+    <BulkEmailAdd 
+      v-if="showBulkEmailAdd" 
+      @close-bulk-email-input="showBulkEmailAdd = false" 
+    />
 
     <div class="text-left">
-      <Button text="new report" color="btn-primary" @btn-click="toggleAddReport" />
-      <Button text="bulk input" color="btn-info" style="margin-left: 1rem;" @btn-click="toggleBulkInput" />
-      <Button text="add email to reports" color="btn-info" style="margin-left: 1rem;" @btn-click="toggleBulkEmailAdd" />
+      <Button 
+        text="new report" 
+        color="btn-primary" 
+        @btn-click="toggleAddReport" 
+      />
+      <Button 
+        text="bulk input" 
+        color="btn-info" 
+        style="margin-left: 1rem;" 
+        @btn-click="toggleBulkInput" 
+      />
+      <Button 
+        text="add email to reports" 
+        color="btn-info" 
+        style="margin-left: 1rem;" 
+        @btn-click="toggleBulkEmailAdd"       
+      />
     </div>
     
-    <UpdateTable :reportsUpdate="reportsUpdate" @clear-update-list="clearUpdateList" />
+    <UpdateTable 
+      :reportsUpdate="reportsUpdate" 
+      @clear-update-list="clearUpdateList" 
+    />
 
-    <ReportsTable :reports="reports" :currentPage="currentPage" :totalPages="totalPages" @edit-report="editReport" @delete-report="deleteReport" @get-page="fetchReports" />
+    <ReportsTable 
+      :reports="reports" 
+      :currentPage="currentPage" 
+      :totalPages="totalPages" 
+      @edit-report="editReport" 
+      @delete-report="deleteReport" 
+      @get-page="fetchReports" 
+    />
   </div>
 </template>
 
