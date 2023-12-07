@@ -1,8 +1,5 @@
 <template>
-  <div>
-    <span class="m-2"><Button color="btn-primary" text="prev" @btn-click="getPrevPage(currentPage)" /></span>
-    <span class="m-2"><Button color="btn-primary" text="next" @btn-click="getNextPage(currentPage)" /></span>
-  </div>
+  <Pagination :currentPage="currentPage" :reports="reports" :totalPages="totalPages" @get-prev-page="getPrevPage" @get-next-page="getNextPage" />
   <table class="table">
     <thead>
       <tr>
@@ -30,15 +27,18 @@
 
 <script>
 import Button from './Button.vue'
+import Pagination from './Pagination.vue'
 
 export default {
     name: "ReportsTable",
     components: {
-        Button
+        Button,
+        Pagination
     },
     props: {
         reports: Array,
-        currentPage: Number
+        currentPage: Number,
+        totalPages: Number
     },
     methods: {
         editLine(report) {
@@ -48,10 +48,10 @@ export default {
           this.$emit('delete-report', report.id)
         },
         getNextPage(page) {
-          this.$emit('get-page', { "page": page + 1, "take": 100 })
+          this.$emit('get-page', { "page": page, "take": 100 })
         },
         getPrevPage(page) {
-          this.$emit('get-page', { "page": page - 1, "take": 100 })
+          this.$emit('get-page', { "page": page, "take": 100 })
         }
     },
     emits: [

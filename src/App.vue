@@ -14,7 +14,7 @@
     
     <UpdateTable :reportsUpdate="reportsUpdate" @clear-update-list="clearUpdateList" />
 
-    <ReportsTable :reports="reports" :currentPage="currentPage" @edit-report="editReport" @delete-report="deleteReport" @get-page="fetchReports" />
+    <ReportsTable :reports="reports" :currentPage="currentPage" :totalPages="totalPages" @edit-report="editReport" @delete-report="deleteReport" @get-page="fetchReports" />
   </div>
 </template>
 
@@ -44,6 +44,7 @@ export default {
     return {
       reports: [],
       currentPage: 0,
+      totalPages: 0,
       searchTerm: String,
       reportsUpdate: [],
       showAddReport: false,
@@ -176,6 +177,7 @@ export default {
   async mounted() {
     this.currentPage = 1
     await this.fetchReports({ "page": this.currentPage, "take": 100 })
+    this.totalPages = Math.ceiling(reports.length / 100)
   }
 }
 </script>
