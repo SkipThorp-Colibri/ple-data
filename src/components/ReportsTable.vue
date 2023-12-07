@@ -19,7 +19,7 @@
             <th scope="row">{{report.id}}</th>
             <td class="text-left"><span v-for="(dept,i) in report.departments" :key="i"><span v-if="i > 0">, </span>{{ dept }}</span></td>
             <td class="text-left"><span v-for="(email,i) in report.emails" :key="i"><span v-if="i > 0">, </span>{{ email }}</span></td>
-            <th class="text-left">{{report.subject}}</th>
+            <td class="text-left">{{report.subject}}</td>
             <td><Button color="btn-primary" text="edit" @btn-click="editLine(report)" /></td>
             <td><Button color="btn-danger" text="delete" @btn-click="deleteLine(report)" /></td>
         </tr>
