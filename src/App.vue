@@ -197,6 +197,10 @@ export default {
       const res = await fetch(`http://localhost:5000/reports?q=${this.searchTerm}`)
       const data = await res.json()
       this.reports = data
+      this.getTotalPages()
+    },
+    async getTotalPages() {
+      this.totalPages = Math.ceil(this.reports.length / 100) // this formula is right!
     },
     async fetchReports(obj) {
       this.currentPage = obj.page
@@ -220,7 +224,6 @@ export default {
   async mounted() {
     this.currentPage = 1
     await this.fetchReports({ "page": this.currentPage, "take": 100 })
-    this.totalPages = Math.ceiling(reports.length / 100)
   }
 }
 </script>
