@@ -92,6 +92,8 @@ export default {
 
       this.closeAll()
 
+      await this.sortList(report)
+
       const stringifyReport = JSON.stringify(report)
 
       const res = await fetch('http://localhost:5000/reports', {
@@ -107,11 +109,14 @@ export default {
     },
     async addBulkReportsToList(reports) {
       for(let i = 0;i < reports.length;i++){
+        await this.sortList(reports[i])
         await this.addNewReportToList(reports[i])
       }
     },
     async onEditReport(report) {
       this.toggleEditReport()
+
+      await this.sortList(report)
       
       const stringifyReport = JSON.stringify(report)
 
@@ -168,6 +173,17 @@ export default {
     },
     async addReportToUpdateList(report) {
       this.reportsUpdate = [...this.reportsUpdate, report]
+    },
+    async sortList(report) {
+      console.log(report)
+      if(report.departments != undefined && report.emails != undefined){
+        var newDepartments = this.sortList(report.departments?.sort())
+        var newEmails = this.sortList(report.emails?.sort())
+
+        report = { ...report, departments: newDepartments, emails: newEmails }
+      }
+
+      return report
     },
     clearUpdateList() {
       this.reportsUpdate = []
