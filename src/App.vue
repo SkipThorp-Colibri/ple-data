@@ -183,20 +183,22 @@ export default {
     async sortAllReports() {
       console.log("sortAllReports")
       await this.fetchAllReports()
-      for(let i = 1; i < this.reports.length; i++){
-        // if(i <= 5) {
+      for(let i = 0; i < this.reports.length; i++){
+        const report = this.reports[i]
+        if((report.departments != undefined && report.departments.length > 1) || (report.emails != undefined && report.emails.length > 1)) {
+          console.log(`sorting ${this.reports[i].id}`, report)
           const res = await this.fetchReport(this.reports[i].id)
-          const report = await this.fetchReport(res.id)
-          await this.onEditReport(report)
-        // }
+          const rep = await this.fetchReport(res.id)
+          await this.onEditReport(rep)
+        }
       }
     },
     async sortList(report) {
-      if(report.departments != undefined && report.emails != undefined){
-        var newDepartments = this.sortList(report.departments?.sort())
-        var newEmails = this.sortList(report.emails?.sort())
-
-        report = { ...report, departments: newDepartments, emails: newEmails }
+      if(report.departments != undefined && report.departments.length > 1) {
+        report = { ...report, departments: report.departments.sort() }
+      }
+      if(report.emails != undefined && report.emails.length > 1) {
+        report = { ...report, emails: report.emails.sort() }
       }
 
       return report
