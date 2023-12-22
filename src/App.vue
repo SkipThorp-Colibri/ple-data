@@ -159,6 +159,11 @@ export default {
       const data = await res.json()
       this.reports = data
     },
+    async fetchAllReports() {
+      for(let i = 1; i < 500; i++) {
+        await this.fetchReports({ "page": i, "take": 50 })
+      }
+    },
     async fetchReports(obj) {
       this.currentPage = obj.page
       this.reports = []
@@ -174,13 +179,26 @@ export default {
     async addReportToUpdateList(report) {
       this.reportsUpdate = [...this.reportsUpdate, report]
     },
+    async sortAllReports() {
+      console.log("sortAllReports")
+      for(let idx = 1; idx < 500; idx++) {
+        await this.fetchReports({ "page": idx, "take": 50 })
+      
+        for(let i = 0; i < this.reports.length; i++){
+          const report = this.reports[i]
+          if((report.departments != undefined && report.departments.length > 1) || (report.emails != undefined && report.emails.length > 1)) {
+            console.log(`sorting ${this.reports[i].id}`, report)
+            await this.onEditReport(report)
+          }
+        }
+      }
+    },
     async sortList(report) {
-      console.log(report)
-      if(report.departments != undefined && report.emails != undefined){
-        var newDepartments = this.sortList(report.departments?.sort())
-        var newEmails = this.sortList(report.emails?.sort())
-
-        report = { ...report, departments: newDepartments, emails: newEmails }
+      if(report.departments != undefined && report.departments.length > 1) {
+        report = { ...report, departments: report.departments.sort() }
+      }
+      if(report.emails != undefined && report.emails.length > 1) {
+        report = { ...report, emails: report.emails.sort() }
       }
 
       return report
@@ -190,6 +208,7 @@ export default {
     }
   },
   async mounted() {
+    // await this.sortAllReports()
     this.currentPage = 1
     await this.fetchReports({ "page": this.currentPage, "take": 100 })
   }
