@@ -179,20 +179,6 @@ export default {
     async addReportToUpdateList(report) {
       this.reportsUpdate = [...this.reportsUpdate, report]
     },
-    async sortAllReports() {
-      console.log("sortAllReports")
-      for(let idx = 1; idx < 500; idx++) {
-        await this.fetchReports({ "page": idx, "take": 50 })
-      
-        for(let i = 0; i < this.reports.length; i++){
-          const report = this.reports[i]
-          if((report.departments != undefined && report.departments.length > 1) || (report.emails != undefined && report.emails.length > 1)) {
-            console.log(`sorting ${this.reports[i].id}`, report)
-            await this.onEditReport(report)
-          }
-        }
-      }
-    },
     async sortList(report) {
       if(report.departments != undefined && report.departments.length > 1) {
         report = { ...report, departments: report.departments.sort() }
@@ -208,7 +194,6 @@ export default {
     }
   },
   async mounted() {
-    // await this.sortAllReports()
     this.currentPage = 1
     await this.fetchReports({ "page": this.currentPage, "take": 100 })
   }
