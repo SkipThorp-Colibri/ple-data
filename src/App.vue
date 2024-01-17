@@ -1,78 +1,78 @@
 <template>
-  <Navbar @search-reports="searchReports" @reset-reports="fetchReports" />
-  <div class="container-fluid" id="main-reports-container">
-    <AddReport v-if="showAddReport" @add-new-report="addNewReportToList" @close-add-report="showAddReport = false" />
-    <EditReport v-if="showEditReport" @submit-edit-report="onEditReport" :report="selectedReport" @close-edit-report="showEditReport = false" />
-    <BulkInput v-if="showBulkInput" @add-bulk-reports="addBulkReportsToList" @close-bulk-input="showBulkInput = false"></BulkInput>
+  <Navbar @search-coupons="searchCoupons" @reset-coupons="fetchCoupons" />
+  <div class="container-fluid" id="main-coupons-container">
+    <AddCoupon v-if="showAddCoupon" @add-new-coupon="addNewCouponToList" @close-add-coupon="showAddCoupon = false" />
+    <EditCoupon v-if="showEditCoupon" @submit-edit-coupon="onEditCoupon" :coupon="selectedCoupon" @close-edit-coupon="showEditCoupon = false" />
+    <BulkInput v-if="showBulkInput" @add-bulk-coupons="addBulkCouponsToList" @close-bulk-input="showBulkInput = false"></BulkInput>
     <BulkEmailAdd v-if="showBulkEmailAdd" @close-bulk-email-input="showBulkEmailAdd = false" />
 
     <div class="text-left">
-      <Button text="new report" color="btn-primary" @btn-click="toggleAddReport" />
+      <Button text="new coupon" color="btn-primary" @btn-click="toggleAddCoupon" />
       <Button text="bulk input" color="btn-info" style="margin-left: 1rem;" @btn-click="toggleBulkInput" />
-      <Button text="add email to reports" color="btn-info" style="margin-left: 1rem;" @btn-click="toggleBulkEmailAdd" />
+      <Button text="add email to coupons" color="btn-info" style="margin-left: 1rem;" @btn-click="toggleBulkEmailAdd" />
     </div>
     
-    <UpdateTable :reportsUpdate="reportsUpdate" @clear-update-list="clearUpdateList" />
+    <UpdateTable :couponsUpdate="couponsUpdate" @clear-update-list="clearUpdateList" />
 
-    <ReportsTable :reports="reports" :currentPage="currentPage" @edit-report="editReport" @delete-report="deleteReport" @get-page="fetchReports" />
+    <CouponsTable :coupons="coupons" :currentPage="currentPage" @edit-coupon="editCoupon" @delete-coupon="deleteCoupon" @get-page="fetchCoupons" />
   </div>
 </template>
 
 <script>
 import BulkEmailAdd from './components/BulkEmailAdd.vue'
-import AddReport from './components/AddReport.vue'
+import AddCoupon from './components/AddCoupon.vue'
 import BulkInput from './components/BulkInput.vue'
 import Button from './components/Button.vue'
-import EditReport from './components/EditReport.vue'
+import EditCoupon from './components/EditCoupon.vue'
 import Navbar from './components/Navbar.vue'
-import ReportsTable from './components/ReportsTable.vue'
+import CouponsTable from './components/CouponsTable.vue'
 import UpdateTable from './components/UpdateTable.vue'
 
 export default {
   name: 'App',
   components: {
     BulkEmailAdd,
-    AddReport,
+    AddCoupon,
     BulkInput,
     Button,
-    EditReport,
+    EditCoupon,
     Navbar,
-    ReportsTable,
+    CouponsTable,
     UpdateTable
   },
   data() {
     return {
-      reports: [],
+      coupons: [],
       currentPage: 0,
       searchTerm: String,
-      reportsUpdate: [],
-      showAddReport: false,
-      showEditReport: false,
+      couponsUpdate: [],
+      showAddCoupon: false,
+      showEditCoupon: false,
       showBulkInput: false,
       showBulkEmailAdd: false,
-      selectedReport: {},
+      selectedCoupon: {},
       isEdit: false
     }
   },
   methods: {
     closeAll() {
-      this.showAddReport = false
-      this.showEditReport = false
+      this.showAddCoupon = false
+      this.showEditCoupon = false
       this.showBulkInput = false
       this.showBulkEmailAdd = false
     },
-    toggleAddReport() {
-      if(this.showAddReport) {
+    toggleAddCoupon() {
+      if(this.showAddCoupon) {
         this.closeAll()
       } else {
-        this.showAddReport = !this.showAddReport
+        this.showAddCoupon = !this.showAddCoupon
       }      
     },
-    toggleEditReport() {
-      if(this.showEditReport) {
+    toggleEditCoupon() {
+      if(this.showEditCoupon) {
         this.closeAll()
       } else {
-        this.showEditReport = !this.showEditReport
+        this.showEditCoupon = !this.showEditCoupon
       }    },
     toggleBulkInput() {
       if(this.showBulkInput) {
@@ -88,114 +88,114 @@ export default {
         this.showBulkEmailAdd = !this.showBulkEmailAdd
       }
     },
-    async addNewReportToList(report) {
+    async addNewCouponToList(coupon) {
 
       this.closeAll()
 
-      await this.sortList(report)
+      await this.sortList(coupon)
 
-      const stringifyReport = JSON.stringify(report)
+      const stringifyCoupon = JSON.stringify(coupon)
 
-      const res = await fetch('http://localhost:5000/reports', {
+      const res = await fetch('http://localhost:5003/coupons', {
         method: 'POST',
         headers: {
           'Content-type': 'application/json'
         },
-        body: stringifyReport
+        body: stringifyCoupon
       })
       const data = await res.json()
-      this.reports = [...this.reports, data]
-      this.addReportToUpdateList(data)
+      this.coupons = [...this.coupons, data]
+      this.addCouponToUpdateList(data)
     },
-    async addBulkReportsToList(reports) {
-      for(let i = 0;i < reports.length;i++){
-        await this.sortList(reports[i])
-        await this.addNewReportToList(reports[i])
+    async addBulkCouponsToList(coupons) {
+      for(let i = 0;i < coupons.length;i++){
+        await this.sortList(coupons[i])
+        await this.addNewCouponToList(coupons[i])
       }
     },
-    async onEditReport(report) {
-      this.toggleEditReport()
+    async onEditCoupon(coupon) {
+      this.toggleEditCoupon()
 
-      await this.sortList(report)
+      await this.sortList(coupon)
       
-      const stringifyReport = JSON.stringify(report)
+      const stringifyCoupon = JSON.stringify(coupon)
 
-      const res = await fetch(`http://localhost:5000/reports/${report.id}`, {
+      const res = await fetch(`http://localhost:5003/coupons/${coupon.id}`, {
         method: 'PUT',
         headers: {
           'Content-type': 'application/json'
         },
-        body: stringifyReport
+        body: stringifyCoupon
       })
       const data = await res.json()
 
-      let updatedItemIndex = this.reports.findIndex(r => r.id === data.id)
-      this.reports[updatedItemIndex] = data
-      this.addReportToUpdateList(data)
+      let updatedItemIndex = this.coupons.findIndex(r => r.id === data.id)
+      this.coupons[updatedItemIndex] = data
+      this.addCouponToUpdateList(data)
     },
-    async onDeleteReport(id) {
-      const res = await fetch(`http://localhost:5000/reports/${id}`, {
+    async onDeleteCoupon(id) {
+      const res = await fetch(`http://localhost:5003/coupons/${id}`, {
         method: 'DELETE'
       })
     },
-    async editReport(id) {
-      this.selectedReport = await this.fetchReport(id)
-      this.showEditReport = true
-      this.showAddReport = false
+    async editCoupon(id) {
+      this.selectedCoupon = await this.fetchCoupon(id)
+      this.showEditCoupon = true
+      this.showAddCoupon = false
       document.body.scrollTop = document.documentElement.scrollTop = 0
     },
-    async deleteReport(id) {
-      let report = await this.fetchReport(id)
+    async deleteCoupon(id) {
+      let coupon = await this.fetchCoupon(id)
 
-      if(confirm(`Do you want to delete ${report.subject}`)) {
-          this.reports = this.reports.filter((r) => r.id !== id)
+      if(confirm(`Do you want to delete ${coupon.subject}`)) {
+          this.coupons = this.coupons.filter((r) => r.id !== id)
       }
-      this.onDeleteReport(id)
+      this.onDeleteCoupon(id)
     },
-    async searchReports(term) {
+    async searchCoupons(term) {
       this.searchTerm = term
-      this.reports = []
-      const res = await fetch(`http://localhost:5000/reports?q=${this.searchTerm}`)
+      this.coupons = []
+      const res = await fetch(`http://localhost:5003/coupons?q=${this.searchTerm}`)
       const data = await res.json()
-      this.reports = data
+      this.coupons = data
     },
-    async fetchAllReports() {
+    async fetchAllCoupons() {
       for(let i = 1; i < 500; i++) {
-        await this.fetchReports({ "page": i, "take": 50 })
+        await this.fetchCoupons({ "page": i, "take": 50 })
       }
     },
-    async fetchReports(obj) {
+    async fetchCoupons(obj) {
       this.currentPage = obj.page
-      this.reports = []
-      const res = await fetch(`http://localhost:5000/reports?_page=${obj.page}&_limit=${obj.take}`)
+      this.coupons = []
+      const res = await fetch(`http://localhost:5003/coupons?_page=${obj.page}&_limit=${obj.take}`)
       const data = await res.json()
-      this.reports = data
+      this.coupons = data
     },
-    async fetchReport(id) {
-      const res = await fetch(`http://localhost:5000/reports/${id}`)
+    async fetchCoupon(id) {
+      const res = await fetch(`http://localhost:5003/coupons/${id}`)
       const data = await res.json()
       return data
     },
-    async addReportToUpdateList(report) {
-      this.reportsUpdate = [...this.reportsUpdate, report]
+    async addCouponToUpdateList(coupon) {
+      this.couponsUpdate = [...this.couponsUpdate, coupon]
     },
-    async sortList(report) {
-      if(report.departments != undefined && report.departments.length > 1) {
-        report = { ...report, departments: report.departments.sort() }
+    async sortList(coupon) {
+      if(coupon.departments != undefined && coupon.departments.length > 1) {
+        coupon = { ...coupon, departments: coupon.departments.sort() }
       }
-      if(report.emails != undefined && report.emails.length > 1) {
-        report = { ...report, emails: report.emails.sort() }
+      if(coupon.emails != undefined && coupon.emails.length > 1) {
+        coupon = { ...coupon, emails: coupon.emails.sort() }
       }
 
-      return report
+      return coupon
     },
     clearUpdateList() {
-      this.reportsUpdate = []
+      this.couponsUpdate = []
     }
   },
   async mounted() {
     this.currentPage = 1
-    await this.fetchReports({ "page": this.currentPage, "take": 100 })
+    await this.fetchCoupons({ "page": this.currentPage, "take": 100 })
   }
 }
 </script>
@@ -209,7 +209,7 @@ export default {
   color: #2c3e50;
 }
 
-#main-reports-container {
+#main-coupons-container {
   margin-top: 4rem;
 }
 

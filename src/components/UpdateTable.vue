@@ -1,5 +1,5 @@
 <template>
-    <div id="updateTableContainer" v-if="reportsUpdate.length > 0">
+    <div id="updateTableContainer" v-if="couponsUpdate.length > 0">
     <table class="table">
         <thead>
         <tr>
@@ -7,8 +7,8 @@
         </tr>
         </thead>
         <tbody>
-            <tr v-for="report in reportsUpdate" :key="report.id">
-                <td class="text-left">{{report.id}} | {{report.departments.join(', ')}} | {{report.emails.join(', ')}} | {{report.subject}}</td>
+            <tr v-for="coupon in couponsUpdate" :key="coupon.id">
+                <td class="text-left">{{coupon.id}} | {{coupon.departments.join(', ')}} | {{coupon.emails.join(', ')}} | {{coupon.subject}}</td>
             </tr>
         </tbody>
     </table>
@@ -27,7 +27,7 @@ export default {
         Button
     },
     props: {
-        reportsUpdate: Array,
+        couponsUpdate: Array,
     },
     data() {
         return {
@@ -36,21 +36,21 @@ export default {
     },
     methods: {
         convertToCsvText() {
-            this.reportsUpdate.forEach((report) => {
+            this.couponsUpdate.forEach((coupon) => {
                 var row = ''
-                row += report.id
-                row += ',"' + report.departments.join('%') + '"'
-                row += ',"' + report.emails.join(';') + '"'
-                row += `,${report.subject}`
-                row += `,${report.rowsort}`
-                row += `,${report.cc_email}`
-                row += `,${report.columnsort}`
-                row += `,${report.login_filter}`
-                row += `,${report.completion_filter}`
-                row += `,${report.remove_button}`
-                row += `,${report.course_type_only}`
-                row += `,${report.ple_only}`
-                row += `,${report.summary_only === 1 ? 1 : 0}\r\n`
+                row += coupon.id
+                row += ',"' + coupon.departments.join('%') + '"'
+                row += ',"' + coupon.emails.join(';') + '"'
+                row += `,${coupon.subject}`
+                row += `,${coupon.rowsort}`
+                row += `,${coupon.cc_email}`
+                row += `,${coupon.columnsort}`
+                row += `,${coupon.login_filter}`
+                row += `,${coupon.completion_filter}`
+                row += `,${coupon.remove_button}`
+                row += `,${coupon.course_type_only}`
+                row += `,${coupon.ple_only}`
+                row += `,${coupon.summary_only === 1 ? 1 : 0}\r\n`
 
                 this.csvContent += row
 

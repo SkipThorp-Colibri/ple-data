@@ -1,6 +1,6 @@
 <template>
-    <div class="container" id="add-report-container">
-        <h3>Add new report</h3>
+    <div class="container" id="add-coupon-container">
+        <h3>Add new coupon</h3>
         <hr />
         <form class="text-left">
             <div class="form-row">
@@ -89,8 +89,8 @@
             </div>
             <hr />
             <div class="form-row">
-                <Button text="submit report" color="btn-success" @btn-click="onReportSubmit" />
-                <Button text="cancel" color="btn-danger" @btn-click="closeAddReport" class="ml-1" />
+                <Button text="submit coupon" color="btn-success" @btn-click="onCouponSubmit" />
+                <Button text="cancel" color="btn-danger" @btn-click="closeAddCoupon" class="ml-1" />
             </div>
         </form>
     </div>
@@ -100,7 +100,7 @@
 import Button from './Button.vue'
 
 export default {
-    name: "AddReport",
+    name: "AddCoupon",
     components: {
         Button
     },
@@ -127,8 +127,8 @@ export default {
         }
     },
     methods: {
-        onReportSubmit() {
-            const report = { 
+        onCouponSubmit() {
+            const coupon = { 
                 departments: this.departments, 
                 emails: this.emails, 
                 subject: this.subject,
@@ -142,7 +142,7 @@ export default {
                 ple_only: parseInt(this.ple_only),
                 summary_only: parseInt(this.summary_only)
             }
-            this.$emit('add-new-report', report)
+            this.$emit('add-new-coupon', coupon)
             this.subject = ''
             this.departments = []
             this.emails = []
@@ -209,8 +209,8 @@ export default {
                 this.departments = this.departments.filter((d) => d !== dept)
             }
         },
-        closeAddReport() {
-            this.$emit('close-add-report')
+        closeAddCoupon() {
+            this.$emit('close-add-coupon')
         }
     }
 }
@@ -220,7 +220,7 @@ export default {
     button {
         margin-top: 1rem;
     }
-    #add-report-container {
+    #add-coupon-container {
         background-color: #eeeeee;
         padding: 1rem;
         margin-bottom: 3rem;

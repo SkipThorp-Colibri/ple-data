@@ -9,7 +9,7 @@
                     
                 </div>
                 <div class="col">
-                    <h5>Reports</h5>
+                    <h5>Coupons</h5>
                     
                 </div>
                 <div class="col">
@@ -26,7 +26,7 @@
                 </div>
                 <div class="col">
                     <div>
-                        <textarea class="form-control" v-model="reportNames"></textarea>
+                        <textarea class="form-control" v-model="couponNames"></textarea>
                     </div>
                 </div>
                 <div class="col">
@@ -55,7 +55,7 @@ export default {
         Button
     },
     props: {
-        report: Object
+        coupon: Object
     },
     data() {
         return {
@@ -70,11 +70,11 @@ export default {
         }
     },
     methods: {
-        onReportSubmit() {
-            for(let i = 0; i < this.report.emails.length; i++) {
-                this.report.emails[i] = this.report.emails[i].toLowerCase()
+        onCouponSubmit() {
+            for(let i = 0; i < this.coupon.emails.length; i++) {
+                this.coupon.emails[i] = this.coupon.emails[i].toLowerCase()
             }
-            this.$emit('submit-edit-report', this.report)
+            this.$emit('submit-edit-coupon', this.coupon)
             this.subject = ''
             this.departments = []
             this.emails = []
@@ -85,7 +85,7 @@ export default {
 
                 newDeptArray.forEach((value) => {
                     value = value.replace(/\u2013|\u2014/g, "-")
-                    this.report.departments = [...this.report.departments, value]
+                    this.coupon.departments = [...this.coupon.departments, value]
                 })
 
                 this.newDepartment = ''

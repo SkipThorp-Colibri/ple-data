@@ -2,10 +2,10 @@
 <div class="input-group mb3">
     <input type="text" class="form-control-sm" placeholder="Search..." v-model="searchTerm" />
     <div class="input-group-append">
-      <Button text="reset" color="btn-danger" @btn-click="resetReports" />
+      <Button text="reset" color="btn-danger" @btn-click="resetCoupons" />
     </div>
     <div class="input-group-append">
-      <Button text="search" color="btn-primary" @btn-click="searchReports" />
+      <Button text="search" color="btn-primary" @btn-click="searchCoupons" />
     </div>
   </div>
 </template>
@@ -24,17 +24,17 @@ export default {
     }
   },
   methods: {
-    async searchReports() {
-      this.$emit('search-reports', this.searchTerm)
+    async searchCoupons() {
+      this.$emit('search-coupons', this.searchTerm)
     },
-    async resetReports() {
+    async resetCoupons() {
       this.searchTerm = ""
-      this.$emit('reset-reports')
+      this.$emit('reset-coupons')
     }
   },
   emits: [
-    'search-reports',
-    'reset-reports'
+    'search-coupons',
+    'reset-coupons'
   ]
 }
 

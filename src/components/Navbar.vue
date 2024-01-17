@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar navbar-dark bg-dark fixed-top">
-  <span class="navbar-brand mb-0 h1">PLE Report Add/Update</span>
-  <span class="text-middle"><SearchForm @search-reports="searchReports" @reset-reports="resetReports" /></span>
+  <span class="navbar-brand mb-0 h1">PLE Coupon Add/Update</span>
+  <span class="text-middle"><SearchForm @search-coupons="searchCoupons" @reset-coupons="resetCoupons" /></span>
   <span class="scroll-btn"><Button text="top" color="btn-secondary" @btn-click="scrollToTop" /></span>
 </nav>
 </template>
@@ -22,11 +22,11 @@ export default {
     }
   },
   methods: {
-    async searchReports(searchTerm) {
-      this.$emit("search-reports", searchTerm)
+    async searchCoupons(searchTerm) {
+      this.$emit("search-coupons", searchTerm)
     },
-    async resetReports() {
-      this.$emit("reset-reports",{ "page": 1, "take": 100 })
+    async resetCoupons() {
+      this.$emit("reset-coupons",{ "page": 1, "take": 100 })
     },
     scrollToTop() {
       window.scrollTo({
@@ -37,8 +37,8 @@ export default {
     }
   },
   emits: [
-    'search-reports',
-    'reset-reports'
+    'search-coupons',
+    'reset-coupons'
   ]
 }
 
