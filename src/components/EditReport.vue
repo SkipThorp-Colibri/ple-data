@@ -1,57 +1,57 @@
 <template>
-    <div class="container" id="add-coupon-container">
-        <h3>Edit coupon - {{ coupon.id }}</h3>
+    <div class="container" id="add-report-container">
+        <h3>Edit report - {{ report.id }}</h3>
         <hr />
         <form class="text-left">
             <div class="form-row">
                 <div class="col">
                     <h5>Departments</h5>
                     <ul>
-                        <li v-for="dept in coupon.departments" :key="dept"><Button :text="dept" color="btn-light" :block="true" @btn-click="removeDepartment(dept)" /></li>
+                        <li v-for="dept in report.departments" :key="dept"><Button :text="dept" color="btn-light" :block="true" @btn-click="removeDepartment(dept)" /></li>
                     </ul>
                 </div>
                 <div class="col">
                     <h5>Emails</h5>
                     <ul>
-                        <li v-for="email in coupon.emails" :key="email"><Button :text="email" color="btn-light" :block="true" @btn-click="removeEmail(email)" /></li>
+                        <li v-for="email in report.emails" :key="email"><Button :text="email" color="btn-light" :block="true" @btn-click="removeEmail(email)" /></li>
                     </ul>
                 </div>
                 <div class="col">
                     <h5>Subject</h5>
-                    {{ coupon.subject }}
+                    {{ report.subject }}
                 </div>
                 <div class="col">
                     <div class="form-row">
                         <div class="col"><label for="rowsort" class="col-sm-2 col-form-label">rowsort</label></div>
-                        <div class="col"><input class="form-control" name="rowsort" v-model="coupon.rowsort" /></div>
+                        <div class="col"><input class="form-control" name="rowsort" v-model="report.rowsort" /></div>
                     </div>
                     <div class="form-row">
                         <div class="col"><label for="columnsort" class="col-sm-2 col-form-label">columnsort</label></div>
-                        <div class="col"><input class="form-control" name="columnsort" v-model="coupon.columnsort" /></div>
+                        <div class="col"><input class="form-control" name="columnsort" v-model="report.columnsort" /></div>
                     </div>
                     <div class="form-row">
                         <div class="col"><label for="login_filter" class="col-sm-2 col-form-label">login_filter</label></div>
-                        <div class="col"><input class="form-control" name="login_filter" v-model="coupon.login_filter" /></div>
+                        <div class="col"><input class="form-control" name="login_filter" v-model="report.login_filter" /></div>
                     </div>
                     <div class="form-row">
                         <div class="col"><label for="completion_filter" class="col-sm-2 col-form-label">completion_filter</label></div>
-                        <div class="col"><input class="form-control" name="completion_filter" v-model="coupon.completion_filter" /></div>
+                        <div class="col"><input class="form-control" name="completion_filter" v-model="report.completion_filter" /></div>
                     </div>
                     <div class="form-row">
                         <div class="col"><label for="remove_button" class="col-sm-2 col-form-label">remove_button</label></div>
-                        <div class="col"><input class="form-control" name="remove_button" v-model="coupon.remove_button" /></div>
+                        <div class="col"><input class="form-control" name="remove_button" v-model="report.remove_button" /></div>
                     </div>
                     <div class="form-row">
                         <div class="col"><label for="course_type_only" class="col-sm-2 col-form-label">course_type_only</label></div>
-                        <div class="col"><input class="form-control" name="course_type_only" v-model="coupon.course_type_only" /></div>
+                        <div class="col"><input class="form-control" name="course_type_only" v-model="report.course_type_only" /></div>
                     </div>
                     <div class="form-row">
                         <div class="col"><label for="ple_only" class="col-sm-2 col-form-label">ple_only</label></div>
-                        <div class="col"><input class="form-control" name="ple_only" v-model="coupon.ple_only" /></div>
+                        <div class="col"><input class="form-control" name="ple_only" v-model="report.ple_only" /></div>
                     </div>
                     <div class="form-row">
                         <div class="col"><label for="summary_only" class="col-sm-2 col-form-label">summary_only</label></div>
-                        <div class="col"><input class="form-control" name="summary_only" v-model="coupon.summary_only" /></div>
+                        <div class="col"><input class="form-control" name="summary_only" v-model="report.summary_only" /></div>
                     </div>
                 </div>
             </div>
@@ -87,8 +87,8 @@
             <hr />
             <div class="form-row">
                 
-                <Button text="submit edit" color="btn-success" @btn-click="onCouponSubmit" />
-                <Button text="cancel" color="btn-danger" @btn-click="closeEditCoupon" class="ml-1" />
+                <Button text="submit edit" color="btn-success" @btn-click="onReportSubmit" />
+                <Button text="cancel" color="btn-danger" @btn-click="closeEditReport" class="ml-1" />
             </div>
         </form>
     </div>
@@ -98,12 +98,12 @@
 import Button from './Button.vue'
 
 export default {
-    name: "EditCoupon",
+    name: "EditReport",
     components: {
         Button
     },
     props: {
-        coupon: Object
+        report: Object
     },
     data() {
         return {
@@ -119,11 +119,11 @@ export default {
         }
     },
     methods: {
-        onCouponSubmit() {
-            for(let i = 0; i < this.coupon.emails.length; i++) {
-                this.coupon.emails[i] = this.coupon.emails[i].toLowerCase()
+        onReportSubmit() {
+            for(let i = 0; i < this.report.emails.length; i++) {
+                this.report.emails[i] = this.report.emails[i].toLowerCase()
             }
-            this.$emit('submit-edit-coupon', this.coupon)
+            this.$emit('submit-edit-report', this.report)
             this.subject = ''
             this.departments = []
             this.emails = []
@@ -134,7 +134,7 @@ export default {
 
                 newDeptArray.forEach((value) => {
                     value = value.replace(/\u2013|\u2014/g, "-")
-                    this.coupon.departments = [...this.coupon.departments, value]
+                    this.report.departments = [...this.report.departments, value]
                 })
 
                 this.newDepartment = ''
@@ -146,7 +146,7 @@ export default {
                 let newEmailArray = this.newEmail.split(';')
 
                 newEmailArray.forEach((value) => {
-                    this.coupon.emails = [...this.coupon.emails, value.toLowerCase()]
+                    this.report.emails = [...this.report.emails, value.toLowerCase()]
                 })
 
                 this.newEmail = ''
@@ -161,7 +161,7 @@ export default {
                 this.newSubject = this.newSubject.replace(/ /g,"_")
                 this.newSubject = this.newSubject.replace(/__/g,"_")
                 
-                this.coupon.subject = this.newSubject
+                this.report.subject = this.newSubject
                 this.newSubject = ''
             }
             this.toggleAddSubject()
@@ -177,16 +177,16 @@ export default {
         },
         removeEmail(email) {
             if(confirm(`Do you want to delete ${email}`)) {
-                this.coupon.emails = this.coupon.emails.filter((e) => e !== email)
+                this.report.emails = this.report.emails.filter((e) => e !== email)
             }
         },
         removeDepartment(dept) {
             if(confirm(`Do you want to delete ${dept}`)) {
-                this.coupon.departments = this.coupon.departments.filter((d) => d !== dept)
+                this.report.departments = this.report.departments.filter((d) => d !== dept)
             }
         },
-        closeEditCoupon() {
-            this.$emit('close-edit-coupon')
+        closeEditReport() {
+            this.$emit('close-edit-report')
         }
     }
 }
@@ -196,7 +196,7 @@ export default {
     button {
         margin-top: 1rem;
     }
-    #add-coupon-container {
+    #add-report-container {
         background-color: #eeeeee;
         padding: 1rem;
         margin-bottom: 3rem;

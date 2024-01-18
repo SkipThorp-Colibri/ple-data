@@ -30,7 +30,7 @@ export default {
     },
     data() {
         return {
-            coupon: [],
+            report: [],
             tsvText: ''
         }
     },
@@ -86,7 +86,7 @@ export default {
                 result.push(lineObj)
             })
             
-            this.$emit('add-bulk-coupons', result)
+            this.$emit('add-bulk-reports', result)
         },
         parseRecords(records) {
             return records.split('\n')

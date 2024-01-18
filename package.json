@@ -1,12 +1,12 @@
 {
-  "name": "coupon-data",
+  "name": "ple-data",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "json-server": "json-server --watch db.json --port 5003",
-    "coupon-json-server": "json-server --watch coupon_data.json --port 5003"
+    "json-server": "json-server --watch db.json --port 5000",
+    "ple-json-server": "json-server --watch ple_data.json --port 5000"
   },
   "dependencies": {
     "core-js": "^3.6.5",
