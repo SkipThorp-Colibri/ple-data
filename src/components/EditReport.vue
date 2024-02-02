@@ -137,6 +137,8 @@ export default {
                     this.report.departments = [...this.report.departments, value]
                 })
 
+                this.report.departments = [...new Set(this.report.departments)]
+
                 this.newDepartment = ''
                 this.toggleAddDepartment()
             }
@@ -148,6 +150,8 @@ export default {
                 newEmailArray.forEach((value) => {
                     this.report.emails = [...this.report.emails, value.toLowerCase()]
                 })
+
+                this.report.emails = [...new Set(this.report.emails)]
 
                 this.newEmail = ''
                 this.toggleAddEmail()
