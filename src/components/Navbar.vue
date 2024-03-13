@@ -1,6 +1,6 @@
 <template>
   <nav class="navbar navbar-dark bg-dark fixed-top">
-  <span class="navbar-brand mb-0 h1">PLE Report Add/Update</span>
+  <span class="navbar-brand mb-0 h1">Add/Update PLE Reports</span>
   <span class="text-middle"><SearchForm @search-reports="searchReports" @reset-reports="resetReports" /></span>
   <span class="scroll-btn"><Button text="top" color="btn-secondary" @btn-click="scrollToTop" /></span>
 </nav>
